@@ -1,0 +1,2174 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Mortgage Rates | Compare Mortgages | first direct</title>
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="index, follow" />
+<meta name="google-site-verification" content="feQbE8ncU2aNiFUxKmhIHnvSHo8WIm33AesIVXx4axg" />
+<meta name="keywords" content="mortgages, mortgage" />
+<meta name="description" content="Whether you&#039;re a first time buyer, remortgaging, or moving home, we&#039;ve made the process of finding the right mortgage simple. Mortgages from first direct." />
+<meta name="summary" content="Whether you&#039;re a first time buyer, remortgaging, or moving home, we&#039;ve made the process of finding the right mortgage simple. Mortgages from first direct." />
+        <link rel="shortcut icon" href="/fdFreyaBuildPackPlugin/fd/images/favicon.ico" />
+        <link rel="shortcut icon" href="/fdFreyaBuildPackPlugin/fd/images/apple-touch-icon.png" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/fdFreyaBuildPackPlugin/fd/css/Styles-min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/fdFreyaBuildPackPlugin/fd/css/PrintStyles-min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/fdFreyaBuildPackPlugin/mbp/css/structure.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/mortgages.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/fancybox.css" />
+<link rel="canonical" type="" media="" href="http://mortgages.firstdirect.com/mortgage-rates" />
+        <script type="text/javascript" src="/fdFreyaBuildPackPlugin/fd/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="/js/logon.js"></script>
+<script type="text/javascript" src="/js/fancybox.js"></script>
+<script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/js/jquery.address-1.4.min.js"></script>
+<script type="text/javascript" src="/js/functions.js"></script>
+<script type="text/javascript" src="/js/apps-hmcib.js"></script>
+<script type="text/javascript" src="/js/swfobject.js"></script>
+<script type="text/javascript" src="/compare-calc/js/jquery.tooltip-4.5.js"></script>
+<script type="text/javascript" src="/fdFreyaBuildPackPlugin/fd/js/webtrends_top_section.js"></script>
+<script type="text/javascript" src="/fdFreyaBuildPackPlugin/mbp/js/functions.js"></script>
+<script type="text/javascript" src="/fdFreyaBuildPackPlugin/fd/js/jquery.plugins-min.js"></script>
+<script type="text/javascript" src="/fdFreyaBuildPackPlugin/fd/js/utilities-min.js"></script>
+<script type="text/javascript" src="/fdFreyaBuildPackPlugin/fd/js/jquery.dig.calculator_hmcib.js"></script>
+<script type="text/javascript" src="/fdFreyaBuildPackPlugin/fd/js/firstdirectpws2a.js"></script>
+<script type="text/javascript" src="/fdFreyaBuildPackPlugin/fd/js/mbox.js"></script>
+<script type="text/javascript" src="/fdFreyaBuildPackPlugin/fd/js/jQuery.fd_DNT.js"></script>
+<script type="text/javascript" src="/js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="/js/mortgage-products.js"></script>
+                <script type="text/javascript">
+            $(function () {
+                $('#sectionNavigation li a').each(function () {
+                   $this = $(this);
+                    $this.removeClass('dbl');
+                    if ($this.height() > 35) {
+                        $this.addClass('dbl');
+                    }
+                });
+
+                if(document.cookie.indexOf("noMobile=true") > -1 && $('#mobileViewLink:visible').length > 0){
+                    setTimeout(function() {
+                        window.oHash = location.hash;
+                        location.hash = 'deskTopView';
+                        $(window).bind('hashchange',function(e){
+                            if(String(location.hash) == String(window.oHash)){
+                                document.cookie="noMobile=false;path=/";
+                                top.location.href = document.referrer;
+                            }
+                        });
+                    }, 500);
+                }
+            })
+        </script>
+    </head>
+    <body class="mortgageProducts">
+
+        <script type="text/javascript">
+HSBC.SITE.rgn="Europe";
+HSBC.SITE.subrgn="UK";
+HSBC.SITE.cnty="United Kingdom";
+HSBC.SITE.ent="First Direct";
+HSBC.SITE.brand="First Direct"
+HSBC.DCS.ID = "dcse2j1285twkf1mbliutrv4s_2m7b";
+
+HSBC.SITE.custgrp="PFS";
+HSBC.SITE.busline="No Business Line";
+HSBC.SITE.prodline="Other";
+HSBC.SITE.site="Public";
+HSBC.SITE.ibtype="";
+HSBC.PAGE.cg_n="Public"
+HSBC.SITE.language="en"
+HSBC.SITE.cam="0";
+</script>
+        <div id="header-wrap">
+
+    <a id="pagetop"></a> <a href="#maincontentskip" class="skipLink">Skip to main content</a>
+
+    <div class="fdMastheadContainer" id="fdMastHead">
+        <div class="fdMastheadContainerInner">
+            <div class="fdMastheadUpperNav">
+                <div class="fdMastheadUpperNavLeft"><span class="invisible">Telephone us on</span> <span
+                    class="phoneNumber">08 456 100 100</span>
+                    <ul class="navCustomerLogin">
+                        <li id="navPIBLoginCTA">
+                            <a href="http://www.firstdirect.com/1/2/pib-service" target="pib"
+                               onclick="dcsMultiTrack('DCS.dcsuri','/pib_logon_start','WT.ti','start pib log on', 'WT.si_n', 'pib_logon', 'WT.si_p','logon_start' ); destLaunch('pib'); return (false);"
+                               title="Log on to Internet Banking (opens in new window)">
+                                <span class="outer"><span class="inner"><span class="padlock"><span class="invisible">log on to</span>Internet Banking</span> </span> </span>
+                            </a>
+                        </li>
+                        <li id="navCustomerLoginCTA">
+                            <a id="navCustomerLoginCTAClick" href="http://www.firstdirect.com/1/2/logon/online-services"
+                               title="Links to other services menu">
+                        	<span class="outer">
+                        		<span class="inner">
+                                    <span class="icon">
+                                   	<span class="padlock">Links to other services</span>
+                                    </span>
+                                </span>
+                            </span>
+                            </a>
+                            <!--<ul id="loginNavigation" aria-hidden="true">-->
+                            <ul id="loginNavigation">
+                                <li>
+                            	<span class="logonNavItem">
+                                	<a href="http://www.firstdirect.com/1/2/ibp-service" target="ibp"
+                                       onclick="dcsMultiTrack('DCS.dcsuri','/ibp_logon_start', 'WT.ti','start ibp log on', 'WT.si_n', 'ibp_logon', 'WT.si_p','logon_start' ); destLaunch('ibp'); return (false);"
+                                       title="Log on to Internet Banking Plus (opens in new window)"><span
+                                        class="invisible">log on to</span>Internet Banking Plus</a>
+                                </span>
+                                </li>
+                                <li>
+                                <span class="logonNavItem">
+    								<a href="http://www.firstdirect.com/1/2/shares-service" target="shares"
+                                       onclick="dcsMultiTrack('DCS.dcsuri','/shares_logon_start','WT.ti','start sharedealing log on', 'WT.si_n', 'shares_logon','WT.si_p','logon_start' ); destLaunch('shares'); return (false);"
+                                       title="Log on to Sharedealing (opens in new window)"><span class="invisible">Log on to </span>Sharedealing</a>
+                                </span>
+                                </li>
+                                <li>
+                                <span class="logonNavItem">
+    								<a href="http://www.littleblackbook.firstdirect.com/" target="lbb"
+                                       title="Little Black Book (opens in new window)"
+                                       onclick="destLaunch('lbb'); return (false);">Little Black Book</a>
+                              </span>
+                                </li>
+                                <li>
+                                <span class="logonNavItem">
+    								<a href="http://www.firstdirect.com/1/2/first-directory-service"
+                                       target="firstdirectory"
+                                       onclick="dcsMultiTrack('DCS.dcsuri','/firstdirectory_logon_start','WT.ti','start firstdirectory log on', 'WT.si_n', 'firstdirectory_logon','WT.si_p','logon_start' ); destLaunch('firstdirectory'); return (false);"
+                                       title="Log on to First Directory (opens in new window)"><span class="invisible">Log on to </span>First
+                                        Directory</a>
+                              </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="navCusgtomerLoginRETAPP">
+                            <a href="http://www.firstdirect.com/1/2/ao-service?url=retrieveapplication" target="ao"
+                               onclick="dcsMultiTrack('DCS.dcsuri','/retrieve_application_start','WT.ti','start retrieve application', 'WT.si_n', 'retrieve_application','WT.si_p','retrieve_app_start' ); javascript:destLaunch('ao','url=retrieveapplication'); return (false);"
+                               title="retrieve your application (opens in new window)">
+                        	<span class="outer">
+                                <span class="inner">
+                                    <span class="icon">Retrieve Application</span>
+                                </span>
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fdMastheadUpperNavRight">
+                    <form id="SearchPageForm" class="SearchPageForm" method="get"
+                          action="www.firstdirect.com/1/2/search" aria-hidden="true" style="">
+                   		<span class="mainSearchBox">
+                   			<span class="outer">
+                   				<span class="inner">
+                   					<input type="text" id="searchString" name="searchString" title="Search input box"
+                                              value="" autocomplete="off"/>
+                   					<button value="Search" class="mainSearchButton" type="submit" name="searchButton"
+                                               title="Search first direct"></button>
+                   				</span>
+                   			</span>
+                   		</span>
+                        <input name="searchRequest" value="searchRequest" type="hidden"/>
+                        <input name="refererSite" value="1" type="hidden"/>
+                        <input name="stask" value="EUKFDIR001" type="hidden"/>
+                    </form>
+                </div>
+            </div>
+            <div class="fdMastheadLowerNav">
+                <div id="navMenu_primary">
+                    <ul>
+                        <li class="first home drop">
+                            <a href="http://www.firstdirect.com/1/2/" title="first direct home page" id="secondary_home"
+                               rel="home" class="">
+                        	<span class="outer">
+                            	<span class="inner">
+                                	<span class="homeIcon">&nbsp;
+                                    	<span class="invisible">Home page</span>
+    								</span>
+                                </span>
+                            </span>
+                            </a>
+                        </li>
+                        <li class="drop">
+                            <a href="http://www.firstdirect.com/1/2/products" id="secondary_products" rel="products"
+                               class=""
+                               title="Products menu">
+                            <span class="outer">
+                                <span class="inner">
+                                    <span class="arrowDown">
+                                        Products
+                                    </span>
+                                </span>
+                            </span>
+                            </a>
+
+                            <div id="products" class="dropdown">
+                                <ul>
+                                    <li><a
+                                        href="http://www.firstdirect.com/1/2/banking?WT.ac=FSDT_HEAD_BA1313">Banking</a>
+                                    </li>
+                                    <li><a href="http://mortgages.firstdirect.com/?WT.ac=FSDT_HEAD_MG1000">Mortgages</a>
+                                    </li>
+                                    <li><a href="http://www.firstdirect.com/1/2/personal-loans?WT.ac=FSDT_HEAD_LN1000">Loans</a>
+                                    </li>
+                                    <li><a href="http://www.firstdirect.com/1/2/credit-cards?WT.ac=FSDT_HEAD_CCD1000">Credit
+                                        cards</a></li>
+                                    <li><a
+                                        href="http://www.firstdirect.com/1/2/savings?WT.ac=FSDT_HEAD_SAV1000">Savings</a>
+                                    </li>
+                                    <li><a href="http://www.firstdirect.com/1/2/investments?WT.ac=FSDT_HEAD_INV1000">Investments</a>
+                                    </li>
+                                    <li><a href="http://www.firstdirect.com/1/2/sharedealing?WT.ac=FSDT_HEAD_SHR1000">Sharedealing</a>
+                                    </li>
+                                    <li><a href="http://www.firstdirect.com/1/2/insurance?WT.ac=FSDT_HEAD_IN1000">Insurance</a>
+                                    </li>
+                                    <li><a
+                                        href="http://www.firstdirect.com/1/2/travel-money-services?WT.ac=FSDT_HEAD_TRAV1000">Travel</a>
+                                    </li>
+                                    <li><a
+                                        href="http://www.firstdirect.com/1/2/offers?WT.ac=FSDT_HEAD_OFF1000">Offers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="http://discover.firstdirect.com?WT.ac=FSDT_HEAD_DFD1000">Discover <strong>first&nbsp;direct</strong></a>
+                        </li>
+                        <li><a href="http://www.firstdirect.com/1/2/tools-and-guides?WT.ac=FSDT_HEAD_TG1000">Tools and
+                            guides</a></li>
+                        <li><a href="http://www.firstdirect.com/1/2/banking/ways-to-bank?WT.ac=FSDT_HEAD_WB1000">Ways to
+                            bank</a></li>
+                        <li><a href="http://socialresponsibility.firstdirect.com?WT.ac=FSDT_HEAD_SR1000">Social
+                            responsibility</a></li>
+                        <li class="end"><a href="http://joinin.firstdirect.com?WT.ac=FSDT_HEAD_JI1000">Join in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- End header-wrap -->
+
+<a id="maincontentskip"></a>
+        <div id="background">
+
+            <div id="wrapper">
+
+                <div id="logo"><a href="http://www.firstdirect.com" title="first direct">first direct</a></div>
+
+                <div id="container">
+				
+                    <div id="disclaimer_banner"></div>
+<noscript>
+    <div id="disclaimer_banner" class="eucookie_disclaimer bg border nojs">
+        <span>&nbsp;</span>
+
+        <p>JavaScript is currently disabled on this computer/device. As such, cookies for this site are currently
+            disabled. In order to have access to all the features of our fully-optimised website, please enable your
+            JavaScript settings via your browser. For a list of all the cookies we use and what they do, please read our
+            <a href="//www.firstdirect.com/1/2/cookie-policy" title="Cookie Policy">Cookie Policy.</a></p>
+    </div>
+</noscript>
+                    <div id="breadcrumb">
+    <nav><ul class=''><li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="itemscope"><a class='root' href='http://www.firstdirect.com/'><span>Home</span></a>&nbsp;&nbsp;&rsaquo;&nbsp;&nbsp;</li><li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="itemscope"><a class='root has-children active-parent' href='/'><span>Mortgages</span></a>&nbsp;&nbsp;&rsaquo;&nbsp;&nbsp;</li><li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="itemscope"><span>Our Mortgage rates</span></li></ul></nav></div>
+                    <div id="section-title">Mortgages</div>
+
+                    <div id="sidebar">
+
+    <div id="sectionNavigation">
+
+    <!-- 
+    ** Navigation classes moved to <a>
+    ** Classes: 
+    **   	'root' => the first link (top level)
+    **		'active' => the active link
+    **		'active-parent' => the parent of the active link
+    **		'active-ancestor' => similar to 'active-parent' but higher up
+    **		'has-children' => the item has a further sub menu
+    **		'no-children'  => item is the last of branch.
+    -->
+
+    <nav><ul class=''><li><p><a class='has-children sectionNavigationRoot on open openSection' href='/' id='MenuItemHomepage'><span class="outer"><span class="inner">Mortgages</span></span></a></p><ul><li><a class='dbl closed' href='/compare-mortgages?WT.ac=MRP1378' id='MenuItemCompareCalcMRP1378'><span class="outer"><span class="inner"><span class="arrow">Find and compare our Mortgages</span></span></span></a></li><li><a class='has-children' href='/help' id='MenuItemHelpLanding'><span class="outer"><span class="inner"><span class="arrow">Help and guides</span></span></span></a></li><li><a class='has-children dbl' href='/mortgage-calculators' id='MenuItemToolsLanding'><span class="outer"><span class="inner"><span class="arrow">Calculators and tools</span></span></span></a></li><li><p><a class='on highlight closed' href='/mortgage-rates?WT.ac=MRP1382' id='MenuItemMortgageProductsMRP1382'><span class="outer"><span class="inner"><span class="arrow">Our Mortgage rates</span></span></span></a></p></li><li><a class='dbl closed' href='/understanding-our-fees?WT.ac=MRP1383' id='MenuItemFeesItemisedMRP1383'><span class="outer"><span class="inner"><span class="arrow">Understanding our fees</span></span></span></a></li></ul></li></ul></nav>
+    </div><!-- End sectionNavigation -->
+
+            <div class="fdRelatedInfo curveLarge">
+    <h4 class="headingBorder">Related Links</h4>
+    <ul>
+        <li><a href="http://www.firstdirect.com/1/2/tools-and-guides" title="Tools and guides">Tools and guides</a></li>
+        <li><a href="http://discover.firstdirect.com/awards" title="Awards">Awards</a></li>
+    </ul>
+</div>
+
+        
+    
+
+</div><!-- End sidebar -->
+
+                    
+
+<div id="content">
+
+    <div id="content-left" class="overflowed">
+
+        <header><h1>Our Mortgage rates</h1></header>
+
+        <hr />
+
+        <div class="share">
+
+	<div class="share-page share-small-icons share-auto-load share-white  share-disable-facebook"></div>
+
+</div>
+        <hr />
+
+        <p>Whether you're a first time buyer, remortgaging, or moving home, we've made the process of helping you find a mortgage simple.</p>
+
+        <p>We offer two types of mortgage - repayment and offset. And for each of those types of mortgage, there are different types of interest rate.</p>
+
+        <p>In addition, we have a range of tools and calculators to help you make a decision. And of course, if you'd like to talk to us, just give us a call - we'd be happy to help.</p>
+
+		
+
+
+        <!--<div id="bordered-box" class="product-ad">
+
+            <header><h4>Compare our mortgages</h4></header>
+
+            <p>For an instant look at the mortgages that could be available to you, why not try our simple Find and Compare tool?</p>
+
+            <p><a href="/compare-mortgages?WT.ac=MRP1424" title="Find and Compare our Mortgages">Find and Compare our Mortgages</a></p>
+
+        </div>-->
+
+        <!-- End content-left --></div>
+
+    <div id="content-right">
+
+        <div class="contact-us">
+
+    <p><em>How can we help?</em></p>
+	
+    <p class="tel-title">If you're new to <strong>first&nbsp;direct</strong>	</p>
+    <p class="tel">0800 48 24 48 <span class="dagger"> &#134;</span></p>
+    
+
+    <p class="tel-title"><strong>first&nbsp;direct</strong> account holders 	</p>
+    <p class="tel">08 456 100 103 <span class="dagger"> &#134;</span></p>
+
+
+            <p class="tel-title"><strong>Existing mortgage holders</strong><br/>To switch your deal 	
+</p>
+        <p class="tel">08 456 100 236 <span class="dagger"> &#134;</span></p>
+
+		
+		 <p class="tel-title">Other queries 	</p>
+		 <p class="tel">08 456 100 173 <span class="dagger"> &#134;</span></p>
+    
+	            <!--<div class="btn black">
+            <ul>
+                                    <form action="" method="post" target="_blank">
+                                                <li><input class="wider" type="submit" name="submit" value="Apply online" title="Apply (opens in a new window)" /></li>
+                    </form>
+                                    <li><a class="wider" href=""><span>Choose a mortgage</span></a></li>
+                				
+            </ul>
+        </div>-->
+    
+</div>
+    </div><!-- End content-right -->
+
+    <div class="clear"></div>
+    
+    
+    <div class="banner-compare-mortgages banner-compare-mortgages2">
+			
+			<p class="bcm-title">Compare our mortgages</p>
+			
+			<p class="bcm-para">For an instant look at the mortgages that could be available to you, why not try our Find and Compare tool?</p>
+			
+			<a class="arrow-white" href="/compare-mortgages?WT.ac=MRP1460" title="Find and Compare our mortgages">Search mortgages</a>
+			
+		</div>
+
+    <div id="range-filter">
+
+        <p><strong>We currently offer a range of mortgages to specific buyer types.<br />Select your buyer type below to view the rates that may be available to you.</strong></p>
+
+        <form id="mortgage-products-filter" action="/mortgage-rates" method="post">
+
+            <label class="showing">Showing:</label>
+
+            <tr>
+  <th><label for="mortgage_product_filters_buyer_type">Buyer type</label></th>
+  <td><select name="mortgage_product_filters[buyer_type]" id="mortgage_product_filters_buyer_type">
+<option value="FTB">First Time Buyer</option>
+<option value="RM">Remortgage</option>
+<option value="HM">Moving Home</option>
+<option value="ECS">Existing Mortgage Customer</option>
+</select></td>
+</tr>
+<tr>
+  <th><label for="mortgage_product_filters_offset">Offset</label></th>
+  <td><select name="mortgage_product_filters[offset]" id="mortgage_product_filters_offset">
+<option value="" selected="selected">All Mortgage Products</option>
+<option value="0">Repayment</option>
+<option value="1">Offset</option>
+</select></td>
+</tr>
+<tr>
+  <th><label for="mortgage_product_filters_search_product_type">Search product type</label></th>
+  <td><select name="mortgage_product_filters[search_product_type]" id="mortgage_product_filters_search_product_type">
+<option value="All">All Rate Types</option>
+<option value="Fixed">Fixed Rate</option>
+<option value="Tracker">Tracker Rate</option>
+<option value="Standard Variable Rate">Standard Variable Rate</option>
+</select><input type="hidden" name="mortgage_product_filters[_csrf_token]" value="38ccf63f86e1ac534c2f9543d388544d" id="mortgage_product_filters__csrf_token" /></td>
+</tr>
+
+            <input type="submit" value="Go" class="non-js-button" />
+
+            <img class="ajax-loader" alt="Loading..." src="/images/loading.gif" style="display: none;" />
+
+        </form>
+
+    </div><!-- End range-filter -->
+
+    <div id="range">
+
+                <div id="Repayment">
+
+                                                        <div class="section">
+
+                    <div class="table-rates-top">Repayment Mortgages - Fixed</div>
+<table width="100%" border="0" margin="0" padding="0" class="table-rates">
+
+    <thead>
+        <tr class="header">
+            <th>
+    <div class="heading">
+        Mortgages
+        <a href="/mortgage-rates?order_by=name2&order_dir=asc" class="sort-up">Sort upwards</a>
+        <a href="/mortgage-rates?order_by=name2&order_dir=desc" class="sort-down">Sort downwards</a>
+    </div>
+</th>
+
+<th>
+<div class="heading">
+    Max <br />LTV
+    <a href="/mortgage-rates?order_by=maximum_ltv&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=maximum_ltv&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Rate
+    <a href="/mortgage-rates?order_by=interest_rate&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=interest_rate&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Reverts <br />to SVR
+    <a href="/mortgage-rates?order_by=svr&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=svr&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Overall <br />cost for <br />comparison
+    <a href="/mortgage-rates?order_by=avr&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=avr&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Booking Fee
+    <a href="/mortgage-rates?order_by=booking_fee&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=booking_fee&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+
+    Arrangement <br />Fee
+
+    <a href="/mortgage-rates?order_by=arrangement_fee&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=arrangement_fee&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+
+</div>
+</th>
+</tr>
+</thead>
+
+<tbody>
+                        <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-fixed-repayment--standard%7E54">
+                    2 Year Fixed Repayment - Standard                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.29%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.5% APR</strong></td>
+            <td>&pound;499</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-fixed-repayment--fee-free%7E10">
+                    2 Year Fixed Repayment - Fee Free                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.59%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.5% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-fixed-repayment--limited-edition%7E98">
+                    2 Year Fixed Repayment - Limited Edition                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                1.89%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.6% APR</strong></td>
+            <td>&pound;1,999</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-fixed-repayment--limited-edition%7E105">
+                    2 Year Fixed Repayment - Limited Edition                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.49%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.6% APR</strong></td>
+            <td>&pound;99</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-fixed-repayment--standard%7E62">
+                    2 Year Fixed Repayment - Standard                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                2.59%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.6% APR</strong></td>
+            <td>&pound;499</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-fixed-repayment--fee-free%7E11">
+                    2 Year Fixed Repayment - Fee Free                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                2.89%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.6% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-repayment--standard%7E14">
+                    3 Year Fixed Repayment - Standard                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.49%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.5% APR</strong></td>
+            <td>&pound;499</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-repayment--fee-free%7E65">
+                    3 Year Fixed Repayment - Fee Free                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.79%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.5% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-repayment--limited-edition%7E108">
+                    3 Year Fixed Repayment - Limited Edition                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.29%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.5% APR</strong></td>
+            <td>&pound;1,999</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-repayment--standard%7E15">
+                    3 Year Fixed Repayment - Standard                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                2.79%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.6% APR</strong></td>
+            <td>&pound;499</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-repayment--fee-free%7E66">
+                    3 Year Fixed Repayment - Fee Free                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.09%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.6% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-repayment--limited-edition%7E101">
+                    3 Year Fixed Repayment - Limited Edition                </a>
+            </td>
+            <td>90%</td>
+            <td>
+                3.89%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.9% APR</strong></td>
+            <td>&pound;999</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-repayment--limited-edition--fee-free%7E87">
+                    3 Year Fixed Repayment - Limited Edition - Fee Free                </a>
+            </td>
+            <td>90%</td>
+            <td>
+                4.19%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.9% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/5-year-fixed-repayment--standard%7E17">
+                    5 Year Fixed Repayment - Standard                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.69%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.4% APR</strong></td>
+            <td>&pound;499</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/5-year-fixed-repayment--fee-free%7E68">
+                    5 Year Fixed Repayment - Fee Free                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.99%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.5% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/5-year-fixed-repayment--limited-edition%7E95">
+                    5 Year Fixed Repayment - Limited Edition                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.49%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.4% APR</strong></td>
+            <td>&pound;1,999</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/5-year-fixed-repayment--standard%7E45">
+                    5 Year Fixed Repayment - Standard                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                2.99%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.5% APR</strong></td>
+            <td>&pound;499</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/5-year-fixed-repayment--fee-free%7E70">
+                    5 Year Fixed Repayment - Fee Free                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.29%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.6% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/5-year-fixed-repayment--limited-edition%7E97">
+                    5 Year Fixed Repayment - Limited Edition                </a>
+            </td>
+            <td>90%</td>
+            <td>
+                4.19%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>4.1% APR</strong></td>
+            <td>&pound;1,499</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/5-year-fixed-repayment--limited-edition--fee-free%7E46">
+                    5 Year Fixed Repayment - Limited Edition - Fee Free                </a>
+            </td>
+            <td>90%</td>
+            <td>
+                4.49%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>4.1% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+    </tbody>
+</table>
+                    <div class="tooltips">
+                        <div class="jsContentTooltip">
+                            <h4>Max LTV</h4>
+                            <p>This is the maximum LTV that will be accepted for this product. The loan to value represents the percentage of the value of the property which the borrower is seeking to borrow. E.g. a &pound;100K property with an &pound;80K mortgage = an 80% LTV.</p>
+                            <p>The maximum LTV we will lend will depend on your individual situation, the property, the loan you choose and the amount you borrow.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Interest Rate</h4>
+                            <p>This is the percentage rate at which the lender calculates the interest they charge the borrower for the mortgage.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Reverting to the Standard Variable Rate for the rest of the term </h4>
+                            <p>The Standard Variable Rate will vary over the term of the loan and is a variable rate set internally by <strong>first&nbsp;direct</strong>.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>The overall cost for comparison is / Annual Percentage Rate (APR)</h4>
+                            <p>APR stands for the Annual Percentage Rate of charge used to compare loan offers.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Booking Fee</h4>
+                            <p>A non-refundable fee charged on some mortgages to secure a particular mortgage deal.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Arrangement Fee</h4>
+                            <p>An Arrangement Fee is a fee which is payable when your mortgage is drawn down. The amount of the Arrangement Fee may vary depending on the product chosen.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                                    <div class="hr dotted"><hr /></div>
+                                                            <div class="section">
+
+                    <div class="table-rates-top">Repayment Mortgages - Tracker</div>
+<table width="100%" border="0" margin="0" padding="0" class="table-rates">
+
+    <thead>
+        <tr class="header">
+            <th>
+    <div class="heading">
+        Mortgages
+        <a href="/mortgage-rates?order_by=name2&order_dir=asc" class="sort-up">Sort upwards</a>
+        <a href="/mortgage-rates?order_by=name2&order_dir=desc" class="sort-down">Sort downwards</a>
+    </div>
+</th>
+
+<th>
+<div class="heading">
+    Max <br />LTV
+    <a href="/mortgage-rates?order_by=maximum_ltv&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=maximum_ltv&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Rate
+    <a href="/mortgage-rates?order_by=interest_rate&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=interest_rate&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Reverts <br />to SVR
+    <a href="/mortgage-rates?order_by=svr&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=svr&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Overall <br />cost for <br />comparison
+    <a href="/mortgage-rates?order_by=avr&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=avr&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Booking Fee
+    <a href="/mortgage-rates?order_by=booking_fee&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=booking_fee&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+
+    Arrangement <br />Fee
+
+    <a href="/mortgage-rates?order_by=arrangement_fee&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=arrangement_fee&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+
+</div>
+</th>
+</tr>
+</thead>
+
+<tbody>
+                        <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/life-tracker-repayment--standard%7E71">
+                    Life Tracker Repayment - Standard                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.59%
+                            </td>
+            <td>0%</td>
+            <td><strong>2.7% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;499</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/life-tracker-repayment--fee-free%7E80">
+                    Life Tracker Repayment - Fee Free                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.89%
+                            </td>
+            <td>0%</td>
+            <td><strong>2.9% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/life-tracker-repayment--limited-edition%7E88">
+                    Life Tracker Repayment - Limited Edition                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.28%
+                            </td>
+            <td>0%</td>
+            <td><strong>2.4% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;1,999</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/life-tracker-repayment--limited-edition%7E106">
+                    Life Tracker Repayment - Limited Edition                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.54%
+                            </td>
+            <td>0%</td>
+            <td><strong>2.6% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;999</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/life-tracker-repayment--standard%7E81">
+                    Life Tracker Repayment - Standard                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                2.79%
+                            </td>
+            <td>0%</td>
+            <td><strong>2.9% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;499</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/life-tracker-repayment--fee-free%7E83">
+                    Life Tracker Repayment - Fee Free                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.09%
+                            </td>
+            <td>0%</td>
+            <td><strong>3.1% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/life-tracker-repayment--limited-edition%7E103">
+                    Life Tracker Repayment - Limited Edition                </a>
+            </td>
+            <td>90%</td>
+            <td>
+                3.99%
+                            </td>
+            <td>0%</td>
+            <td><strong>4.1% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;999</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/life-tracker-repayment--limited-edition--fee-free%7E85">
+                    Life Tracker Repayment - Limited Edition - Fee Free                </a>
+            </td>
+            <td>90%</td>
+            <td>
+                4.19%
+                            </td>
+            <td>0%</td>
+            <td><strong>4.3% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+    </tbody>
+</table>
+                    <div class="tooltips">
+                        <div class="jsContentTooltip">
+                            <h4>Max LTV</h4>
+                            <p>This is the maximum LTV that will be accepted for this product. The loan to value represents the percentage of the value of the property which the borrower is seeking to borrow. E.g. a &pound;100K property with an &pound;80K mortgage = an 80% LTV.</p>
+                            <p>The maximum LTV we will lend will depend on your individual situation, the property, the loan you choose and the amount you borrow.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Interest Rate</h4>
+                            <p>This is the percentage rate at which the lender calculates the interest they charge the borrower for the mortgage.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Reverting to the Standard Variable Rate for the rest of the term </h4>
+                            <p>The Standard Variable Rate will vary over the term of the loan and is a variable rate set internally by <strong>first&nbsp;direct</strong>.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>The overall cost for comparison is / Annual Percentage Rate (APR)</h4>
+                            <p>APR stands for the Annual Percentage Rate of charge used to compare loan offers.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Booking Fee</h4>
+                            <p>A non-refundable fee charged on some mortgages to secure a particular mortgage deal.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Arrangement Fee</h4>
+                            <p>An Arrangement Fee is a fee which is payable when your mortgage is drawn down. The amount of the Arrangement Fee may vary depending on the product chosen.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                                </div>
+
+            <div class="hr"><hr /></div>
+            <div id="Offset">
+
+                                                        <div class="section">
+
+                    <div class="table-rates-top">Offset Mortgages - Fixed</div>
+<table width="100%" border="0" margin="0" padding="0" class="table-rates">
+
+    <thead>
+        <tr class="header">
+            <th>
+    <div class="heading">
+        Mortgages
+        <a href="/mortgage-rates?order_by=name2&order_dir=asc" class="sort-up">Sort upwards</a>
+        <a href="/mortgage-rates?order_by=name2&order_dir=desc" class="sort-down">Sort downwards</a>
+    </div>
+</th>
+
+<th>
+<div class="heading">
+    Max <br />LTV
+    <a href="/mortgage-rates?order_by=maximum_ltv&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=maximum_ltv&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Rate
+    <a href="/mortgage-rates?order_by=interest_rate&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=interest_rate&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Reverts <br />to SVR
+    <a href="/mortgage-rates?order_by=svr&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=svr&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Overall <br />cost for <br />comparison
+    <a href="/mortgage-rates?order_by=avr&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=avr&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Booking Fee
+    <a href="/mortgage-rates?order_by=booking_fee&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=booking_fee&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+
+    Arrangement <br />Fee
+
+    <a href="/mortgage-rates?order_by=arrangement_fee&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=arrangement_fee&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+
+</div>
+</th>
+</tr>
+</thead>
+
+<tbody>
+                        <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-fixed-offset--standard%7E19">
+                    2 Year Fixed  Offset - Standard                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.79%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;499</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-fixed-offset--fee-free%7E55">
+                    2 Year Fixed Offset - Fee Free                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                3.09%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-fixed-offset--standard%7E1">
+                    2 Year Fixed Offset - Standard                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.09%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;499</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-fixed-offset--fee-free%7E56">
+                    2 Year Fixed Offset - Fee Free                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.39%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-offset--standard%7E49">
+                    3 Year Fixed Offset - Standard                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.99%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;499</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-offset--fee-free%7E57">
+                    3 Year Fixed Offset - Fee Free                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                3.29%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-offset--limited-edition%7E107">
+                    3 Year Fixed Offset - Limited Edition                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.69%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;1,999</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-offset--standard%7E2">
+                    3 Year Fixed Offset - Standard                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.29%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;499</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/3-year-fixed-offset--fee-free%7E58">
+                    3 Year Fixed Offset - Fee Free                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.59%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+    </tbody>
+</table>
+                    <div class="tooltips">
+                        <div class="jsContentTooltip">
+                            <h4>Max LTV</h4>
+                            <p>This is the maximum LTV that will be accepted for this product. The loan to value represents the percentage of the value of the property which the borrower is seeking to borrow. E.g. a &pound;100K property with an &pound;80K mortgage = an 80% LTV.</p>
+                            <p>The maximum LTV we will lend will depend on your individual situation, the property, the loan you choose and the amount you borrow.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Interest Rate</h4>
+                            <p>This is the percentage rate at which the lender calculates the interest they charge the borrower for the mortgage.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Reverting to the Standard Variable Rate for the rest of the term </h4>
+                            <p>The Standard Variable Rate will vary over the term of the loan and is a variable rate set internally by <strong>first&nbsp;direct</strong>.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>The overall cost for comparison is / Annual Percentage Rate (APR)</h4>
+                            <p>APR stands for the Annual Percentage Rate of charge used to compare loan offers.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Booking Fee</h4>
+                            <p>A non-refundable fee charged on some mortgages to secure a particular mortgage deal.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Arrangement Fee</h4>
+                            <p>An Arrangement Fee is a fee which is payable when your mortgage is drawn down. The amount of the Arrangement Fee may vary depending on the product chosen.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                                    <div class="hr dotted"><hr /></div>
+                                                            <div class="section">
+
+                    <div class="table-rates-top">Offset Mortgages - Tracker</div>
+<table width="100%" border="0" margin="0" padding="0" class="table-rates">
+
+    <thead>
+        <tr class="header">
+            <th>
+    <div class="heading">
+        Mortgages
+        <a href="/mortgage-rates?order_by=name2&order_dir=asc" class="sort-up">Sort upwards</a>
+        <a href="/mortgage-rates?order_by=name2&order_dir=desc" class="sort-down">Sort downwards</a>
+    </div>
+</th>
+
+<th>
+<div class="heading">
+    Max <br />LTV
+    <a href="/mortgage-rates?order_by=maximum_ltv&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=maximum_ltv&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Rate
+    <a href="/mortgage-rates?order_by=interest_rate&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=interest_rate&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Reverts <br />to SVR
+    <a href="/mortgage-rates?order_by=svr&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=svr&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Overall <br />cost for <br />comparison
+    <a href="/mortgage-rates?order_by=avr&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=avr&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Booking Fee
+    <a href="/mortgage-rates?order_by=booking_fee&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=booking_fee&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+
+    Arrangement <br />Fee
+
+    <a href="/mortgage-rates?order_by=arrangement_fee&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=arrangement_fee&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+
+</div>
+</th>
+</tr>
+</thead>
+
+<tbody>
+                        <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-tracker-offset--standard%7E79">
+                    2 Year Tracker Offset - Standard                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.79%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;499</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-tracker-offset--fee-free%7E6">
+                    2 Year Tracker Offset - Fee Free                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                3.09%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-tracker-offset--limited-edition%7E93">
+                    2 Year Tracker Offset - Limited Edition                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.59%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;1,499</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-tracker-offset--standard%7E7">
+                    2 Year Tracker Offset - Standard                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.19%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;499</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/2-year-tracker-offset--fee-free%7E53">
+                    2 Year Tracker Offset - Fee Free                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.49%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/base-rate-tracker-offset--standard%7E3">
+                    Base Rate Tracker Offset - Standard                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                2.99%
+                            </td>
+            <td>0%</td>
+            <td><strong>3.1% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;499</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/base-rate-tracker-offset--fee-free%7E59">
+                    Base Rate Tracker Offset - Fee Free                </a>
+            </td>
+            <td>65%</td>
+            <td>
+                3.29%
+                            </td>
+            <td>0%</td>
+            <td><strong>3.3% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+                    <tr class="alt">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/base-rate-tracker-offset--standard%7E4">
+                    Base Rate Tracker Offset - Standard                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.39%
+                            </td>
+            <td>0%</td>
+            <td><strong>3.5% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;499</td>
+
+        </tr>
+                    <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/base-rate-tracker-offset--fee-free%7E60">
+                    Base Rate Tracker Offset - Fee Free                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.69%
+                            </td>
+            <td>0%</td>
+            <td><strong>3.7% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;0</td>
+
+        </tr>
+    </tbody>
+</table>
+                    <div class="tooltips">
+                        <div class="jsContentTooltip">
+                            <h4>Max LTV</h4>
+                            <p>This is the maximum LTV that will be accepted for this product. The loan to value represents the percentage of the value of the property which the borrower is seeking to borrow. E.g. a &pound;100K property with an &pound;80K mortgage = an 80% LTV.</p>
+                            <p>The maximum LTV we will lend will depend on your individual situation, the property, the loan you choose and the amount you borrow.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Interest Rate</h4>
+                            <p>This is the percentage rate at which the lender calculates the interest they charge the borrower for the mortgage.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Reverting to the Standard Variable Rate for the rest of the term </h4>
+                            <p>The Standard Variable Rate will vary over the term of the loan and is a variable rate set internally by <strong>first&nbsp;direct</strong>.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>The overall cost for comparison is / Annual Percentage Rate (APR)</h4>
+                            <p>APR stands for the Annual Percentage Rate of charge used to compare loan offers.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Booking Fee</h4>
+                            <p>A non-refundable fee charged on some mortgages to secure a particular mortgage deal.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Arrangement Fee</h4>
+                            <p>An Arrangement Fee is a fee which is payable when your mortgage is drawn down. The amount of the Arrangement Fee may vary depending on the product chosen.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                                    <div class="hr dotted"><hr /></div>
+                                                            <div class="section">
+
+                    <div class="table-rates-top">Offset Mortgages - Standard Variable Rate</div>
+<table width="100%" border="0" margin="0" padding="0" class="table-rates">
+
+    <thead>
+        <tr class="header">
+            <th>
+    <div class="heading">
+        Mortgages
+        <a href="/mortgage-rates?order_by=name2&order_dir=asc" class="sort-up">Sort upwards</a>
+        <a href="/mortgage-rates?order_by=name2&order_dir=desc" class="sort-down">Sort downwards</a>
+    </div>
+</th>
+
+<th>
+<div class="heading">
+    Max <br />LTV
+    <a href="/mortgage-rates?order_by=maximum_ltv&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=maximum_ltv&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Rate
+    <a href="/mortgage-rates?order_by=interest_rate&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=interest_rate&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Reverts <br />to SVR
+    <a href="/mortgage-rates?order_by=svr&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=svr&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Overall <br />cost for <br />comparison
+    <a href="/mortgage-rates?order_by=avr&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=avr&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+    Booking Fee
+    <a href="/mortgage-rates?order_by=booking_fee&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=booking_fee&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+</div>
+</th>
+
+<th>
+<div class="heading">
+
+    Arrangement <br />Fee
+
+    <a href="/mortgage-rates?order_by=arrangement_fee&order_dir=asc" class="sort-up">Sort upwards</a>
+    <a href="/mortgage-rates?order_by=arrangement_fee&order_dir=desc" class="sort-down">Sort downwards</a>
+    <a href="#" class="help">Help</a>
+
+</div>
+</th>
+</tr>
+</thead>
+
+<tbody>
+                        <tr class="">
+
+            <td class="mortgage"><a href="/mortgage-rates/product/standard-variable-rate-offset--standard%7E8">
+                    Standard Variable Rate Offset - Standard                </a>
+            </td>
+            <td>75%</td>
+            <td>
+                3.69%
+                            </td>
+            <td>3.69%</td>
+            <td><strong>3.8% APR</strong></td>
+            <td>&pound;0</td>
+            <td>&pound;499</td>
+
+        </tr>
+    </tbody>
+</table>
+                    <div class="tooltips">
+                        <div class="jsContentTooltip">
+                            <h4>Max LTV</h4>
+                            <p>This is the maximum LTV that will be accepted for this product. The loan to value represents the percentage of the value of the property which the borrower is seeking to borrow. E.g. a &pound;100K property with an &pound;80K mortgage = an 80% LTV.</p>
+                            <p>The maximum LTV we will lend will depend on your individual situation, the property, the loan you choose and the amount you borrow.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Interest Rate</h4>
+                            <p>This is the percentage rate at which the lender calculates the interest they charge the borrower for the mortgage.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Reverting to the Standard Variable Rate for the rest of the term </h4>
+                            <p>The Standard Variable Rate will vary over the term of the loan and is a variable rate set internally by <strong>first&nbsp;direct</strong>.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>The overall cost for comparison is / Annual Percentage Rate (APR)</h4>
+                            <p>APR stands for the Annual Percentage Rate of charge used to compare loan offers.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Booking Fee</h4>
+                            <p>A non-refundable fee charged on some mortgages to secure a particular mortgage deal.</p>
+                        </div>
+                        <div class="jsContentTooltip">
+                            <h4>Arrangement Fee</h4>
+                            <p>An Arrangement Fee is a fee which is payable when your mortgage is drawn down. The amount of the Arrangement Fee may vary depending on the product chosen.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                                </div>
+
+    
+    </div><!-- End range -->
+
+    <div class="rounded-bottom"></div>
+
+    <p class="center"><br /><strong>We reserve the right to withdraw products at any time without notice.</strong></p>
+
+    <div class="hr"><hr /></div>
+
+    <div id="video-module">
+
+        <div id="videos">
+
+    
+
+   <!--  <div class="embed">Player.</div> -->
+
+	<div class="embed">
+
+		<div class="flex-container">
+		  <div class="flexslider">
+		    <ul class="slides">
+		      <li data-video-title="Our mortgage range">
+		      		<!-- Give each video a unique id number if using multiple videos on a page -->
+                    <script type="text/javascript">
+/*<![CDATA[*/
+$(document).ready(function() {
+
+	var flashvars = {};
+	flashvars.xml_path = "/videos/range/";
+
+	var params = {};
+	params.menu = "false";
+	params.wmode = "direct";
+	params.scale = "noscale";
+	params.allowfullscreen = "true";
+	params.allowscriptaccess = "always";
+	
+	var attributes = {};
+	attributes.id = "video-replace-1";
+	attributes.name = "video-replace-1";
+	
+	swfobject.embedSWF("/fdFreyaBuildPackPlugin/mbp/swf/video_player_fd.swf", "video-replace-1", "400", "265", "10", undefined, flashvars, params, attributes);
+});
+/*]]>*/
+</script>
+
+<div class="fd-video-holder">
+    <div class="fd-video-replace">
+        <div id="video-replace-1">
+            <a href="/external/url?url=aHR0cDovL3d3dy5hZG9iZS5jb20vZG93bmxvYWRz" class="external-url" target="_blank" title=""><img src="/fdFreyaBuildPackPlugin/fd/images/thumb_noflash.jpg" width="400" height="265" /></a>
+        </div>
+    </div>
+</div>		      </li>
+		      <li data-video-title="Offset mortgages video">
+		      	<!-- Give each video a unique id number if using multiple videos on a page -->
+                <script type="text/javascript">
+/*<![CDATA[*/
+$(document).ready(function() {
+
+	var flashvars = {};
+	flashvars.xml_path = "/videos/offset/";
+
+	var params = {};
+	params.menu = "false";
+	params.wmode = "direct";
+	params.scale = "noscale";
+	params.allowfullscreen = "true";
+	params.allowscriptaccess = "always";
+	
+	var attributes = {};
+	attributes.id = "video-replace-2";
+	attributes.name = "video-replace-2";
+	
+	swfobject.embedSWF("/fdFreyaBuildPackPlugin/mbp/swf/video_player_fd.swf", "video-replace-2", "400", "265", "10", undefined, flashvars, params, attributes);
+});
+/*]]>*/
+</script>
+
+<div class="fd-video-holder">
+    <div class="fd-video-replace">
+        <div id="video-replace-2">
+            <a href="/external/url?url=aHR0cDovL3d3dy5hZG9iZS5jb20vZG93bmxvYWRz" class="external-url" target="_blank" title=""><img src="/fdFreyaBuildPackPlugin/fd/images/thumb_noflash.jpg" width="400" height="265" /></a>
+        </div>
+    </div>
+</div>		      </li>
+		      <li data-video-title="Repayment mortgages video">
+		      		<!-- Give each video a unique id number if using multiple videos on a page -->
+                    <script type="text/javascript">
+/*<![CDATA[*/
+$(document).ready(function() {
+
+	var flashvars = {};
+	flashvars.xml_path = "/videos/repay/";
+
+	var params = {};
+	params.menu = "false";
+	params.wmode = "direct";
+	params.scale = "noscale";
+	params.allowfullscreen = "true";
+	params.allowscriptaccess = "always";
+	
+	var attributes = {};
+	attributes.id = "video-replace-3";
+	attributes.name = "video-replace-3";
+	
+	swfobject.embedSWF("/fdFreyaBuildPackPlugin/mbp/swf/video_player_fd.swf", "video-replace-3", "400", "265", "10", undefined, flashvars, params, attributes);
+});
+/*]]>*/
+</script>
+
+<div class="fd-video-holder">
+    <div class="fd-video-replace">
+        <div id="video-replace-3">
+            <a href="/external/url?url=aHR0cDovL3d3dy5hZG9iZS5jb20vZG93bmxvYWRz" class="external-url" target="_blank" title=""><img src="/fdFreyaBuildPackPlugin/fd/images/thumb_noflash.jpg" width="400" height="265" /></a>
+        </div>
+    </div>
+</div>		      </li>
+		    </ul>
+		  </div>
+		</div>
+
+
+
+ 	</div>
+
+    <div id="video-paging">
+
+   		<div class="js">
+   			<!-- JS Controls inserted here -->
+
+   		</div>
+
+		<noscript>
+		<div class="nojs">
+	        <a class="left"  href="#">
+	            <span>Previous video</span>
+	            How to setup Internet Banking
+	        </a>
+
+	        <a class="right"  href="#">
+	            <span>Next video</span>
+	            Viewing your online accounts
+	        </a>
+        </div>
+		</noscript>
+
+    </div>
+
+</div>
+        <div id="videos-side">
+
+            <p class="title"><strong>Useful tools and calculators</strong></p>
+
+            <p>We've gathered together a selection of handy calculators to help make your life a little easier.</p>
+
+            <ul>
+                <li><a onclick="dcsMultiTrack('DCS.dcsuri','/mortgage-rates/compare-mortgages-link','WT.ti','Our Mortgage Rates Compare Our Mortgages Link');"  href="/compare-mortgages" class="arrow-black" title="Compare our mortgages">Compare our mortgages</a></li>
+                <li><a onclick="dcsMultiTrack('DCS.dcsuri','/mortgage-rates/offset-calc-link','WT.ti','Our Mortgage Rates Offset Calculator Link');"  href="/offset-mortgage-calculator" class="arrow-black" title="Offset calculator">Offset calculator</a></li>
+                <li><a onclick="dcsMultiTrack('DCS.dcsuri','/mortgage-rates/overpayment-calc-link','WT.ti','Our Mortgage Rates Overpayment Calc Link');" href="/mortgage-overpayments-calculator?WT.ac=MRP1427" class="arrow-black" title="Overpayment calculator">Overpayment calculator</a></li>
+            </ul>
+
+        </div>
+
+    </div><!-- End video-module -->
+
+    <div class="hr"><hr /></div>
+
+    
+    <div class="highlight warning">
+
+    <p><strong>Think carefully before securing other debts against your home.<br/>Your home may be repossessed if you do not keep up repayments on your mortgage.</strong></p>
+
+</div>
+
+
+    <hr />
+
+        <div id="buyer-columns">
+
+        <header><h5>Have a question or ready to apply?</h5></header>
+
+        <div class="col">
+
+            <p><em>Contact us</em></p>
+
+            <p class="tel-title">If you're new to <strong>first&nbsp;direct</strong></p>
+            <p class="tel">0800 48 24 48 <span class="dagger"> &#134;</span></p>
+			<br />
+
+            <p class="tel-title"><strong>first&nbsp;direct</strong> account holders </p>
+            <p class="tel">08 456 100 103<span class="dagger"> &#134;</span></p>
+			<br />
+
+            
+			
+			
+        </div>
+
+        
+<!--[if lt IE 9]>
+	<style type="text/css">
+		.home #buyer-columns #apply-promo{
+			margin-top: -19px !important;
+		}
+	</style>
+<![endif]-->
+
+	
+
+<div id="apply-promo">
+    <div class="inner">
+    <p><em>Apply online</em></p>
+
+    <div class="hr dotted">
+        <hr/>
+    </div>
+
+        <p>
+                Follow these easy steps to start your online mortgage application:
+            </p>
+
+    <ol>
+        <li>Search our range of mortgages to find and compare the ones available to you.</li>
+        <li>Choose a mortgage that suits your needs.</li>
+        <li>
+                        Select “Apply” to start your application or existing <strong>first&nbsp;direct</strong> mortgage customers please call <strong>08 456 100 103</strong> to switch your deal, or <strong>08 456 100 236</strong> for additional borrowing.
+
+                    </li>
+    </ol>
+    
+        
+    <div class="btn white">
+        <ul>
+                        <li>
+                <a
+                    onclick=""
+                    href="/apply-online/init/2"
+                                        title="Search and apply"
+                                        >
+                    <span>Search and apply</span>
+                </a>
+            </li>
+                    </ul>
+    </div>
+    </div><!-- close .inner>-->
+</div><!-- close #apply-promo-->
+
+<img height="1" width="1" src="http://view.atdmt.com/action/mdgfid_2012firstdirectMortgagesHubApply_1"/>
+    </div><!-- End buyer-columns -->
+
+    <hr />
+
+    <div class="share">
+
+	<div class="share-page share-small-icons share-auto-load share-white  share-disable-facebook"></div>
+
+</div>
+    <div class="hr"><hr /></div>
+
+    <div id="cant-find">
+
+	<form id="siteSearchForm" name="siteSearchForm" method="get">
+	
+		<div class="searchInputLargeWrapper">
+	
+			<h3 class="searchedForTitle">Can't find what you're looking for?</h3>
+	
+			<legend><span class="invisible">Search first direct website</span></legend>
+			
+			<label for="inputBox"><span class="invisible">Enter the word or phrase you want to search for</span></label>
+	
+			<div class="mainSearchBox">
+			
+	            <div class="outer">
+	
+					<input name="inputBox" size="26" id="inputBox" style="width:82%; " maxlength="100" value="" autocomplete="off" class="searchInputLargeSearchString ds_predictive">
+	
+	              <input type="button" class="mainSearchButton">
+	              
+	            </div>
+	
+		</div>
+		
+		</div>
+	
+	</form>
+
+</div>    
+    <p class="dagger">&#134; Our Mortgage Team is available 8am to 10pm, 7 days a week</p>
+
+</div><!-- End content -->
+
+<img height="1" width="1" src="http://view.atdmt.com/action/mdgfid_2012firstdirectMortgagesHubOurMortgager_1"/>
+                </div><!-- End container -->
+
+            </div><!-- End wrapper -->
+
+        </div><!-- End background -->
+
+        <div id="footer-wrap">
+
+
+    <div id="fdProductFooter" class="fdFooterContainer">
+
+                    <div id="cookies_enabled_banner"></div>
+            <div id="cookies_disabled_banner"></div>
+        
+                    <div class="fdFooterSitemap curveLarge">
+    <div class="fdFooterSitemapInner">
+        <div class="col colrestricted">
+            <h2><a href="http://www.firstdirect.com/1/2/banking">Banking</a></h2>
+            <ul>
+                <li><a href="http://www.firstdirect.com/1/2/banking/current-account?WT.ac=FSDT_FOOT_BA1315">1st
+                    Account</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/banking/switching-bank-accounts">Switch to us</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/banking/first-directory?WT.ac=FSDT_FOOT_fdi1334">First
+                    Directory</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/banking/ways-to-bank/online-banking">Internet Banking</a>
+                </li>
+                <li><a href="http://www.firstdirect.com/1/2/banking/ways-to-bank/internet-banking-plus">Internet Banking
+                    Plus</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/banking/ways-to-bank/mobile-banking">Mobile Money</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/banking/ways-to-bank/sms-banking">Text Message Banking</a>
+                </li>
+                <li><a href="http://www.firstdirect.com/1/2/banking/ways-to-bank/iphone-banking-apps">Banking on the Go
+                    iPhone App</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/banking/ways-to-bank/telephone-banking">Telephone
+                    banking</a></li>
+            </ul>
+            <h2><a href="http://mortgages.firstdirect.com?WT.ac=FSDT_FOOT_MG1007">Mortgages</a></h2>
+            <ul>
+                <li><a href="http://mortgages.firstdirect.com/compare-mortgages?WT.ac=FSDT_FOOT_MG1008">Our
+                    mortgages</a></li>
+            </ul>
+        </div>
+        <div class="col colrestricted">
+            <h2><a href="http://www.firstdirect.com/1/2/personal-loans?WT.ac=FSDT_FOOT_LN1001">Loans</a></h2>
+            <ul>
+                <li><a href="http://www.firstdirect.com/1/2/personal-loans?WT.ac=FSDT_FOOT_PL1001">Personal Loans</a>
+                </li>
+            </ul>
+
+            <h2><a href="http://www.firstdirect.com/1/2/credit-cards?WT.ac=FSDT_FOOT_LN1001">Credit cards</a></h2>
+            <ul>
+                <li><a href="http://www.firstdirect.com/1/2/credit-cards/credit-card?WT.ac=FSDT_FOOT_CC1000">Credit
+                    Card</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/credit-cards/gold-card?WT.ac=FSDT_FOOT_GC1000">Gold Card</a>
+                </li>
+            </ul>
+
+            <h2><a href="http://www.firstdirect.com/1/2/savings?WT.ac=FSDT_FOOT_SAV1001">Savings</a></h2>
+            <ul>
+                <li><a href="http://www.firstdirect.com/1/2/savings/compare-savings-accounts?WT.ac=FSDT_FOOT_CSAV1000">Compare
+                    saving products</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/savings/fixed-rate-savings?WT.ac=FSDT_FOOT_FRS1001">Fixed
+                    Rate Savings</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/savings/regular-savings-account?WT.ac=FSDT_FOOT_REG1001">Regular
+                    Saver Account</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/savings/cash-isa?WT.ac=FSDT_FOOT_CISA1000">Cash ISA</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/savings/e-saver?WT.ac=FSDT_FOOT_EDS1000">Everyday e-Saver
+                    Account</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/savings/savings-account?WT.ac=FSDT_FOOT_SAV1002">Savings
+                    Account</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/savings/bonus-savings-account?WT.ac=FSDT_FOOT_BSA1000">Bonus
+                    Savings Account</a></li>
+            </ul>
+        </div>
+        <div class="col colrestricted">
+            <h2><a href="http://www.firstdirect.com/1/2/investments">Investments</a></h2>
+            <ul>
+                <li><a href="http://www.firstdirect.com/1/2/investments/investment-funds">Selected Investment Funds</a>
+                </li>
+                <li><a
+                    href="http://www.firstdirect.com/1/2/investments/investment-funds/hsbc-world-selection-portfolios">HSBC
+                    World Selection Portfolios</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/investments/child-trust-fund">Child Trust Fund</a></li>
+            </ul>
+
+            <h2><a href="http://www.firstdirect.com/1/2/sharedealing?WT.ac=FSDT_FOOT_SHR1001">Sharedealing</a></h2>
+            <ul>
+                <li><a href="http://www.firstdirect.com/1/2/sharedealing/sharedealing-services?WT.ac=FSDT_FOOT_SHR1002">Sharedealing
+                    services</a></li>
+                <li><a
+                    href="http://www.firstdirect.com/1/2/sharedealing/self-select-isa?WT.ac=FSDT_FOOT_SS1000"><strong>first&nbsp;direct</strong>
+                    Stocks and Shares ISA</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/sharedealing/exchange-traded-funds?WT.ac=FSDT_FOOT_ETF1000">Exchange
+                    Traded Funds</a></li>
+            </ul>
+        </div>
+        <div class="col colrestricted">
+            <h2><a href="http://www.firstdirect.com/1/2/insurance?WT.ac=FSDT_FOOT_IN1001">Insurance</a></h2>
+            <ul>
+                <li><a href="http://www.firstdirect.com/1/2/insurance/car-insurance?WT.ac=FSDT_FOOT_CAR1000">Car
+                    Insurance</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/insurance/home-insurance?WT.ac=FSDT_FOOT_HIN1000">Home
+                    Insurance</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/insurance/travel-insurance?WT.ac=FSDT_FOOT_TR1003">Travel
+                    Insurance</a></li>
+            </ul>
+            <h2><a href="http://www.firstdirect.com/1/2/travel-money-services?WT.ac=FSDT_FOOT_trav10001">Travel</a></h2>
+            <ul>
+                <li><a href="http://www.firstdirect.com/1/2/travel-money-services/travel-money?WT.ac=FSDT_FOOT_TM1000">Travel
+                    Money</a></li>
+                <li><a
+                    href="http://www.firstdirect.com/1/2/travel-money-services/currency-converter-iphone-app?WT.ac=FSDT_FOOT_CAPP1000">Currency
+                    Converter iPhone App</a></li>
+            </ul>
+            <h2>Useful information</h2>
+            <ul>
+                <li><a href="http://www.firstdirect.com/1/2/products">All products</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/responsible-lending">Responsible lending</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/money-worries">Money worries</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/security-centre">Security</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/tools-and-guides/unclaimed-assets">Unclaimed Assets</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/bereavement">Bereavement support</a></li>
+                <li><a href="http://www.firstdirect.com/1/2/payment-protection-insurance">Payment Protection
+                    Insurance</a></li>
+            </ul>
+        </div>
+    </div>
+</div>        
+                    
+<div class="fdFooterMenu">
+    <h2 class="invisible">first direct links</h2>
+    <ul>
+                <li><a href="http://www.firstdirect.com/1/2/contact-us">Contact us</a></li>
+        <li><a href="http://www.newsroom.firstdirect.com/">Social Media Newsroom</a></li>
+        <li><a href="http://www.firstdirect.com/1/2/sitemap">Sitemap</a></li>
+        <li><a href="http://www.firstdirect.com/1/2/security-centre">Security</a></li>
+        <li><a href="http://www.interactive.firstdirect.com/jobs">Jobs</a></li>
+        <li><a href="http://www.firstdirect.com/1/2/legals">Legals</a></li>
+        <li><a href="http://www.firstdirect.com/1/2/rates-and-charges/rates">Rates</a></li>
+        <li><a href="http://www.firstdirect.com/1/2/accessibility">Accessibility</a></li>
+        <li class="last"><a href="http://www.firstdirect.com/1/2/cookie-policy">Cookie policy</a></li>
+    </ul>
+</div>        
+                    <div class="fdFooterLegals">
+    <script language="javascript" type="text/javascript">ukResident();</script>
+    <noscript>
+        <p>This site is intended for residents of the United Kingdom only.</p>
+    </noscript>
+    <p><strong>first direct</strong> is a division of HSBC Bank plc. &copy; HSBC Bank plc 2012. All Rights Reserved.
+        <span class="txtTimes"><span class="txtItalic">Member</span> <strong>HSBC</strong> <img
+            src="/fdFreyaBuildPackPlugin/fd/images/hsbcmember_footer_w.gif"
+            width="20" height="10" alt=""/> <span class="txtItalic">Group</span>.</span><br/>
+        Because we want to make sure we're doing a good job, we may monitor or record our calls. We hope you don't mind.
+    </p>
+</div>            </div>
+
+</div><!-- End footer-wrap -->
+          <!-- script language="javascript" type="text/javascript" -->
+  <script type="text/javascript">
+  <!--
+    gVersion="1.0";
+  //-->
+  </script>
+  <script type="text/javascript1.1">
+  <!--
+    gVersion="1.1";
+  //--></script>
+  <script type="text/javascript1.2">
+  <!--
+    gVersion="1.2"; var RE={"%09":/\t/g,"%20":/ /g,"%23":/\#/g,"%26":/\&/g,"%2B":/\+/g,"%3F":/\?/g,"%5C":/\\/g};
+  //--></script>
+  <script type="text/javascript1.3">
+  <!--
+    gVersion="1.3";
+  //-->
+  </script>
+  <script type="text/javascript1.4">
+  <!--
+    gVersion="1.4";
+  //-->
+  </script>
+  <script type="text/javascript1.5">
+  <!--
+    gVersion="1.5";
+  //-->
+  </script>
+  <noscript>
+    <div><img width="1" height="1" alt=" " src="http://www1.member-hsbc-group.com/dcse2j1285twkf1mbliutrv4s_2m7b/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" /></div>
+  </noscript>
+  <script type="text/javascript" src="/fdFreyaBuildPackPlugin/fd/js/webtrends_bottom_section.js"></script>
+    </body>
+</html>

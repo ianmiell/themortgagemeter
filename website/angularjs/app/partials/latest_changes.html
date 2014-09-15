@@ -1,0 +1,5 @@
+<span>
+		<p><h3>Latest Changes</h3><h4>Get updates</h3><form ng-submit="dosubscribe()"><label for="email">Input email to subscribe for updates:</label><input type="email" id="email" name="email" ng-model="email" autofocus><input type=submit Value="Send"></input></form>{{email_result.result}}</p>
+	<p>Latest change to mortgage deals in the table below, most recent first. Items struck out are those that have been changed, replaced with the ones not struck out. Completely struck out rows are no longer available. Lines with no strike-outs are new mortgages.</p>
+</span>
+<span ng-bind-html-unsafe="changes | change_filter"></span>

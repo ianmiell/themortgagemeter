@@ -1,0 +1,42 @@
+<h3>Best Buys</h3>
+An interactive table that allows you to find the kind of mortgage you are after.
+<br/>
+<table class="table table-condensed table-striped table-bordered table-hover">
+	<thead>
+		<tr>
+			<td><b>Headline Rate</b></td>
+			<td><b>SVR</b> </td>
+			<td><b>APR</b> </td>
+			<td><b>Loan to Value</b></td>
+			<td><b>Lender</b></td>
+			<td><b>Eligibility</b></td>
+			<td><b>Rate Type</b></td>
+			<td><b>Fees</b></td>
+			<td><b>Initial Rate Period</b></td>
+		</tr>
+		<tr>
+			<td> <select style='width:100%' ng-model="orderingchoice"> <option value="apr">Best APR</option> <option value="rate">Best Headline Rate</option> </select> </td>
+			<td></td>
+			<td></td>
+			<td> <select style='width:100%' ng-model="ltvchoice" ng-change="dochange()"> <option value="6000">60%+</option> <option value="7000">70%+</option> <option value="8000">80%+</option> <option value="9000">90%+</option> </select></td>
+			<td> <select style='width:100%' ng-model="institution_code" ng-change="dochange()"> <option value="X">All</option> <option ng-repeat="item in conversions[0]['institution']" value="{{item.code}}">{{item.value}}</option> </select> </td>
+			<td> <select style='width:100%' ng-model="eligibility" ng-change="dochange()"> <option value="X">All</option> <option ng-repeat="item in conversions[0]['eligibility']" value="{{item.code}}">{{item.value}}</option> </select> </td>
+			<td><select style='width:100%' ng-model="mortgage_type" ng-change="dochange()"><option value="X">All</option><option ng-repeat="item in conversions[0]['mortgage_type']" value="{{item.code}}">{{item.value}}</option></select></td>
+			<td></td>
+			<td><select style='width:100%' ng-model="initial_period" ng-change="dochange()"><option value="0">All</option><option ng-repeat="item in conversions[0]['initial_period']" value="{{item.code}}">{{item.value}}</option></select></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="mortgage in mortgages | orderBy:orderingchoice">
+			<td ng-bind-template="{{mortgage.rate_display}}">loading</td>
+			<td ng-bind-template="{{mortgage.svr_display}}">loading</td>
+			<td ng-bind-template="{{mortgage.apr_display}}">loading</td>
+			<td ng-bind-template="{{mortgage.ltv_display}}">loading</td>
+			<td ng-bind-template="{{mortgage.institution_name}}">loading</td>
+			<td ng-bind-template="{{mortgage.eligibility_display}}">loading</td>
+			<td ng-bind-template="{{mortgage.mortgage_type_display}}">loading</td>
+			<td ng-bind-template="{{mortgage.booking_fee_display}}">loading</td>
+			<td ng-bind-template="{{mortgage.initial_period_display}}">loading</td>
+		</tr>
+	</tbody>	
+</table>

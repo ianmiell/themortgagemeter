@@ -1,0 +1,27 @@
+#!/usr/bin/env expect
+
+#debug 1
+
+set hostname [exec hostname]
+if {$hostname != "themortgagemeter"} {
+	puts "quitting, not on themortgagemeter" 
+	exit
+}
+
+set timeout -1
+
+spawn bash
+
+send "./backup_db.sh\n"
+expect -re {themortgagemeter@themortgagemeter}
+send "git commit -am \"latest backup\"\n"
+expect -re {themortgagemeter@themortgagemeter}
+send "git pull\n"
+expect -re "assword.*:"
+send "MORTGAGECOMPARISON_GITPASSWORD\n"
+expect -re {themortgagemeter@themortgagemeter}
+send "git push\n"
+expect -re "assword.*:"
+send "MORTGAGECOMPARISON_GITPASSWORD\n"
+expect -re {themortgagemeter@themortgagemeter}
+

@@ -1,0 +1,23 @@
+[com.themortgagemeter.setup]
+build:yes
+
+[container]
+# Hostname for the container
+hostname:themortgagemeter
+# Root password
+password:themortgagemeter
+
+[repository]
+do_repository_work:yes
+# Change this to your username
+user:themortgagemeter
+password:
+email:
+tag:yes
+push:no
+tar:no
+name:themortgagemeter
+suffix_date:no
+# Use month
+suffix_format:%m
+

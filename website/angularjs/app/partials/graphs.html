@@ -1,0 +1,52 @@
+<h3>Historical</h3>
+These graphs are based on historical averages across all the mortgages tracked. Bear in mind that smaller sample sizes can result in larger swings in data. However, the trends should be clear.
+
+<h4>Historical averages of the various fixed rates</h3>
+<div id="fixed_graph_obj" style='width:inherited;height:400px'></div>
+<!--<h4>Historical averages of the various first-time-buyer fixed rates</h3>
+<div id="ftb_fixed_graph_obj" style='width:inherited;height:400px'></div>-->
+<br>
+<h4>Historical averages of the various discount tracker rates</h3>
+<div id="discount_rate_graph_obj" style='width:inherited;height:400px'></div>
+<br>
+<h4>Historical averages of the various standard variable rates</h3>
+<div id="svr_graph_obj" style='width:inherited;height:400px'></div>
+<script type="text/javascript">
+	$(function () {
+		var fixed_data = [];
+		var fixed_graph_obj = $("#fixed_graph_obj");
+		var discount_rate_data = [];
+		var discount_rate_graph_obj = $("#discount_rate_graph_obj");
+		//var ftb_fixed_data = [];
+		//var ftb_fixed_graph_obj = $("#ftb_fixed_graph_obj");
+		var svr_data = [];
+		var svr_graph_obj = $("#svr_graph_obj");
+		function onDataReceived(ret) {
+			// let's add it to our current data
+			for (i=0;i < ret.fixed_rate_data.num_series;i++) {
+				fixed_data.push(ret.fixed_rate_data[i]);
+			}
+			for (i=0;i < ret.discount_rate_data.num_series;i++) {
+				discount_rate_data.push(ret.discount_rate_data[i]);
+			}
+			//for (i=0;i < ret.ftb_fixed_rate_data.num_series;i++) {
+			//	ftb_fixed_data.push(ret.ftb_fixed_rate_data[i]);
+			//}
+			for (i=0;i < ret.svr_data.num_series;i++) {
+				svr_data.push(ret.svr_data[i]);
+			}
+			// and plot all we got
+			$.plot(fixed_graph_obj, fixed_data, ret.fixed_rate_data.options);
+			$.plot(discount_rate_graph_obj, discount_rate_data, ret.discount_rate_data.options);
+			//$.plot(ftb_fixed_graph_obj, ftb_fixed_data, ret.ftb_fixed_rate_data.options);
+			$.plot(svr_graph_obj, svr_data, ret.svr_data.options);
+		}
+		$.ajax({
+			url: '/rest/graphs',
+			method: 'GET',
+			dataType: 'json',
+			success: onDataReceived
+		});
+	});
+</script>
+

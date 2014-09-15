@@ -1,0 +1,6 @@
+[submodule "simple_mailer"]
+	path = simple_mailer
+	url = https://github.com/zwischenzugs/simple_mailer.git
+[submodule "flot"]
+	path = flot
+	url = https://github.com/flot/flot.git

@@ -1,0 +1,2489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>Find a Mortgage - FTB, Remortgages, Buy-to-let - Northern Rock</title>
+
+    <meta name="description" content="Find a Northern Rock Mortgage - see our range of Flexible, First-Time-Buyer &amp; Buy-to-let Mortgages as well as remortgages too. Visit Northern Rock today" />
+    
+    <link rel="shortcut icon" type="image/ico" href="/_mortgage_assets/media/favicon.ico" />
+
+        
+	        <link rel="stylesheet" type="text/css" media="all" href="/_mortgage_assets/css/mortgages-max.css" />
+         
+
+        <script type="text/javascript" src="/_mortgage_assets/js/jquery-1.4.2.min.js"> </script>
+
+    
+             <script src="/e-privacy/scripts/eprivacy.js" type="text/javascript"></script>
+        <link href="/e-privacy/css/eprivacy.css" rel="stylesheet" type="text/css" />
+        
+      
+      
+
+
+    <script type="text/javascript" src="/_mortgage_assets/js/jquery.tablesorter.mod.js"> </script>
+    <script type="text/javascript" src="/_mortgage_assets/js/jquery-cookie.js"> </script>
+    <!--
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"> </script>	
+    -->
+    <!--[if IE]>
+    <script type="text/javascript" src="/_mortgage_assets/js/excanvas.compiled.js"> </script>
+    <![endif]-->
+    <script type="text/javascript">
+      
+jQuery.fn.insertmap = function() {
+	$.getScript("http://maps.google.co.uk/maps?file=api&v=2&async=2&callback=renderMap&key=ABQIAAAAQmhVbIsR21NHgZH5074hwBRGf07ls_Tw0-vh5TIhyAbNHVhjxBTJXgSWCIKFW96dvioNMstDv6iMpw");
+}
+var sitePrepend="/mortgages";
+    </script>
+    
+        <script type="text/javascript" src="/_mortgage_assets/js/mortgages-max.js"> </script>
+    
+  </head>
+  <body>
+    <a href="/contact/feedback/" class="feedbackTab" id="feedbackTabNonJS"><img src="/_mortgage_assets/media/feedback.png" alt="Give feedback" title="Give feedback" class="feedbackTab"/></a>
+
+  <div id="e-privacy-message" class="c12">
+	<noscript id="e-privacy-noscript">
+		<div id="e-privacy-message-holder">
+			<div id="e-privacy-message-info"><div></div></div>
+			<div id="e-privacy-message-content">
+				<iframe id="e-privacy-message-iframe" name="message-iframe" src="/e-privacy/cookie-message.asp" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+			</div>
+			<div id="e-privacy-message-close"></div>
+		</div>
+	</noscript>
+</div>
+    <div id="page">
+      <div id="head">
+        <div id="logo">
+            <a href="/"><img alt="Northern Rock plc" src="/_mortgage_assets/media/logo.jpg" /></a>
+            
+        </div>
+        <div id="navigation">
+          
+          <!-- temp code for mort AB -->
+    <ul class="alt" id="sub"><li class="first"><a href="http://companyinfo.northernrock.co.uk/">Company Info</a></li>
+        <li><a href="/intermediaries_enter.asp">Intermediaries</a></li>
+        <li><a href="/help/">Help</a></li>
+        <li><a href="/contact/">Contact Us</a></li>
+        <li class="secondLast"><a href="/security/">Security</a></li>
+        <li class="last"><a href="/_ets2/securegateway.asp?Product=GENERIC"><span class="login">Customer sign on<span>&nbsp;</span></span></a></li>
+    </ul>
+        <ul class="alt" id="global">
+            <li><a href="/">home</a></li>
+            <li><a href="/savings/">savings</a></li>
+            <li class="here"><a href="/mortgages/">mortgages</a></li>
+            <li><a href="/insurance/">insurance</a></li>
+            <li><a href="/financial-planning/">financial planning</a></li>
+        </ul>
+          <ul class="alt" id="site"><li><a href="/Mortgages/Learn/Learn-About-Mortgages"><span>Help &amp; Guides</span></a></li>
+            <li><a href="/Mortgages/Find"><span>Mortgage Range</span></a></li>
+            <li><a href="/Mortgages/Tools"><span>Calculators &amp; Tools</span></a></li>
+            <li><a href="/Mortgages/Apply/Ways-To-Apply"><span>Ways to apply</span></a></li>
+        </ul>
+
+
+        <!-- end of temp code -->
+        </div>
+        
+      </div>
+	    <div id="content">
+  	    
+      
+  
+ <div id="mortgagepage" class="g12 findmortgage">
+    <div class="finderTop preview"><span class="image">&nbsp;</span>
+	    <h1 class="getStarted">Find your mortgage</h1>
+        <p>Complete the fields to see what products we have to suit your needs, including what your monthly payments could be.</p>
+    </div>
+
+    
+
+<div id="filterpage">
+    <div id="options" class="form">
+	    <form id="mortgageform" class="clearfix" method="post" >
+        
+			    <!-- UTMTracker_Find_First_Time_Buyer -->
+		
+		
+	
+	<div id="stepone" class="step open"  >
+		<div class="container g12 alpha omega" id="dataForm">
+            <div class="g3 alpha body">
+                <div class="area1">
+                    <label for="BuyerTypeList">Buyer type</label>
+                    <select id="BuyerTypeList" name="BuyerType"><option value="pleaseselect">- Select Buyer Type -</option>
+<option selected="selected" value="firsttimebuyer">First Time Buyer</option>
+<option value="movinghouse">Moving Home</option>
+<option value="remortgage">Remortgage</option>
+<option value="buytolet">Buy to Let</option>
+</select>
+
+                    	
+				        <!-- property help -->
+				        
+				        <div id="routealpha">
+							    <div class="row">
+								    <label for="Deposit">Deposit available</label>
+								    <span class="prefix">&pound;</span><input MaxLength="9" class="text" id="Deposit" name="Deposit" type="text" value="" />
+							    </div>
+							    <div class="row">
+								    <label for="PropertyValue">Property value </label>
+								    <span class="prefix">&pound;</span><input MaxLength="9" class="text" id="PropertyValue" name="PropertyValue" type="text" value="" />
+							    </div>
+
+
+				        </div>
+		            
+                </div>
+            </div>
+            <div class="g3 body">
+                <div id="ltvhelp" class="area2">
+                    <label>Loan to Value</label>
+					<div id="yourmortgageinfo">
+						<p id="ltvdisplay"><em class="suffix">You need a </em><span>0%</span> <em class="suffix">mortgage</em></p>
+						<p id="loanrequired"><em class="suffix">You need to borrow </em><span>£0</span></p>
+					</div>
+                    <div>
+                        <div id="betterLTV" class=" hidden" >
+                        To see lower rate mortgages, try one of the following:
+                            <ul>
+                                <li>Increase your deposit to <span id="incDep">£0</span></li>
+                                <li>Reduce your property value to <br /><span id="decVal">£0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+            </div>
+            <div class="g3 body">
+                <div id="stepthree" class="area3">
+				
+                    <fieldset id="proddetails" class="row">
+                        
+
+                        <p class="label">Repayment method </p>
+					    <label for="RepaymentMethodRepayment">
+  					    <input checked="checked" class="radio" id="RepaymentMethodRepayment" name="RepaymentMethod" type="radio" value="Repayment" />
+						    Repayment
+					    </label>
+					    <a class="help inlinehelp hidden" href="#">help</a><span class="helptxt hidden">With a repayment mortgage, your monthly payment covers the interest you need to pay, plus a percentage of the original loan. Once all of the payments are made, the mortgage will be fully repaid.</span>
+
+				        <div id="radIntOnly" class="">
+					        <label for="RepaymentMethodInterestOnly">
+	  				        <input class="radio" id="RepaymentMethodInterestOnly" name="RepaymentMethod" type="radio" value="Interest Only" />
+  					        Interest only
+					        </label>
+					        <a class="help inlinehelp hidden" href="#">help</a><span class="helptxt hidden">This is a mortgage taken out where you only pay back the interest charges each month. As the initial loan amount is not being reduced, this will need to be repaid in some other way such as an investment or savings plan which should be reviewed on a regular basis.</span>
+				        </div>
+				
+				        <div id="radPartPart" class="">
+					        <label for="RepaymentMethodPartAndPart">
+  					        <input class="radio" id="RepaymentMethodPartAndPart" name="RepaymentMethod" type="radio" value="PartAndPart" />
+						        Part and part
+					        </label>
+					        <a class="help inlinehelp hidden" href="#">help</a><span class="helptxt hidden">A part and part mortgage is a combination of repayment and interest only. Your monthly mortgage payment will include the interest you need to pay, plus some of the original loan. When the mortgage term ends, you will still need to pay off the interest-only part of your loan, however the repayment part will be paid off.</span>
+			            </div>
+
+				        <div id="partnpart">
+				          <input type="hidden" name="loanAmount" id="loanAmount" value="0" />
+					        <div class="row">
+						        <label for="InterestOnlyAmount">Interest only amount
+							        <a class="help inlinehelp hidden" href="#">help</a><span class="helptxt hidden">Amount of property value to pay off as interest only</span>
+  						         
+						        </label>
+						        <span class="prefix">&pound;</span>
+						        <input MaxLength="9" class="text" id="InterestOnlyAmount" name="InterestOnlyAmount" type="text" value="0" />
+					        </div>
+					        <p class="results hidden">Repayment amount <span>&pound;20,000</span></p>
+				        </div>
+                        
+
+                    </fieldset>
+
+				</div>
+            </div>
+            <div class="g3 omega lastArea body">
+                <div id="steptwo" class="area4">
+                <fieldset id="morttype" class="row">
+
+                	<div class="row">
+					    <p class="label">Repayment term <span class="helptxt"></span></p>
+					    <a class="help inlinehelp hidden" href="#">help</a><span class="helptxt hidden">This is the period of time over which you choose to pay off your mortgage.</span>
+					    <select id="Term" name="Term"><option value="7">7 years</option>
+<option value="8">8 years</option>
+<option value="9">9 years</option>
+<option value="10">10 years</option>
+<option value="11">11 years</option>
+<option value="12">12 years</option>
+<option value="13">13 years</option>
+<option value="14">14 years</option>
+<option value="15">15 years</option>
+<option value="16">16 years</option>
+<option value="17">17 years</option>
+<option value="18">18 years</option>
+<option value="19">19 years</option>
+<option value="20">20 years</option>
+<option value="21">21 years</option>
+<option value="22">22 years</option>
+<option value="23">23 years</option>
+<option value="24">24 years</option>
+<option selected="selected" value="25">25 years</option>
+<option value="26">26 years</option>
+<option value="27">27 years</option>
+<option value="28">28 years</option>
+<option value="29">29 years</option>
+<option value="30">30 years</option>
+<option value="31">31 years</option>
+<option value="32">32 years</option>
+<option value="33">33 years</option>
+<option value="34">34 years</option>
+<option value="35">35 years</option>
+</select>
+					    
+				    </div>
+
+                    <br />
+
+                    <p class="label">Product Features</p>
+                    <label for="FeatureAll">
+	  				<input checked="checked" class="radio" id="FeatureAll" name="ProductFeature" type="radio" value="All" />
+  					All
+					</label>
+
+                    <label for="FeatureFreedom">
+	  				<input class="radio" id="FeatureFreedom" name="ProductFeature" type="radio" value="FreeToFix" />
+  					Freedom to fix
+					</label>
+					<a class="help inlinehelp hidden" href="#">help</a><span class="helptxt hidden">A Freedom to Fix mortgage gives you the option to switch to a fixed rate during your tracker rate period, without incurring an Early Repayment Charge.</span>
+
+                    <label for="FeatureCashback">
+	  				<input class="radio" id="FeatureCashback" name="ProductFeature" type="radio" value="Cashback" />
+  					Cashback
+					</label>
+					<a class="help inlinehelp hidden" href="#">help</a><span class="helptxt hidden">Some products offer a cashback incentive which will be paid on completion. Please note, cashback isn't available if you're porting your existing mortgage.</span>
+
+                    <label for="FeatureFeeFree">
+	  				<input class="radio" id="FeatureFeeFree" name="ProductFeature" type="radio" value="FeeFree" />
+  					No product fee
+					</label>
+					<a class="help inlinehelp hidden" href="#">help</a><span class="helptxt hidden">Some of our products don't carry a product fee, these are referred to as 'fee saver' products.</span>
+
+				</fieldset>
+                    <noscript>
+                        <div class="row nextstep">
+						    <div id="nonJSSubmit">
+                                <span class="button"><input type="submit" class="text" value="Calculate" style="width:80px; clear:right;"/></span><br /><br />
+                            </div>
+				        </div>
+                    </noscript>
+                </div>
+            </div>
+        </div>
+        <div id="mortgageTypeFilterForm" class="container g12 alpha omega ">
+            <div class="g12 alpha omega">
+                <ul id="filterTabs">
+			        <li id="navAll" class="first  here highlighted"><a href="/mortgages/Find/Find-A-Mortgage/"><span class="inner">All Products (50)</span><span class="tmp"></span></a></li>
+			        <li id="navFix" class=" highlighted"><a href="/mortgages/Find/Find-A-Mortgage/Fixed-Rate/"><span class="inner">Fixed Rates (32)</span><span class="tmp"></span></a></li>
+			        <li id="navTrk" class=" highlighted"><a href="/mortgages/Find/Find-A-Mortgage/Tracker/"><span class="inner">Tracker Rates (18)</span><span class="tmp"></span></a></li>
+                    <li id="navShort" class="last ">
+                        <div class="shortlistfilter">
+                            <a href="/mortgages/Find/Find-A-Mortgage/Shortlist/"><span class="inner">Your Shortlist (<span id="shortlistCount">0</span>)</span><span class="tmp"></span></a> 
+                        </div>
+                    </li>
+		        </ul>
+            </div>
+        </div>
+	</div>
+
+        </form>
+    </div>
+			
+	
+<div class="mPanel">
+	<div class="panels">
+        
+
+<div class="panel highlight empty">
+    <div class="container">
+        <p class="intro">
+    
+
+
+        We have found the following mortgages that meet your criteria.  To find out more about details about any of these simply 
+        select 'find out more', or you can add them to your shortlist then return later to review them (as long as they are still 
+        available when you return).
+
+
+
+
+        </p>
+    </div>
+</div>
+		
+		<!-- found mortgages -->
+		<p id="mortgagesfound" class="subintro">We have found <strong> 50 mortgages</strong> that suit your needs. <span><a href="/Mortgages/Find">(I'd like to start again)</a></span>
+        
+<span id="sortPanel" class="hidden">
+    <select id="sortDropdown">
+        <option>Sort By</option>
+        <option value="6,0"  >Monthly payment – Low – High</option>
+        <option value="6,1" >Monthly payment – High – Low</option>
+        <option value="1,0" >Rate – Low – High</option>
+        <option value="1,1" >Rate – High – Low</option>
+        <option value="0,0" >Product Term – Low – High</option>
+        <option value="0,1" >Product Term – High - Low</option>
+        <option value="4,0" >Product Fee – Low – High</option>
+        <option value="4,1" >Product Fee – High – Low</option>
+    </select>
+</span>
+          </p>
+	  
+	            <table class="findresults tablesorter">
+                        
+<thead>
+    <tr>
+	    <th class="product {sorter: 'digit'}">Product / Term <span class="sort"></span></th>
+	    <th class="rate {sorter: 'text'}">Initial Rate <span class="sort"></span></th>
+	    <th class="nonClick svr">Followed by our standard variable rate</th>
+	    <th class="oac">The overall cost for comparison is <span class="sort twoline"></span></th>
+	    <th class="fee {sorter: 'text'}">Product Fee <span class="sort"></span></th>
+	    <th class="erc">Early Repayment Charge <span class="sort"></span></th>
+	    <th class="payment">Monthly Payment <span class="sort"></span></th>
+        <th class="next nonClick">Next Steps <span class="sort"></span></th>
+    </tr>
+</thead>
+                    <tbody>
+	            
+	           
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>3 Year Everyday Tracker</span> (Bank of England Base Rate + 2.85%)</td>
+    <td><span><em class="IntRate">3.35</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.5&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247451">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_tracker_5cgg">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>5 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">3.59</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.5&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247429">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/5yr_everyday_fixed_5cfl">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">5 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>5 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">3.79</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.5&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247430">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/5yr_everyday_fixed_5cfm">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">5 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">2.99</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247415">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_5cf2">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">3.19</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247413">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_5cdy">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Everyday Tracker</span> (Bank of England Base Rate + 2.74%)</td>
+    <td><span><em class="IntRate">3.24</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247445">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_tracker_5cg8">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">3.39</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247421">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_5cfb">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">3.45</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247414">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_5cdz">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Everyday Tracker</span> (Bank of England Base Rate + 2.95%)</td>
+    <td><span><em class="IntRate">3.45</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247446">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_tracker_5cg9">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Freedom to Fix Tracker</span> (Bank of England Base Rate + 2.95%)</td>
+    <td><span><em class="IntRate">3.45</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247460">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_freedom_to_fix_tracker_5cgs">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Freedom to Fix Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">3.59</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247416">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_5cf5">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Everyday Tracker</span> (Bank of England Base Rate + 3.15%)</td>
+    <td><span><em class="IntRate">3.65</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247448">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_tracker_5cgc">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>3 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">3.49</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247422">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_fixed_5cfc">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>3 Year Everyday Tracker</span> (Bank of England Base Rate + 2.99%)</td>
+    <td><span><em class="IntRate">3.49</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247452">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_tracker_5cgh">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>3 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">3.69</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247423">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_fixed_5cfd">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>3 Year Everyday Tracker</span> (Bank of England Base Rate + 3.25%)</td>
+    <td><span><em class="IntRate">3.75</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247454">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_tracker_5cgk">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>3 Year Everyday Tracker</span> (Bank of England Base Rate + 3.39%)</td>
+    <td><span><em class="IntRate">3.89</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247455">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_tracker_5cgl">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>3 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">3.95</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247424">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_fixed_5cff">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>5 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">4.08</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.6&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247431">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/5yr_everyday_fixed_5cfn">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">5 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Freedom to Fix Tracker</span> (Bank of England Base Rate + 3.09%)</td>
+    <td><span><em class="IntRate">3.59</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247461">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_freedom_to_fix_tracker_5cgt">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Freedom to Fix Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Flexi Tracker</span> (Bank of England Base Rate + 3.15%)</td>
+    <td><span><em class="IntRate">3.65</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247457">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_flexi_tracker_5cgn">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Flexi Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Flexi Tracker</span> (Bank of England Base Rate + 3.39%)</td>
+    <td><span><em class="IntRate">3.89</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247458">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_flexi_tracker_5cgq">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Flexi Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Everyday Tracker</span> (Bank of England Base Rate + 3.39%)</td>
+    <td><span><em class="IntRate">3.89</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247449">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_tracker_5cgd">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">4.09</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247417">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_5cf6">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Everyday Tracker</span> (Bank of England Base Rate + 3.59%)</td>
+    <td><span><em class="IntRate">4.09</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247447">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_tracker_5cgb">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed Cashback</span></td>
+    <td><span><em class="IntRate">4.19</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247436">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_cashback_5cfv">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed Cashback</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Freedom to Fix Tracker</span> (Bank of England Base Rate + 3.69%)</td>
+    <td><span><em class="IntRate">4.19</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247462">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_freedom_to_fix_tracker_5cgv">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Freedom to Fix Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Everyday Tracker</span> (Bank of England Base Rate + 3.99%)</td>
+    <td><span><em class="IntRate">4.49</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247450">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_tracker_5cgf">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">4.58</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247418">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_5cf7">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>3 Year Everyday Tracker</span> (Bank of England Base Rate + 3.59%)</td>
+    <td><span><em class="IntRate">4.09</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247453">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_tracker_5cgj">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>3 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">4.28</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247425">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_fixed_5cfg">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>3 Year Everyday Fixed Cashback</span></td>
+    <td><span><em class="IntRate">4.38</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247439">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_fixed_cashback_5cfy">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Fixed Cashback</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>3 Year Everyday Tracker</span> (Bank of England Base Rate + 3.99%)</td>
+    <td><span><em class="IntRate">4.49</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247456">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_tracker_5cgm">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>5 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">4.68</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.7&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247432">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/5yr_everyday_fixed_5cfq">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">5 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list trackerpanel">
+    <td class="fam_product"><span>2 Year Flexi Tracker</span> (Bank of England Base Rate + 4.19%)</td>
+    <td><span><em class="IntRate">4.69</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.8&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247459">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_flexi_tracker_5cgr">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="trackerpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Flexi Tracker</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed Cashback</span></td>
+    <td><span><em class="IntRate">4.79</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.8&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247437">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_cashback_5cfw">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed Cashback</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">5.08</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.8&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247419">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_5cf8">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>3 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">4.68</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.8&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247426">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_fixed_5cfh">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>5 Year Everyday Fixed Cashback</span></td>
+    <td><span><em class="IntRate">4.58</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.8&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247442">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/5yr_everyday_fixed_cashback_5cg5">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">5 Year Everyday Fixed Cashback</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>5 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">4.99</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.8&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247433">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/5yr_everyday_fixed_5cfr">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">5 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>3 Year Everyday Fixed Cashback</span></td>
+    <td><span><em class="IntRate">5.09</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.9&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247440">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_fixed_cashback_5cfz">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Fixed Cashback</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>3 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">5.18</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.9&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247427">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_fixed_5cfj">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>5 Year Everyday Fixed Cashback</span></td>
+    <td><span><em class="IntRate">5.19</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.9&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247443">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/5yr_everyday_fixed_cashback_5cg6">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">5 Year Everyday Fixed Cashback</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>5 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">5.28</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>4.9&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247434">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/5yr_everyday_fixed_5cfs">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">5 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed Cashback</span></td>
+    <td><span><em class="IntRate">5.89</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>5.0&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247438">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_cashback_5cfx">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed Cashback</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>2 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">6.19</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>5.0&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247420">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/2yr_everyday_fixed_5cf9">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">2 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>3 Year Everyday Fixed Cashback</span></td>
+    <td><span><em class="IntRate">6.19</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>5.1&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247441">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_fixed_cashback_5cg2">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Fixed Cashback</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>3 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">6.29</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>5.1&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247428">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/3yr_everyday_fixed_5cfk">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">3 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>5 Year Everyday Fixed Cashback</span></td>
+    <td><span><em class="IntRate">6.29</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>5.3&#37; APR</span></td>
+	<td><span class="fees">&pound;995</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247444">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/5yr_everyday_fixed_cashback_5cg7">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">5 Year Everyday Fixed Cashback</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+<tr class="list fixedpanel">
+    <td class="fam_product"><span>5 Year Everyday Fixed</span></td>
+    <td><span><em class="IntRate">6.39</em>&#37;</span></td>
+
+	<td>Currently <span>4.79&#37;</span></td>
+	<td><span>5.3&#37; APR</span></td>
+	<td><span class="fees">None</span></td>
+	<td><span>Yes</span></td>
+	<td>
+        <div class="paymentBox">
+        
+	        <span class="nopayment">-</span>
+	    
+        </div>
+    </td>
+    <td class="expand">
+        <a class="save" href="/Mortgages/Services/Mortgages/Save/1140247435">Add to shortlist</a>
+		  
+			<a class="continue moreinfo" href="/Mortgages/Find/Find-A-Mortgage/5yr_everyday_fixed_5cft">Full details & apply</a>
+		  
+    </td>
+</tr>
+ 
+<tr class="FAMextradetails ">
+    <td colspan="8" class="fixedpanelextra">
+        <div class="mortExtraDetails">
+            <p class="prodfeatures mobileProdTitle">5 Year Everyday Fixed</p>
+			<div class="based">
+				<h3>Based on:</h3>
+				<ul>
+					<li><strong>&pound;<span class="pvalue"></span></strong> Property value.</li>
+					<li><strong>&pound;<span class="dvalue"></span></strong> Loan Amount.</li> 
+					<li><strong><span class="yr">25</span> Year</strong> Repayment term.</li>
+				</ul>
+            </div>
+        </div>
+    </td>
+ </tr>
+
+
+
+                </tbody>
+            </table>
+
+            <p>This information does not contain all of the details you need to  choose a mortgage. Make sure that you read 
+            the separate key facts illustration before you make a decision. Cashback is not available to customers porting 
+            their existing Northern Rock mortgage.</p>
+          
+  </div>
+</div>
+
+
+</div>
+</div>
+
+<div>
+    <p>Products may be withdrawn at short notice. Please <a href="/contact/">contact us</a> to confirm product availability.</p>
+</div>
+
+<script type="text/javascript">
+    var axel = Math.random() + "";
+    var a = axel * 10000000000000;
+    document.write('<iframe class="doubleClick" src="http://fls.doubleclick.net/activityi;src=3471694;type=user_612;cat=mortg551;ord=' + a + '?" width="1" height="1" frameborder="0"></iframe>');
+</script>
+<noscript>
+<iframe class="doubleClick" src="http://fls.doubleclick.net/activityi;src=3471694;type=user_612;cat=mortg551;ord=1?" width="1" height="1" frameborder="0"></iframe>
+</noscript>
+
+
+	    </div>
+      <div id="foot">
+        <ul class="alt">
+	        <li><a href="/accessibility/">Accessibility</a></li>
+	        <li><a href="/legal/">Legal</a></li>
+	        <li><a href="/privacy/">Privacy</a></li>
+	        <li><a href="/sitemap/">Site map</a></li>
+            <li><a href="/video-guides/">Video guides</a></li>
+            <li class="last"><a href="/cookies/">How we use cookies</a></li>
+        </ul>
+        
+            <p class="subcopy">THINK CAREFULLY BEFORE SECURING OTHER DEBTS AGAINST YOUR HOME. YOUR HOME MAY BE REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE. <span class="copyright">&copy; Northern Rock plc. 2012</span></p>
+        
+      </div>
+    </div>
+    
+             
+    <!--GA code -->
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-3685418-1");
+        pageTracker._trackPageview();
+        pageTracker._setDomainName('northernrock.co.uk');
+    } catch (err) { }</script> 
+		<!-- end GA code -->
+
+      
+      <script type="text/javascript">
+            var axel = Math.random() + "";
+            var a = axel * 10000000000000;
+            
+                document.write('<iframe class="doubleClick" src="http://fls.doubleclick.net/activityi;src=2905467;type=count780;cat=040fi376;ord=1;num=' + a + '?" width="1" height="1" frameborder="0"></iframe>');
+                </script>
+                <noscript>
+                    <iframe class="doubleClick"  src="http://fls.doubleclick.net/activityi;src=2905467;type=count780;cat=040fi376;ord=1;num=1?"
+              width="1" height="1" frameborder="0"></iframe>
+          
+          </noscript>
+          
+    <script type='text/javascript'>
+        if (document.referrer) {
+            var ord = Math.random() * 1000000000000;
+            document.write('<SCRIPT language="JavaScript1.1" SRC="https://ad.doubleclick.net/adj/N4378.N10463.nso.codesrv/B6754923;dcadv=3725577;sz=1x2;ord=' + ord + '?"><\/SCRIPT>');
+        }
+    </script>
+    
+
+  </body>
+</html>

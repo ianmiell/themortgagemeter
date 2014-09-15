@@ -1,0 +1,2 @@
+MORTGAGE_COMPARISON_RETRIEVAL_REGRESSION_TEST='--test'
+./get_mortgages.sh

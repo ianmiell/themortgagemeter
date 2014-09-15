@@ -1,0 +1,14 @@
+#!/usr/bin/env expect
+
+# aim is to restart apache
+
+#debug 1
+
+spawn bash
+expect -re "themortgagemeter@[exec hostname]"
+send "sudo su -"
+expect -re "root@[exec hostname]"
+send "apache2ctl restart\n"
+expect -re "root@[exec hostname]"
+send "exit"
+expect -re "themortgagemeter@[exec hostname]"

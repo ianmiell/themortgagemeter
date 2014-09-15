@@ -1,0 +1,1311 @@
+<html>
+ <head>
+ </head>
+ <body>
+  <div class="tableWrapper simpleTable noalt" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+   <div class="tableWrapperInner">
+    <h2 style="height: 40px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+     <span class="tableH2RightBG">
+      Fixed rate mortgages
+      <a href="/mortgages/interestrates-types/fixedtrackermortgage.htm" target="_blank">
+       <img alt="More information about fixed and tracker rates" src="/_/images/backgrounds/informationIconWhiteOnBlue.gif" title=""/>
+      </a>
+     </span>
+    </h2>
+    <table>
+     <thead>
+      <tr>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " width="50">
+        <div class="thRightBG">
+         More
+         <br/>
+         info
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " title="This is the length of the mortgage deal" width="60">
+        <div class="thRightBG">
+         Deal
+         <br/>
+         period
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " title="This is the rate you pay during the deal period" width="80">
+        <div class="thRightBG">
+         Initial
+         <br/>
+         rate
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " title="The Standard Mortgage Rate is the rate your loan will revert to when the initial deal period ends" width="90">
+        <div class="thRightBG">
+         Followed
+         <br/>
+         by the SMR,
+         <br/>
+         currently
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " title="This is the Annual Percentage Rate (APR) which can be used to compare the total cost of different deals" width="90">
+        <div class="thRightBG">
+         Overall cost for comparison
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " title="The cost of reserving a particular mortgage" width="80">
+        <div class="thRightBG">
+         Fees
+         <br/>
+         payable
+         <sup>
+          2
+         </sup>
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+        <div class="thRightBG">
+         <a href="#mortgageRatesLegend">
+          Mortgage
+          <br/>
+          features
+         </a>
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+        <div class="thRightBG">
+         <a href="#monthlyPayments">
+          Monthly
+          <br/>
+          payment
+         </a>
+        </div>
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49068" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        2 years
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.34%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.8% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £499
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+        <img alt="Reduced product fee" class="helpCursor" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £881.20
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49068" name="49068">
+         </a>
+         <p>
+          A fixed rate of interest for 2 years means your payments won't change during this time.
+         </p>
+         <p>
+          Fees payable include a product fee of £400 plus a non-refundable, upfront booking fee of £99. The product fee can be paid upfront or added to the loan, but if you add this fee to your loan you will be charged interest on it during the term of the loan.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 3.00% applies for the first 2 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Reduced product fee" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+          <span class="mortgageinfo">
+           Discounted product fee
+          </span>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49425" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        2 years
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.74%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.8% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £99
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £921.59
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49425" name="49425">
+         </a>
+         <p>
+          A fixed rate of interest for 2 years means your payments won't change during this time.
+         </p>
+         <p>
+          Fees payable include a product fee of £0 plus a non-refundable, upfront booking fee of £99.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 3.00% applies for the first 2 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49133" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        3 years
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.59%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.7% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £499
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+        <img alt="Reduced product fee" class="helpCursor" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £906.32
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49133" name="49133">
+         </a>
+         <p>
+          A fixed rate of interest for 3 years means your payments won't change during this time.
+         </p>
+         <p>
+          Fees payable include a product fee of £400 plus a non-refundable, upfront booking fee of £99. The product fee can be paid upfront or added to the loan, but if you add this fee to your loan you will be charged interest on it during the term of the loan.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 4.00% applies for the first 3 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Reduced product fee" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+          <span class="mortgageinfo">
+           Discounted product fee
+          </span>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49505" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        3 years
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.89%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.8% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £99
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £937.01
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49505" name="49505">
+         </a>
+         <p>
+          A fixed rate of interest for 3 years means your payments won't change during this time.
+         </p>
+         <p>
+          Fees payable include a product fee of £0 plus a non-refundable, upfront booking fee of £99.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 4.00% applies for the first 3 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49286" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        5 years
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.99%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.7% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £499
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+        <img alt="Reduced product fee" class="helpCursor" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £947.38
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49286" name="49286">
+         </a>
+         <p>
+          A fixed rate of interest for 5 years means your payments won't change during this time.
+         </p>
+         <p>
+          Fees payable include a product fee of £400 plus a non-refundable, upfront booking fee of £99. The product fee can be paid upfront or added to the loan, but if you add this fee to your loan you will be charged interest on it during the term of the loan.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 5.00% applies for the first 5 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Reduced product fee" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+          <span class="mortgageinfo">
+           Discounted product fee
+          </span>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49668" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        5 years
+       </td>
+       <td class="initialRate">
+        <strong>
+         3.19%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.7% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £99
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £968.30
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49668" name="49668">
+         </a>
+         <p>
+          A fixed rate of interest for 5 years means your payments won't change during this time.
+         </p>
+         <p>
+          Fees payable include a product fee of £0 plus a non-refundable, upfront booking fee of £99.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 5.00% applies for the first 5 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr class="featureRow">
+       <th colspan="8" scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+        <div class="thRightBG">
+         <a href="/mortgages/interestrates-types/specialoffers.htm?offer=6">
+          Flexclusives
+         </a>
+         <img alt="Flexclusives" src="/NR/rdonlyres/3D802D87-722B-49BA-BA28-1188D3F7A1BC/0/flexclusivesgold_silverBG.png" title=""/>
+        </div>
+       </th>
+      </tr>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49217" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        4 years
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.59%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.6% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £499
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+        <img alt="Free standard legal fees or £250 cashback" border="0" class="helpCursor" src="/NR/rdonlyres/4B5FB87E-20AC-4D5A-845D-77288F86FD0E/0/mortgage_icon_choice.gif" title=""/>
+        <img alt="Free standard valuation on your property" border="0" class="helpCursor" src="/NR/rdonlyres/B1E5B66A-861C-4CFD-BC1F-BA1316F122FC/0/iconfreevaluation.gif" title=""/>
+        <img alt="Reduced product fee" class="helpCursor" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £906.32
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49217" name="49217">
+         </a>
+         <p>
+          To get access to our range of Flexclusive offers you must either:
+         </p>
+         <ol>
+          <li>
+           Hold a FlexAccount with a Visa debit card (not cash card or cash card+) and:
+           <ul>
+            <li>
+             Have been paying in £750+ a month (excluding internal transfers) for the last 3 months; or
+            </li>
+            <li>
+             Complete an account transfer to us (from a non-Nationwide account) using our Account Transfer Service or have done so in the last 4 months; or
+            </li>
+           </ul>
+          </li>
+          <li>
+           Hold a FlexDirect or FlexPlus account.
+          </li>
+         </ol>
+         <p>
+          A fixed rate of interest for 4 years means your payments won't change during this time.
+         </p>
+         <p>
+          Fees payable include a product fee of £400 plus a non-refundable, upfront booking fee of £99. The product fee can be paid upfront or added to the loan, but if you add this fee to your loan you will be charged interest on it during the term of the loan.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 4.00% applies for the first 4 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Free standard legal fees or £250 cashback" border="0" src="/NR/rdonlyres/4B5FB87E-20AC-4D5A-845D-77288F86FD0E/0/mortgage_icon_choice.gif"/>
+          <span class="mortgageinfo">
+           Free standard legal fees when you use our licensed conveyancer
+           <strong>
+            or
+           </strong>
+           £250 cashback
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Free standard valuation on your property" border="0" src="/NR/rdonlyres/B1E5B66A-861C-4CFD-BC1F-BA1316F122FC/0/iconfreevaluation.gif"/>
+          <span class="mortgageinfo">
+           Free standard valuation on your property Free standard valuation report: save £225 on a house worth £150,000
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Reduced product fee" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+          <span class="mortgageinfo">
+           Discounted product fee
+          </span>
+         </p>
+         <p class="mortgageOfferTerms">
+          <a class="popup" href="/popup/mortgage-offer-terms.htm" target="_blank" title="This link opens in a new window">
+           Terms and conditions for mortgage offers
+          </a>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49599" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        4 years
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.89%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.6% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £99
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+        <img alt="Free standard legal fees or £250 cashback" border="0" class="helpCursor" src="/NR/rdonlyres/4B5FB87E-20AC-4D5A-845D-77288F86FD0E/0/mortgage_icon_choice.gif" title=""/>
+        <img alt="Free standard valuation on your property" border="0" class="helpCursor" src="/NR/rdonlyres/B1E5B66A-861C-4CFD-BC1F-BA1316F122FC/0/iconfreevaluation.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £937.01
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49599" name="49599">
+         </a>
+         <p>
+          To get access to our range of Flexclusive offers you must either:
+         </p>
+         <ol>
+          <li>
+           Hold a FlexAccount with a Visa debit card (not cash card or cash card+) and:
+           <ul>
+            <li>
+             Have been paying in £750+ a month (excluding internal transfers) for the last 3 months; or
+            </li>
+            <li>
+             Complete an account transfer to us (from a non-Nationwide account) using our Account Transfer Service or have done so in the last 4 months; or
+            </li>
+           </ul>
+          </li>
+          <li>
+           Hold a FlexDirect or FlexPlus account.
+          </li>
+         </ol>
+         <p>
+          A fixed rate of interest for 4 years means your payments won't change during this time.
+         </p>
+         <p>
+          Fees payable include a product fee of £0 plus a non-refundable, upfront booking fee of £99.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 4.00% applies for the first 4 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Free standard legal fees or £250 cashback" border="0" src="/NR/rdonlyres/4B5FB87E-20AC-4D5A-845D-77288F86FD0E/0/mortgage_icon_choice.gif"/>
+          <span class="mortgageinfo">
+           Free standard legal fees when you use our licensed conveyancer
+           <strong>
+            or
+           </strong>
+           £250 cashback
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Free standard valuation on your property" border="0" src="/NR/rdonlyres/B1E5B66A-861C-4CFD-BC1F-BA1316F122FC/0/iconfreevaluation.gif"/>
+          <span class="mortgageinfo">
+           Free standard valuation on your property Free standard valuation report: save £225 on a house worth £150,000
+          </span>
+         </p>
+         <p class="mortgageOfferTerms">
+          <a class="popup" href="/popup/mortgage-offer-terms.htm" target="_blank" title="This link opens in a new window">
+           Terms and conditions for mortgage offers
+          </a>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+  <div class="tableFooter" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+   <div class="tableFooterRightBG">
+    <p>
+    </p>
+   </div>
+  </div>
+  <div class="tableWrapper simpleTable noalt" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+   <div class="tableWrapperInner">
+    <h2 style="height: 40px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+     <span class="tableH2RightBG">
+      Tracker mortgages
+      <a href="/mortgages/interestrates-types/fixedtrackermortgage.htm" target="_blank">
+       <img alt="More information about fixed and tracker rates" src="/_/images/backgrounds/informationIconWhiteOnBlue.gif" title=""/>
+      </a>
+     </span>
+    </h2>
+    <table>
+     <thead>
+      <tr>
+       <td class="introTxt" colspan="9">
+        Want to future-proof your mortgage? The Switch &amp; Fix feature of our tracker mortgages could help future-proof your mortgage payments.
+        <a href="/mortgages/interestrates-types/fixedtrackermortgage.htm">
+         Find out more
+        </a>
+        .
+       </td>
+      </tr>
+      <tr>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " width="50">
+        <div class="thRightBG">
+         More
+         <br/>
+         info
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " title="This is the length of the mortgage deal" width="60">
+        <div class="thRightBG">
+         Deal
+         <br/>
+         period
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " width="80">
+        <div class="thRightBG">
+         Base rate
+         <br/>
+         differential
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " title="This is the rate you pay during the deal period" width="80">
+        <div class="thRightBG">
+         Initial
+         <br/>
+         rate
+         <sup>
+          3
+         </sup>
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " title="The Standard Mortgage Rate is the rate your loan will revert to when the initial deal period ends" width="90">
+        <div class="thRightBG">
+         Followed
+         <br/>
+         by the SMR,
+         <br/>
+         currently
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " title="This is the Annual Percentage Rate (APR) which can be used to compare the total cost of different deals" width="90">
+        <div class="thRightBG">
+         Overall cost for comparison
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " title="The cost of reserving a particular mortgage" width="80">
+        <div class="thRightBG">
+         Fees
+         <br/>
+         payable
+         <sup>
+          2
+         </sup>
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+        <div class="thRightBG">
+         <a href="#mortgageRatesLegend">
+          Mortgage
+          <br/>
+          features
+         </a>
+        </div>
+       </th>
+       <th scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+        <div class="thRightBG">
+         <a href="#monthlyPayments">
+          Monthly
+          <br/>
+          payment
+         </a>
+        </div>
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49348" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        2 years
+       </td>
+       <td class="baseRateDiiferential">
+        +1.84%
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.34%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.8% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £499
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+        <img alt="Reduced product fee" class="helpCursor" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £881.20
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49348" name="49348">
+         </a>
+         <p>
+          Your rate of interest tracks the Bank of England Base Rate by a set percentage for 2 years (i.e. the Base Rate differential above)
+          <sup>
+           3
+          </sup>
+          .
+         </p>
+         <p>
+          Fees payable include a product fee of £400 plus a non-refundable, upfront booking fee of £99. The product fee can be paid upfront or added to the loan, but if you add this fee to your loan you will be charged interest on it during the term of the loan.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 2.50% applies for the first 2 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Reduced product fee" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+          <span class="mortgageinfo">
+           Discounted product fee
+          </span>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49740" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        2 years
+       </td>
+       <td class="baseRateDiiferential">
+        +2.24%
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.74%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.8% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £99
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £921.59
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49740" name="49740">
+         </a>
+         <p>
+          Your rate of interest tracks the Bank of England Base Rate by a set percentage for 2 years (i.e. the Base Rate differential above)
+          <sup>
+           3
+          </sup>
+          .
+         </p>
+         <p>
+          Fees payable include a product fee of £0 plus a non-refundable, upfront booking fee of £99.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 2.50% applies for the first 2 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49383" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        3 years
+       </td>
+       <td class="baseRateDiiferential">
+        +2.09%
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.59%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.7% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £499
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+        <img alt="Reduced product fee" class="helpCursor" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £906.32
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49383" name="49383">
+         </a>
+         <p>
+          Your rate of interest tracks the Bank of England Base Rate by a set percentage for 3 years (i.e. the Base Rate differential above)
+          <sup>
+           3
+          </sup>
+          .
+         </p>
+         <p>
+          Fees payable include a product fee of £400 plus a non-refundable, upfront booking fee of £99. The product fee can be paid upfront or added to the loan, but if you add this fee to your loan you will be charged interest on it during the term of the loan.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 3.00% applies for the first 3 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Reduced product fee" src="/NR/rdonlyres/DBB96B83-A974-4751-BC7E-89D66A549F0C/0/icons_discounted.gif" title=""/>
+          <span class="mortgageinfo">
+           Discounted product fee
+          </span>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49787" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        3 years
+       </td>
+       <td class="baseRateDiiferential">
+        +2.39%
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.89%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.7% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £99
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="Early Repayment Charge applies for overpayments above £500 per month or if you exit your deal early" border="0" class="helpCursor" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £937.01
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49787" name="49787">
+         </a>
+         <p>
+          Your rate of interest tracks the Bank of England Base Rate by a set percentage for 3 years (i.e. the Base Rate differential above)
+          <sup>
+           3
+          </sup>
+          .
+         </p>
+         <p>
+          Fees payable include a product fee of £0 plus a non-refundable, upfront booking fee of £99.
+         </p>
+         <p class="icon">
+          <img alt="Early Repayment Charge applies" border="0" src="/NR/rdonlyres/F4C6DDDC-B34C-40E6-A0B8-19809054FC39/0/iconearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           An Early Repayment Charge of 3.00% applies for the first 3 years if you overpay by more than £500.00 in a month (and is payable on the entire overpayment amount) or if you exit your deal early (payable on your outstanding balance)
+          </span>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr class="featureRow">
+       <th colspan="9" scope="col" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+        <div class="thRightBG">
+         <a href="/mortgages/interestrates-types/specialoffers.htm?offer=6">
+          Flexclusives
+         </a>
+         <img alt="Flexclusives" src="/NR/rdonlyres/3D802D87-722B-49BA-BA28-1188D3F7A1BC/0/flexclusivesgold_silverBG.png" title=""/>
+        </div>
+       </th>
+      </tr>
+      <tr>
+       <td class="moreInformation">
+        <a class="plusMinus" href="#49826" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: red; border-right-color: red; border-bottom-color: red; border-left-color: red; ">
+         <img alt="+" src="/NR/rdonlyres/0563BC01-0D26-40FA-8ED4-C0B08D1A61C0/0/plus.png"/>
+        </a>
+       </td>
+       <td class="termInYears">
+        5 years
+       </td>
+       <td class="baseRateDiiferential">
+        +2.19%
+       </td>
+       <td class="initialRate">
+        <strong>
+         2.69%
+        </strong>
+       </td>
+       <td class="revertRate">
+        3.99%
+       </td>
+       <td class="aprCell">
+        <strong>
+         3.4% APR
+        </strong>
+       </td>
+       <td class="highlighted">
+        £99
+       </td>
+       <td class="mortgageFeatures">
+        <img alt="No Early Repayment Charge, allowing unlimited overpayments and penalty free switching" border="0" class="helpCursor" src="/NR/rdonlyres/97BA5F84-009C-4163-AAD5-79AC73A7EE22/0/iconnoearlyrepaymentfees.gif" title=""/>
+        <img alt="Free standard legal fees or £250 cashback" border="0" class="helpCursor" src="/NR/rdonlyres/4B5FB87E-20AC-4D5A-845D-77288F86FD0E/0/mortgage_icon_choice.gif" title=""/>
+        <img alt="Free standard valuation on your property" border="0" class="helpCursor" src="/NR/rdonlyres/B1E5B66A-861C-4CFD-BC1F-BA1316F122FC/0/iconfreevaluation.gif" title=""/>
+       </td>
+       <td class="mortgageMonthlyPayment">
+        £916.49
+       </td>
+      </tr>
+      <tr class="moreInformation">
+       <td colspan="15">
+        <div class="moreInformation wrapper">
+         <a id="49826" name="49826">
+         </a>
+         <p>
+          To get access to our range of Flexclusive offers you must either:
+         </p>
+         <ol>
+          <li>
+           Hold a FlexAccount with a Visa debit card (not cash card or cash card+) and:
+           <ul>
+            <li>
+             Have been paying in £750+ a month (excluding internal transfers) for the last 3 months; or
+            </li>
+            <li>
+             Complete an account transfer to us (from a non-Nationwide account) using our Account Transfer Service or have done so in the last 4 months; or
+            </li>
+           </ul>
+          </li>
+          <li>
+           Hold a FlexDirect or FlexPlus account.
+          </li>
+         </ol>
+         <p>
+          Your rate of interest tracks the Bank of England Base Rate by a set percentage for 5 years (i.e. the Base Rate differential above)
+          <sup>
+           3
+          </sup>
+          .
+         </p>
+         <p>
+          Fees payable include a product fee of £0 plus a non-refundable, upfront booking fee of £99.
+         </p>
+         <p class="icon">
+          <img alt="No Early Repayment Charge, allowing unlimited overpayments and penalty free switching" border="0" src="/NR/rdonlyres/97BA5F84-009C-4163-AAD5-79AC73A7EE22/0/iconnoearlyrepaymentfees.gif"/>
+          <span class="mortgageinfo">
+           No Early Repayment Charge, allowing unlimited overpayments and penalty free switching No Early Repayment Charges, so you can overpay by as much as you like, when you like, or switch your deal at any time without incurring any charges
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Free standard legal fees or £250 cashback" border="0" src="/NR/rdonlyres/4B5FB87E-20AC-4D5A-845D-77288F86FD0E/0/mortgage_icon_choice.gif"/>
+          <span class="mortgageinfo">
+           Free standard legal fees when you use our licensed conveyancer
+           <strong>
+            or
+           </strong>
+           £250 cashback
+          </span>
+         </p>
+         <p class="icon">
+          <img alt="Free standard valuation on your property" border="0" src="/NR/rdonlyres/B1E5B66A-861C-4CFD-BC1F-BA1316F122FC/0/iconfreevaluation.gif"/>
+          <span class="mortgageinfo">
+           Free standard valuation on your property Free standard valuation report: save £225 on a house worth £150,000
+          </span>
+         </p>
+         <p class="mortgageOfferTerms">
+          <a class="popup" href="/popup/mortgage-offer-terms.htm" target="_blank" title="This link opens in a new window">
+           Terms and conditions for mortgage offers
+          </a>
+         </p>
+         <div class="boundingBox snug">
+          <div class="linkingElement phoneSmall smallIcon">
+           <span class="icon">
+           </span>
+           <span class="icon">
+           </span>
+           <h4 style="margin:0px;">
+            Call our mortgage team on 0800 028 8937
+           </h4>
+           <p class="smallPrint">
+            <small>
+             (Open 8am-8pm Mon-Fri and 9am-5pm all weekend)
+            </small>
+           </p>
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+  <div class="tableFooter" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+   <div class="tableFooterRightBG">
+    <p>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>
+

@@ -1,0 +1,24 @@
+#!/usr/bin/env expect
+
+#debug 1
+
+set hostname [exec hostname]
+if {$hostname == "themortgagemeter"} {
+	puts "quitting, on themortgagemeter"
+	exit
+}
+
+set timeout -1
+
+spawn bash
+expect -re "themortgagemeter@${hostname}"
+send "git config --global user.email MORTGAGECOMPARISON_ADMINEMAIL\n"
+expect -re "themortgagemeter@${hostname}"
+send "git config --global user.name 'MORTGAGECOMPARISON_ADMINEMAIL'\n"
+expect -re "themortgagemeter@${hostname}"
+send "git pull\n"
+expect -re "assword.*:"
+send "MORTGAGECOMPARISON_GITPASSWORD\n"
+expect -re "themortgagemeter@${hostname}"
+send "./restore_db.sh\n"
+expect -re "themortgagemeter@${hostname}"

@@ -1,0 +1,34 @@
+tMortgage
+    mortgage_id integer NOT NULL,
+    institution_code character varying(6),
+    mortgage_type character(1), -- 'F'ixed, 'V'ariable, 'T'racker, 'O'ffset
+    rate integer, -- % * 100
+    apr integer, -- % * 100
+    ltv integer, -- % * 100
+    fix_period integer, -- months
+    booking_fee integer, -- GBP
+    term integer -- months
+
+tSavings
+	savings_id
+	institution_code
+	variability                    - Variable/Fixed
+	isa                            - Y = ISA
+	child                          - Y = children's account
+	online                         - Y = account can be run online
+	branch                         - Y = account can be run from branch
+	regular_saver - Y              - a regular saver account
+	regular_saver_frequency_period - frequency of regular saving (integer)
+	regular_saver_frequency_type   - Monthly, Yearly
+	regular_saver_min_amt          - min amount to put into 
+	regular_saver_max_amt          - max amount to put into
+	bonus                          - Y = bonus account, ie part of the rate is a bonus
+	bonus_frequency_period         - see regular_saver_frequency_period
+	bonus_frequency_type           - see regular_saver_frequency_type
+	savings_period                 - term of savings (integer, months)
+	min_amt                        - min amount to deposit (int, pence)
+	max_amt                        - max amount to deposit (int, pence)
+	gross_percent                  - gross percentage to be paid
+	aer_percent                    - aer percentage
+	interest_paid                  - 'Y'early,'M'onthly,'U'nknown
+
