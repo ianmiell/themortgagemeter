@@ -5,7 +5,11 @@ themortgagemeter.com
 Requirements:
 
 python
-pip install requirements.txt (?)
+
+pip
+
+pip install -r requirements.txt
+
 shutit
 
 eg on 14.04 ubuntu:
