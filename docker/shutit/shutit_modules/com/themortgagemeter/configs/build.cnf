@@ -1,5 +1,5 @@
 [com.themortgagemeter.setup]
-build:yes
+shutit.core.module.build:yes
 
 [container]
 # Hostname for the container
