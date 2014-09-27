@@ -10,6 +10,18 @@ RUN pip install -r requirements.txt
 WORKDIR /opt
 RUN git clone https://github.com/ianmiell/themortgagemeter.git
 
+RUN touch ~/.shutit/config
+RUN chmod 600 ~/.shutit/config
+RUN echo "[com.themortgagemeter.setup]" >> ~/.shutit/config
+
+# Delete the TODOs, and this line when you've filled this in
+TODO RUN echo "#gitpassword:OPTIONAL - YOUR GIT PASSWORD HERE" >> ~/.shutit/config
+TODO RUN echo "gitrepo:YOUR GIT CLONE URL" >> ~/.shutit/config
+TODO RUN echo "mailpass:YOUR MAIL SENDER ACCOUNT PASSWORD" >> ~/.shutit/config
+TODO RUN echo "senderemail:YOUR SITE SENDER EMAIL ACCOUNT" >> ~/.shutit/config
+TODO RUN echo "adminemail:YOUR SITE ADMIN EMAIL ACCOUNT" >> ~/.shutit/config
+TODO RUN echo "sitename:YOUR SITE DOMAIN NAME" >> ~/.shutit/config
+
 WORKDIR /opt/themortgagemeter/docker/shutit/shutit_modules/com/themortgagemeter
 RUN /opt/shutit/shutit build -m /opt/shutit/library --interactive 0 -s build conn_module shutit.tk.conn_bash
 
