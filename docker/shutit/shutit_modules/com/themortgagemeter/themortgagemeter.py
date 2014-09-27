@@ -88,13 +88,12 @@ class themortgagemeter(ShutItModule):
 		return True
 
 	def get_config(self, shutit):
-		cp = shutit.cfg['config_parser']
-		shutit.cfg[self.module_id]['gitpassword'] = cp.get(self.module_id,'gitpassword','defaultpass')
-		shutit.cfg[self.module_id]['gitrepo']     = cp.get(self.module_id,'gitrepo')
-		shutit.cfg[self.module_id]['mailpass']    = cp.get(self.module_id,'mailpass')
-		shutit.cfg[self.module_id]['adminemail']   = cp.get(self.module_id,'adminemail')
-		shutit.cfg[self.module_id]['senderemail']  = cp.get(self.module_id,'senderemail')
-		shutit.cfg[self.module_id]['sitename']     = cp.get(self.module_id,'sitename')
+		shutit.get_config(self.module_id, 'gitpassword','defaultgitpassword')
+		shutit.get_config(self.module_id, 'gitrepo')
+		shutit.get_config(self.module_id, 'mailpass')
+		shutit.get_config(self.module_id, 'adminemail')
+		shutit.get_config(self.module_id, 'senderemail')
+		shutit.get_config(self.module_id, 'sitename')
 		return True
 
 	def test(self, shutit):
