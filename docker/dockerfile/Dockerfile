@@ -23,7 +23,7 @@ TODO RUN echo "adminemail:YOUR SITE ADMIN EMAIL ACCOUNT" >> ~/.shutit/config
 TODO RUN echo "sitename:YOUR SITE DOMAIN NAME" >> ~/.shutit/config
 
 WORKDIR /opt/themortgagemeter/docker/shutit/shutit_modules/com/themortgagemeter
-RUN /opt/shutit/shutit build -m /opt/shutit/library --interactive 0 -s build conn_module shutit.tk.conn_bash
+RUN /opt/shutit/shutit build --shutit_module_path /opt/shutit/library --delivery bash
 
 CMD ["/bin/bash"]
 
