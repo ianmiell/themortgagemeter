@@ -10,9 +10,12 @@ RUN pip install -r requirements.txt
 WORKDIR /opt
 RUN git clone https://github.com/ianmiell/themortgagemeter.git
 
-RUN touch ~/.shutit/config
-RUN chmod 600 ~/.shutit/config
-RUN echo "[com.themortgagemeter.setup]" >> ~/.shutit/config
+ENV HOME /root
+
+RUN mkdir /root/.shutit
+RUN touch /root/.shutit/config
+RUN chmod 600 /root/.shutit/config
+RUN echo "[com.themortgagemeter.setup]" >> /root/.shutit/config
 
 # Delete the TODOs, and this line when you've filled this in
 TODO RUN echo "#gitpassword:OPTIONAL - YOUR GIT PASSWORD HERE" >> ~/.shutit/config
