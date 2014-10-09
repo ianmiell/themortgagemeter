@@ -12,16 +12,16 @@ RUN git clone https://github.com/ianmiell/themortgagemeter.git
 
 ENV HOME /root
 
-RUN mkdir /root/.shutit
-RUN touch /root/.shutit/config
-RUN chmod 600 /root/.shutit/config
-RUN echo "[com.themortgagemeter.setup]" >> /root/.shutit/config
+RUN mkdir ~/.shutit
+RUN touch ~/.shutit/config
+RUN chmod 600 ~/.shutit/config
+RUN echo "[com.themortgagemeter.setup]" >> ~/.shutit/config
 
 # Delete the TODOs, and this line when you've filled this in
 TODO RUN echo "#gitpassword:OPTIONAL - YOUR GIT PASSWORD HERE" >> ~/.shutit/config
 TODO RUN echo "gitrepo:YOUR GIT CLONE URL" >> ~/.shutit/config
-TODO RUN echo "mailpass:YOUR MAIL SENDER ACCOUNT PASSWORD" >> ~/.shutit/config
 TODO RUN echo "senderemail:YOUR SITE SENDER EMAIL ACCOUNT" >> ~/.shutit/config
+TODO RUN echo "mailpass:YOUR MAIL SENDER ACCOUNT PASSWORD" >> ~/.shutit/config
 TODO RUN echo "adminemail:YOUR SITE ADMIN EMAIL ACCOUNT" >> ~/.shutit/config
 TODO RUN echo "sitename:YOUR SITE DOMAIN NAME" >> ~/.shutit/config
 
