@@ -12,6 +12,7 @@ class themortgagemeter(ShutItModule):
 		config_dict = shutit.cfg
 		shutit.install('telnet')
 		shutit.install('sudo')
+		shutit.install('adduser')
 		shutit.send('groupadd -g 1000 themortgagemeter')
 		shutit.send('useradd -g themortgagemeter -d /home/themortgagemeter -s /bin/bash -m themortgagemeter')
 		shutit.send('adduser themortgagemeter sudo')
