@@ -30,10 +30,12 @@ class themortgagemeter(ShutItModule):
 		shutit.send('pushd /opt')
 		if shutit.send('git clone ' + shutit.cfg[self.module_id]['gitrepo'],expect=['assword',shutit.get_default_expect()],check_exit=False) == 0:
 			shutit.send(config_dict[self.module_id]['gitpassword'])
-		shutit.send('pushd mortgagecomparison')
+		shutit.send('popd')
+		shutit.send('pushd /opt/themortgagemeter')
 		shutit.send('git submodule init')
 		shutit.send('git submodule update')
-		shutit.send('cd simple_mailer')
+		shutit.send('popd')
+		shutit.send('pushd /opt/themortgagemeter/simple_mailer')
 		shutit.send('git pull origin master')
 		shutit.send('chmod 600 /space/mortgagecomparison/conf/mailpass')
 		shutit.send('echo -n "' + shutit.cfg[self.module_id]['mailpass'] + '" > /space/mortgagecomparison/conf/mailpass')
@@ -42,6 +44,7 @@ class themortgagemeter(ShutItModule):
 00 16 * * * cd /opt/mortgagecomparison/bin; ./get_mortgages.sh 2>&1 > /tmp/get_mortgages.out; cd /opt/mortgagecomparison/retrieval/emailer; python emailer.py 2>&1 > /tmp/emailer.out
 00 16 * * * cd /opt/mortgagecomparison/bin; ./get_savings.sh 2>&1 > /tmp/get_savings.out
 00 19 * * * (cd /opt/mortgagecomparison/bin; ./backup_db.exp) > /tmp/backupout 2>&1" | crontab -""")
+		shutit.send('popd')
 		shutit.logout()
 		shutit.send("perl -p -i -e 's/Require all denied/Require all granted/' /etc/apache2/apache2.conf")
 		shutit.send('cp /opt/mortgagecomparison/website/apache2/sites-enabled/000-default /etc/apache2/sites-available/000-default.conf')
