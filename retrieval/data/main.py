@@ -38,7 +38,7 @@ def main():
 	mortgagecomparison_db.commit_db()
 
 if __name__ == '__main__':
-	sys.path.append('/opt/mortgagecomparison/shared')
+	sys.path.append('/opt/themortgagemeter/shared')
 	parser = argparse.ArgumentParser(description='Get mortgage rates')
 	parser.add_argument('--institution', help='which institution code to do',required=True,choices=['ONS'])
 	parser.add_argument('--test', help='test, ie do not commit data',default=False, action='store_true')

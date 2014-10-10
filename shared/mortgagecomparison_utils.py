@@ -208,7 +208,7 @@ def get_anchors_pages(bsobj,regex,logger,base_url=''):
 # Use phantomjs to get a page, return a bs object
 def get_page_headless(url,logger):
 	child         = pexpect.spawn('/bin/bash')
-	#the_page = pexpect.run('/opt/phantomjs/bin/phantomjs /opt/mortgagecomparison/retrieval/mortgages/phantomjs/get_url.js ' + url)
+	#the_page = pexpect.run('/opt/phantomjs/bin/phantomjs /opt/themortgagemeter/retrieval/mortgages/phantomjs/get_url.js ' + url)
 	the_page = pexpect.run('curl -3 --insecure ' + url)
 	the_page_list = string.split(the_page,sep='\n')
 	while '' in the_page_list:

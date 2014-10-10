@@ -33,35 +33,35 @@ class themortgagemeter(ShutItModule):
 			shutit.send(config_dict[self.module_id]['gitpassword'])
 		shutit.send('popd')
 		shutit.send('pushd /opt/themortgagemeter')
-		shutit.send('git submodule init')
-		shutit.send('git submodule update')
+		shutit.send('git submodule add https://github.com/zwischenzugs/simple_mailer.git')
+		shutit.send('git submodule add https://github.com/flot/flot.git')
 		shutit.send('popd')
 		shutit.send('pushd /opt/themortgagemeter/simple_mailer')
 		shutit.send('git pull origin master')
-		shutit.send('chmod 600 /space/mortgagecomparison/conf/mailpass')
-		shutit.send('echo -n "' + shutit.cfg[self.module_id]['mailpass'] + '" > /space/mortgagecomparison/conf/mailpass')
+		shutit.send('chmod 600 /opt/themortgagemeter/conf/mailpass')
+		shutit.send('echo -n "' + shutit.cfg[self.module_id]['mailpass'] + '" > /opt/themortgagemeter/conf/mailpass')
 		shutit.send("""echo "
 # m h  dom mon dow   command
-00 16 * * * cd /opt/mortgagecomparison/bin; ./get_mortgages.sh 2>&1 > /tmp/get_mortgages.out; cd /opt/mortgagecomparison/retrieval/emailer; python emailer.py 2>&1 > /tmp/emailer.out
-00 16 * * * cd /opt/mortgagecomparison/bin; ./get_savings.sh 2>&1 > /tmp/get_savings.out
-00 19 * * * (cd /opt/mortgagecomparison/bin; ./backup_db.exp) > /tmp/backupout 2>&1" | crontab -""")
+00 16 * * * cd /opt/themortgagemeter/bin && ./get_mortgages.sh 2>&1 > /tmp/get_mortgages.out && cd /opt/themortgagemeter/retrieval/emailer && python emailer.py 2>&1 > /tmp/emailer.out
+00 16 * * * cd /opt/themortgagemeter/bin && ./get_savings.sh 2>&1 > /tmp/get_savings.out
+00 19 * * * (cd /opt/themortgagemeter/bin && ./backup_db.exp) > /tmp/backupout 2>&1" | crontab -""")
 		shutit.send('popd')
 		shutit.logout()
 		shutit.send("perl -p -i -e 's/Require all denied/Require all granted/' /etc/apache2/apache2.conf")
-		shutit.send('cp /opt/mortgagecomparison/website/apache2/sites-enabled/000-default /etc/apache2/sites-available/000-default.conf')
-		shutit.send('cp /space/mortgagecomparison/website/apache2/sites-enabled/000-default /etc/apache2/sites-available/000-default.conf')
+		shutit.send('cp /opt/themortgagemeter/website/apache2/sites-enabled/000-default /etc/apache2/sites-available/000-default.conf')
+		shutit.send('cp /opt/themortgagemeter/website/apache2/sites-enabled/000-default /etc/apache2/sites-available/000-default.conf')
 		#change the perms on the log folders to 777 (the umask is applied on creation)
-		shutit.send('chmod 777 /opt/mortgagecomparison/retrieval/mortgages/logs')
-		shutit.send('chmod 777 /opt/mortgagecomparison/retrieval/data/logs')
-		shutit.send('touch /opt/mortgagecomparison/website/django/mortgagecomparison/logs/log.log')
-		shutit.send('chmod 777 /opt/mortgagecomparison/website/django/mortgagecomparison/logs/log.log')
+		shutit.send('chmod 777 /opt/themortgagemeter/retrieval/mortgages/logs')
+		shutit.send('chmod 777 /opt/themortgagemeter/retrieval/data/logs')
+		shutit.send('touch /opt/themortgagemeter/website/django/mortgagecomparison/logs/log.log')
+		shutit.send('chmod 777 /opt/themortgagemeter/website/django/mortgagecomparison/logs/log.log')
 		##install the database
 		shutit.login('postgres')
-		shutit.send('psql postgres < /opt/mortgagecomparison/sql/CREATE_DATABASE.sql')
+		shutit.send('psql postgres < /opt/themortgagemeter/sql/CREATE_DATABASE.sql')
 		##set the postgres and themortgagemeter password (as postgres):
-		shutit.send_and_expect('/opt/mortgagecomparison/bin/create_user.sh')
-		shutit.send_and_expect('psql mortgagecomparison < /opt/mortgagecomparison/sql/archive/SCHEMA_CURRENT.sql')
-		shutit.send_and_expect('psql mortgagecomparison < /opt/mortgagecomparison/sql/archive/DATA_CURRENT.sql')
+		shutit.send_and_expect('/opt/themortgagemeter/bin/create_user.sh')
+		#shutit.send_and_expect('psql mortgagecomparison < /opt/themortgagemeter/sql/archive/SCHEMA_CURRENT.sql')
+		#shutit.send_and_expect('psql mortgagecomparison < /opt/themortgagemeter/sql/archive/DATA_CURRENT.sql')
 		shutit.logout()
 		shutit.add_line_to_file('#!/bin/bash','/root/start_themortgagemeter.sh')
 		shutit.add_line_to_file('/root/start_postgres.sh','/root/start_themortgagemeter.sh')
@@ -70,7 +70,7 @@ class themortgagemeter(ShutItModule):
 		shutit.add_line_to_file('service sysklogd start','/root/start_themortgagemeter.sh')
 		shutit.add_line_to_file('cron -f -L 8','/root/start_themortgagemeter.sh')
 		shutit.send('chmod +x /root/start_themortgagemeter.sh')
-		shutit.send('pushd /opt/mortgagecomparison')
+		shutit.send('pushd /opt/themortgagemeter')
 		# The below strings are deliberately broken up to ensure we don't overwrite them ourselves :)
 		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/MORTGAGECOMPARISON" + "_ADMINEMAIL/" + shutit.cfg[self.module_id]['adminemail'] + "/g'")
 		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/MORTGAGECOMPARISON" + "_SENDEREMAIL/" + shutit.cfg[self.module_id]['senderemail'] + "/g'")
@@ -109,8 +109,7 @@ def module():
 	return themortgagemeter(
 		'com.themortgagemeter.setup', 1003189494.56,
 		description='Builds the mortgage comparison site',
-		depends=['shutit.tk.setup']
-		#depends=['shutit.tk.setup','shutit.tk.ssh_server.ssh_server','shutit.tk.postgres.postgres','shutit.tk.phantomjs.phantomjs','shutit.tk.casperjs.casperjs']
+		depends=['shutit.tk.setup','shutit.tk.ssh_server.ssh_server','shutit.tk.postgres.postgres','shutit.tk.phantomjs.phantomjs','shutit.tk.casperjs.casperjs']
 	)
 
 

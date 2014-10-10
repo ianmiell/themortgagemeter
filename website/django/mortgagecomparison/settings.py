@@ -150,7 +150,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.handlers.TimedRotatingFileHandler',
-            'filename': '/opt/mortgagecomparison/website/django/mortgagecomparison/logs/log.log',
+            'filename': '/opt/themortgagemeter/website/django/mortgagecomparison/logs/log.log',
 			'when': 'D',
 			'backupCount': '14',
             'formatter': 'timed'
@@ -178,5 +178,5 @@ if LIVE == True:
 # Test and live python path additions
 # Live
 # alruccabah
-sys.path.append('/opt/mortgagecomparison/shared')
+sys.path.append('/opt/themortgagemeter/shared')
 

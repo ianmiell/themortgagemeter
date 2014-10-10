@@ -1,4 +1,4 @@
-cd /opt/mortgagecomparison/retrieval/mortgages
+cd /opt/themortgagmeter/retrieval/mortgages
 python main.py --institution NTNWD $MORTGAGE_COMPARISON_RETRIEVAL_REGRESSION_TEST &
 python main.py --institution SNTNDR $MORTGAGE_COMPARISON_RETRIEVAL_REGRESSION_TEST &
 python main.py --institution HLFX $MORTGAGE_COMPARISON_RETRIEVAL_REGRESSION_TEST &
@@ -19,7 +19,7 @@ echo "insert into tretrievaldates (day) values (current_date);" | psql mortgagec
 echo "select refresh_matview('replacement_mortgages_materialized_view');" | psql mortgagecomparison
 # Clear the cache
 echo "Moving to bin"
-cd /opt/mortgagecomparison/bin
+cd /opt/themortgagemeter/bin
 echo "Clearing cache"
 ./clear_cache.sh
 echo "Cleared cache"

@@ -14,7 +14,7 @@ import time
 	
 
 def api(request):
-	r = file('/opt/mortgagecomparison/website/django/mortgagecomparison/mortgagecomparisonapp/urls.py').read()
+	r = file('/opt/themortgagemeter/website/django/mortgagecomparison/mortgagecomparisonapp/urls.py').read()
 	return HttpResponse(r)
 
 # Clear the cache

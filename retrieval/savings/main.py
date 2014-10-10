@@ -79,7 +79,7 @@ def update_changes(val,institution_code,logger):
 		#mortgagecomparison_utils.record_alert('SAVINGS_CHANGE: ' + institution_code,logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
 
 if __name__ == '__main__':
-	sys.path.append('/opt/mortgagecomparison/shared')
+	sys.path.append('/opt/themortgagemeter/shared')
 	parser = argparse.ArgumentParser(description='Get mortgage rates')
 	parser.add_argument('--static', help='whether to use static files for testing', default=False, action='store_true')
 	parser.add_argument('--institution', help='which institution code to do',required=True,choices=['NTNWD','HSBC','HLFX'])
