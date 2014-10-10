@@ -24,6 +24,7 @@ TODO RUN echo "senderemail:YOUR SITE SENDER EMAIL ACCOUNT" >> ~/.shutit/config
 TODO RUN echo "mailpass:YOUR MAIL SENDER ACCOUNT PASSWORD" >> ~/.shutit/config
 TODO RUN echo "adminemail:YOUR SITE ADMIN EMAIL ACCOUNT" >> ~/.shutit/config
 TODO RUN echo "sitename:YOUR SITE DOMAIN NAME" >> ~/.shutit/config
+TODO RUN echo "containerpassword:YOUR CONTAINER ROOT PASSWORD" >> ~/.shutit/config
 
 WORKDIR /opt/themortgagemeter/docker/shutit/shutit_modules/com/themortgagemeter
 RUN /opt/shutit/shutit build --shutit_module_path /opt/shutit/library --delivery bash
