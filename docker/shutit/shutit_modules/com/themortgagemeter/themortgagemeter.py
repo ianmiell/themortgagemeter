@@ -19,8 +19,8 @@ class themortgagemeter(ShutItModule):
 		shutit.send('chmod 0440 /etc/sudoers.d/sudo')
 
 		shutit.send('passwd','new UNIX password:')
-		shutit.send(config_dict[self.module_id]['containerpassword'],'new UNIX password:',check_exit=False)
-		shutit.send(config_dict[self.module_id]['containerpassword'],check_exit=False)
+		shutit.send(config_dict[self.module_id]['containerpass'],'new UNIX password:',check_exit=False)
+		shutit.send(config_dict[self.module_id]['containerpass'],check_exit=False)
 		for package in ('vim','expect','linux-tools-common','linux-tools','postgresql','libpq-dev','libpostgresql-jdbc-java','python-psycopg2','xml-twig-tools','html2text','tidy','git-core','python-pip','python-html5lib','python-beautifulsoup','python-pygresql','python-bs4','python-html5lib','npm','apache2','libapache2-mod-wsgi','python-django','python-pexpect','curl','git','sysklogd','cron','linux-image-virtual'):
 			shutit.install(package,timeout=1200)
 		shutit.send('pip install beautifulsoup4')
@@ -94,7 +94,8 @@ class themortgagemeter(ShutItModule):
 		shutit.get_config(self.module_id, 'adminemail')
 		shutit.get_config(self.module_id, 'senderemail')
 		shutit.get_config(self.module_id, 'sitename')
-		shutit.get_config(self.module_id, 'containerpassword')
+		shutit.get_config(self.module_id, 'containerpass')
+		print shutit.cfg
 		return True
 
 	def test(self, shutit):
@@ -104,7 +105,8 @@ def module():
 	return themortgagemeter(
 		'com.themortgagemeter.setup', 1003189494.56,
 		description='Builds the mortgage comparison site',
-		depends=['shutit.tk.setup','shutit.tk.ssh_server.ssh_server','shutit.tk.postgres.postgres','shutit.tk.phantomjs.phantomjs','shutit.tk.casperjs.casperjs']
+		depends=['shutit.tk.setup']
+		#depends=['shutit.tk.setup','shutit.tk.ssh_server.ssh_server','shutit.tk.postgres.postgres','shutit.tk.phantomjs.phantomjs','shutit.tk.casperjs.casperjs']
 	)
 
 
