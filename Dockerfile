@@ -7,10 +7,11 @@ RUN git clone https://github.com/ianmiell/shutit.git
 WORKDIR /opt/shutit
 RUN pip install -r requirements.txt
 
-WORKDIR /opt
-RUN git clone https://github.com/ianmiell/themortgagemeter.git
-
 ENV HOME /root
+
+RUN mkdir /opt/themortgagemeter
+ADD . /opt/themortgagemeter
+WORKDIR /opt
 
 RUN mkdir ~/.shutit
 RUN touch ~/.shutit/config
@@ -33,7 +34,7 @@ RUN echo "adminemail:ian.miell@gmail.com" >> ~/.shutit/config
 # Your site's domain name, eg themortgagemeter.com
 RUN echo "sitename:themortgagemeter.com" >> ~/.shutit/config
 # This value will be the root password for your container
-RUN echo "containerpassword:rootpass" >> ~/.shutit/config
+RUN echo "containerpass:rootpass" >> ~/.shutit/config
 # CONFIG SECTION COMPLETE
 ################################################################################
 
