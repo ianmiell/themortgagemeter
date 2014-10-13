@@ -17,14 +17,25 @@ RUN touch ~/.shutit/config
 RUN chmod 600 ~/.shutit/config
 RUN echo "[com.themortgagemeter.setup]" >> ~/.shutit/config
 
-# Delete the TODOs, and this line when you've filled this in
-TODO RUN echo "#gitpassword:OPTIONAL - YOUR GIT PASSWORD HERE" >> ~/.shutit/config
-TODO RUN echo "gitrepo:YOUR GIT CLONE URL" >> ~/.shutit/config
-TODO RUN echo "senderemail:YOUR SITE SENDER EMAIL ACCOUNT" >> ~/.shutit/config
-TODO RUN echo "mailpass:YOUR MAIL SENDER ACCOUNT PASSWORD" >> ~/.shutit/config
-TODO RUN echo "adminemail:YOUR SITE ADMIN EMAIL ACCOUNT" >> ~/.shutit/config
-TODO RUN echo "sitename:YOUR SITE DOMAIN NAME" >> ~/.shutit/config
-TODO RUN echo "containerpassword:YOUR CONTAINER ROOT PASSWORD" >> ~/.shutit/config
+################################################################################
+# Fill this in appropriately and delete this line
+# Git repository to clone the code from within the container. We will run
+# git clone [this value]
+RUN echo "gitrepo:https://github.com/ianmiell/themortgagemeter.git" >> ~/.shutit/config
+# Git password for pushing changes up (only needed if required)
+#RUN echo "#gitpassword:mygitpass" >> ~/.shutit/config
+# Email to send emails
+RUN echo "senderemail:ian.miell@gmail.com" >> ~/.shutit/config
+# Password for senderemail account
+RUN echo "mailpass:mymailpass" >> ~/.shutit/config
+# Administrative email account (ie mail to send alerts etc to)
+RUN echo "adminemail:ian.miell@gmail.com" >> ~/.shutit/config
+# Your site's domain name, eg themortgagemeter.com
+RUN echo "sitename:themortgagemeter.com" >> ~/.shutit/config
+# This value will be the root password for your container
+RUN echo "containerpassword:rootpass" >> ~/.shutit/config
+# CONFIG SECTION COMPLETE
+################################################################################
 
 WORKDIR /opt/themortgagemeter/docker/shutit/shutit_modules/com/themortgagemeter
 RUN /opt/shutit/shutit build --shutit_module_path /opt/shutit/library --delivery bash
