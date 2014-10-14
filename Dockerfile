@@ -38,7 +38,7 @@ RUN echo "containerpass:rootpass" >> ~/.shutit/config
 ################################################################################
 
 WORKDIR /opt/themortgagemeter/docker/shutit/shutit_modules/com/themortgagemeter
-RUN /opt/shutit/shutit build --shutit_module_path /opt/shutit/library --delivery bash
+RUN /opt/shutit/shutit build --shutit_module_path /opt/shutit/library --delivery dockerfile
 
 CMD ["/bin/bash"]
 
