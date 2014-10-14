@@ -11,7 +11,6 @@ ENV HOME /root
 
 RUN mkdir /opt/themortgagemeter
 ADD . /opt/themortgagemeter
-WORKDIR /opt
 
 RUN mkdir ~/.shutit
 RUN touch ~/.shutit/config
