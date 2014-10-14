@@ -28,10 +28,12 @@ class themortgagemeter(ShutItModule):
 		shutit.send('pip install openpyxl')
 		shutit.send('chmod 777 /opt')
 		shutit.login('themortgagemeter')
-		shutit.send('pushd /opt')
-		if shutit.send('git clone ' + shutit.cfg[self.module_id]['gitrepo'],expect=['assword',shutit.get_default_expect()],check_exit=False) == 0:
-			shutit.send(config_dict[self.module_id]['gitpassword'])
-		shutit.send('popd')
+		# If we're delivering within a dockerfile this will already have been added
+		if not shutit.file_exists('/opt/themortgagemeter'):
+			shutit.send('pushd /opt')
+			if shutit.send('git clone ' + shutit.cfg[self.module_id]['gitrepo'],expect=['assword',shutit.get_default_expect()],check_exit=False) == 0:
+				shutit.send(config_dict[self.module_id]['gitpassword'])
+			shutit.send('popd')
 		shutit.send('pushd /opt/themortgagemeter')
 		shutit.send('git submodule init')
 		shutit.send('git submodule update')
