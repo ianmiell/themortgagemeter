@@ -48,7 +48,7 @@ class themortgagemeter(ShutItModule):
 # m h  dom mon dow   command
 00 16 * * * cd /opt/themortgagemeter/bin && ./get_mortgages.sh 2>&1 > /tmp/get_mortgages.out && cd /opt/themortgagemeter/retrieval/emailer && python emailer.py 2>&1 > /tmp/emailer.out
 00 16 * * * cd /opt/themortgagemeter/bin && ./get_savings.sh 2>&1 > /tmp/get_savings.out
-00 19 * * * (cd /opt/themortgagemeter/bin && ./backup_db.exp) > /tmp/backupout 2>&1" > a"""
+00 19 * * * (cd /opt/themortgagemeter/bin && ./backup_db.exp) > /tmp/backupout 2>&1" > a""")
 		shutit.send("crontab a")
 		shutit.send("rm a")
 		shutit.send('popd')
