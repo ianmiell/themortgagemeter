@@ -10,15 +10,20 @@ class themortgagemeter(ShutItModule):
 
 	def build(self,shutit):
 		config_dict = shutit.cfg
-		shutit.install('telnet')
-		shutit.install('sudo')
 		shutit.install('adduser')
+		shutit.install('cron')
+		shutit.install('sudo')
+		shutit.install('telnet')
 		shutit.send('groupadd -g 1000 themortgagemeter')
 		shutit.send('useradd -g themortgagemeter -d /home/themortgagemeter -s /bin/bash -m themortgagemeter')
 		shutit.send('adduser themortgagemeter sudo')
 		shutit.send('echo "%sudo ALL=(ALL:ALL) ALL" > /etc/sudoers.d/sudo')
 		shutit.send('chmod 0440 /etc/sudoers.d/sudo')
-
+		shutit.send("""echo "
+# m h  dom mon dow   command
+00 16 * * * cd /opt/themortgagemeter/bin && ./get_mortgages.sh 2>&1 > /tmp/get_mortgages.out && cd /opt/themortgagemeter/retrieval/emailer && python emailer.py 2>&1 > /tmp/emailer.out
+00 16 * * * cd /opt/themortgagemeter/bin && ./get_savings.sh 2>&1 > /tmp/get_savings.out
+00 19 * * * (cd /opt/themortgagemeter/bin && ./backup_db.exp) > /tmp/backupout 2>&1" | crontab -u themortgagemeter -""")
 		shutit.send('passwd','new UNIX password:')
 		shutit.send(config_dict[self.module_id]['containerpass'],'new UNIX password:',check_exit=False)
 		shutit.send(config_dict[self.module_id]['containerpass'],check_exit=False)
@@ -44,13 +49,6 @@ class themortgagemeter(ShutItModule):
 		shutit.send('git pull origin master')
 		shutit.send('chmod 600 /opt/themortgagemeter/conf/mailpass')
 		shutit.send('echo -n "' + shutit.cfg[self.module_id]['mailpass'] + '" > /opt/themortgagemeter/conf/mailpass')
-		shutit.send("""echo "
-# m h  dom mon dow   command
-00 16 * * * cd /opt/themortgagemeter/bin && ./get_mortgages.sh 2>&1 > /tmp/get_mortgages.out && cd /opt/themortgagemeter/retrieval/emailer && python emailer.py 2>&1 > /tmp/emailer.out
-00 16 * * * cd /opt/themortgagemeter/bin && ./get_savings.sh 2>&1 > /tmp/get_savings.out
-00 19 * * * (cd /opt/themortgagemeter/bin && ./backup_db.exp) > /tmp/backupout 2>&1" > a""")
-		shutit.send("crontab a")
-		shutit.send("rm a")
 		shutit.send('popd')
 		shutit.logout()
 		shutit.send("perl -p -i -e 's/Require all denied/Require all granted/' /etc/apache2/apache2.conf")
