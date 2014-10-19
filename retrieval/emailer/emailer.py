@@ -11,7 +11,7 @@ import random
 
 # TODO: logging
 
-sender                  = 'SENDEREMAIL'
+sender                  = 'MORTGAGECOMPARISON_SENDEREMAIL'
 contentfile             = None
 subject                 = 'Change to rates on themortgagemeter.com'
 mortgage_change_content = 'There has been a change of rates on http://themortgagemeter.com. Go to:\n\nhttp://themortgagemeter.com/#/latest_changes\n\nto see what\'s changed.\n\nIf you have any comments about the site or wish to unsubscribe, please reply to this mail.'
