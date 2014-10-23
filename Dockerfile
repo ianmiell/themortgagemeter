@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM ubuntu:ubuntu
 
 RUN apt-get update
 RUN apt-get install -y -qq curl git python-pip
