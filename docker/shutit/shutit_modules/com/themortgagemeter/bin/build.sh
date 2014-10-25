@@ -1,4 +1,9 @@
 #!/bin/bash
 pushd ..
-${SHUTITDIR}/shutit build --shutit_module_path ${SHUTITDIR}/library --image_tag stackbrew/ubuntu:saucy
+shutit build --shutit_module_path $(dirname $(which shutit))/library --image_tag stackbrew/ubuntu:saucy
+if [[ "x$?" != "x0" ]]
+then
+	popd
+	exit 1
+fi
 popd
