@@ -1,5 +1,10 @@
 FROM ubuntu:12.04
 
+MAINTAINER ian.miell@gmail.com
+
+EXPOSE 80 8080
+EXPOSE 22 2222
+
 RUN apt-get update
 RUN apt-get install -y -qq curl git python-pip
 WORKDIR /opt
@@ -37,8 +42,11 @@ RUN echo "containerpass:rootpass" >> ~/.shutit/config
 # CONFIG SECTION COMPLETE
 ################################################################################
 
+EXPOSE 80 8080
+EXPOSE 22 2222
+
 WORKDIR /opt/themortgagemeter/docker/shutit/shutit_modules/com/themortgagemeter
 RUN /opt/shutit/shutit build --shutit_module_path /opt/shutit/library --delivery dockerfile
 
-CMD ["/bin/bash"]
+CMD ["/root/start_themortgagemeter.sh"]
 
