@@ -2,9 +2,6 @@ FROM ubuntu:ubuntu
 
 MAINTAINER ian.miell@gmail.com
 
-EXPOSE 80 8080
-EXPOSE 22 2222
-
 RUN apt-get update
 RUN apt-get install -y -qq curl git python-pip
 WORKDIR /opt
