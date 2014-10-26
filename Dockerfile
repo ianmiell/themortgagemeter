@@ -1,4 +1,4 @@
-FROM ubuntu:ubuntu
+FROM ubuntu:trusty
 
 MAINTAINER ian.miell@gmail.com
 
