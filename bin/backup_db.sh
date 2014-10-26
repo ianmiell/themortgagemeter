@@ -2,8 +2,8 @@ HOST=`hostname`
 if [ $HOST = "themortgagemeter" ]
 then
 	DATE=`date +%Y%m%d`
-	git config --global user.email "MORTGAGECOMPARISON_ADMINEMAIL"
-	git config --global user.name "MORTGAGECOMPARISON_ADMINEMAIL"
+	git config --global user.email "THEMORTGAGEMETER_ADMINEMAIL"
+	git config --global user.name "THEMORTGAGEMETER_ADMINEMAIL"
 	pg_dump themortgagemeter -a > ../sql/archive/DATA_${DATE}.sql
 	pg_dump themortgagemeter -s > ../sql/archive/SCHEMA_${DATE}.sql
 	cp ../sql/archive/SCHEMA_${DATE}.sql ../sql/archive/SCHEMA_CURRENT.sql

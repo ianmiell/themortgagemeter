@@ -109,7 +109,7 @@ SELECT pg_catalog.setval('auth_group_permissions_id_seq', 1, false);
 --
 
 COPY auth_user (id, username, first_name, last_name, email, password, is_staff, is_active, is_superuser, last_login, date_joined) FROM stdin;
-1	themortgagemeter			MORTGAGECOMPARISON_ADMINEMAIL	sha1$0f1e7$3404dac4ebf4c7faa7ab031716a637bb3b89049a	t	t	t	2012-07-17 08:30:07.758385+00	2012-07-17 08:30:07.758385+00
+1	themortgagemeter			THEMORTGAGEMETER_ADMINEMAIL	sha1$0f1e7$3404dac4ebf4c7faa7ab031716a637bb3b89049a	t	t	t	2012-07-17 08:30:07.758385+00	2012-07-17 08:30:07.758385+00
 \.
 
 

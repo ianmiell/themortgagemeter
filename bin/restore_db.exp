@@ -12,13 +12,13 @@ set timeout -1
 
 spawn bash
 expect -re "themortgagemeter@${hostname}"
-send "git config --global user.email MORTGAGECOMPARISON_ADMINEMAIL\n"
+send "git config --global user.email THEMORTGAGEMETER_ADMINEMAIL\n"
 expect -re "themortgagemeter@${hostname}"
-send "git config --global user.name 'MORTGAGECOMPARISON_ADMINEMAIL'\n"
+send "git config --global user.name 'THEMORTGAGEMETER_ADMINEMAIL'\n"
 expect -re "themortgagemeter@${hostname}"
 send "git pull\n"
 expect -re "assword.*:"
-send "MORTGAGECOMPARISON_GITPASSWORD\n"
+send "THEMORTGAGEMETER_GITPASSWORD\n"
 expect -re "themortgagemeter@${hostname}"
 send "./restore_db.sh\n"
 expect -re "themortgagemeter@${hostname}"

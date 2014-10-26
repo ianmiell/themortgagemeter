@@ -11,7 +11,7 @@ import random
 
 # TODO: logging
 
-sender                  = 'MORTGAGECOMPARISON_SENDEREMAIL'
+sender                  = 'THEMORTGAGEMETER_SENDEREMAIL'
 contentfile             = None
 subject                 = 'Change to rates on themortgagemeter.com'
 mortgage_change_content = 'There has been a change of rates on http://themortgagemeter.com. Go to:\n\nhttp://themortgagemeter.com/#/latest_changes\n\nto see what\'s changed.\n\nIf you have any comments about the site or wish to unsubscribe, please reply to this mail.'
@@ -88,7 +88,7 @@ def main():
 	for alert_row in alert_rows:
 		alert_id = alert_row[0]
 		alert = alert_row[1]
-		simple_mailer.main(sender,'MORTGAGECOMPARISON_ADMINEMAIL',passfile,subject,contentfile,error_content)
+		simple_mailer.main(sender,'THEMORTGAGEMETER_ADMINEMAIL',passfile,subject,contentfile,error_content)
 	# if we are here, we assume all has gone OK, and we delete the relevant alerts
 	themortgagemeter_db.cursor.execute(qry_delete_error_alerts)
 

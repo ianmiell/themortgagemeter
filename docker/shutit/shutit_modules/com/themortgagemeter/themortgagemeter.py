@@ -76,10 +76,10 @@ class themortgagemeter(ShutItModule):
 		shutit.send('chmod +x /root/start_themortgagemeter.sh')
 		shutit.send('pushd /opt/themortgagemeter')
 		# The below strings are deliberately broken up to ensure we don't overwrite them ourselves :)
-		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/MORTGAGECOMPARISON" + "_ADMINEMAIL/" + shutit.cfg[self.module_id]['adminemail'] + "/g'")
-		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/MORTGAGECOMPARISON" + "_SENDEREMAIL/" + shutit.cfg[self.module_id]['senderemail'] + "/g'")
-		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/MORTGAGECOMPARISON" + "_SITENAME/" + shutit.cfg[self.module_id]['sitename'] + "/g'")
-		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/MORTGAGECOMPARISON" + "_GITPASSWORD/" + shutit.cfg[self.module_id]['gitpassword'] + "/g'")
+		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/THEMORTGAGEMETER" + "_ADMINEMAIL/" + shutit.cfg[self.module_id]['adminemail'] + "/g'")
+		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/THEMORTGAGEMETER" + "_SENDEREMAIL/" + shutit.cfg[self.module_id]['senderemail'] + "/g'")
+		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/THEMORTGAGEMETER" + "_SITENAME/" + shutit.cfg[self.module_id]['sitename'] + "/g'")
+		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/THEMORTGAGEMETER" + "_GITPASSWORD/" + shutit.cfg[self.module_id]['gitpassword'] + "/g'")
 		shutit.send('popd')
 		return True
 

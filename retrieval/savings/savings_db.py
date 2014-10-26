@@ -154,7 +154,7 @@ def delete_savings_not_current(institution_code,date,forcedelete,logger):
 		main.update_changes(True,institution_code,logger)
 	logger.info('%s savings rows deleted',(int(deletecount)))
 	if count > 0 and deletecount == count and forcedelete == False:
-		themortgagemeter_utils.record_error('Would have deleted all savings rows for ' + institution_code + ', check logs',logger,mortgagecomparion_db.db_connection,themortgagemeter_db.cursor)
+		themortgagemeter_utils.record_error('Would have deleted all savings rows for ' + institution_code + ', check logs',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
 	return
 

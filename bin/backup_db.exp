@@ -18,10 +18,10 @@ send "git commit -am \"latest backup\"\n"
 expect -re {themortgagemeter@themortgagemeter}
 send "git pull\n"
 expect -re "assword.*:"
-send "MORTGAGECOMPARISON_GITPASSWORD\n"
+send "THEMORTGAGEMETER_GITPASSWORD\n"
 expect -re {themortgagemeter@themortgagemeter}
 send "git push\n"
 expect -re "assword.*:"
-send "MORTGAGECOMPARISON_GITPASSWORD\n"
+send "THEMORTGAGEMETER_GITPASSWORD\n"
 expect -re {themortgagemeter@themortgagemeter}
 
