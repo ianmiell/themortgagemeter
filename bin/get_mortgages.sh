@@ -14,9 +14,9 @@ python main.py --institution YRKSHR $MORTGAGE_COMPARISON_RETRIEVAL_REGRESSION_TE
 #python main.py --institution NRTHNR $MORTGAGE_COMPARISON_RETRIEVAL_REGRESSION_TEST &
 wait
 # Insert the current date into the retrieval_dates table
-echo "insert into tretrievaldates (day) values (current_date);" | psql mortgagecomparison
+echo "insert into tretrievaldates (day) values (current_date);" | psql themortgagemeter
 # Refresh materialized views
-echo "select refresh_matview('replacement_mortgages_materialized_view');" | psql mortgagecomparison
+echo "select refresh_matview('replacement_mortgages_materialized_view');" | psql themortgagemeter
 # Clear the cache
 echo "Moving to bin"
 cd /opt/themortgagemeter/bin

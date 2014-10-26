@@ -1,4 +1,4 @@
-# Django settings for mortgagecomparison project.
+# Django settings for themortgagemeter project.
 
 import sys
 import os
@@ -22,7 +22,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'mortgagecomparison',                      # Or path to database file if using sqlite3.
+        'NAME': 'themortgagemeter',                      # Or path to database file if using sqlite3.
         'USER': 'themortgagemeter',                      # Not used with sqlite3.
         'PASSWORD': 'postgres',                  # Not used with sqlite3.
         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3. IS ACTUALLY REQUIRED
@@ -130,7 +130,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    'mortgagecomparisonapp',
+    'themortgagemeterapp',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -150,7 +150,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.handlers.TimedRotatingFileHandler',
-            'filename': '/opt/themortgagemeter/website/django/mortgagecomparison/logs/log.log',
+            'filename': '/opt/themortgagemeter/website/django/themortgagemeter/logs/log.log',
 			'when': 'D',
 			'backupCount': '14',
             'formatter': 'timed'

@@ -24,21 +24,21 @@ changes = False
 # Argument parsing
 def main():
 	global changes
-	import mortgagecomparison_db
-	import mortgagecomparison_utils
-	mortgagecomparison_db.open_db()
+	import themortgagemeter_db
+	import themortgagemeter_utils
+	themortgagemeter_db.open_db()
 	if args.logging == 'DEBUG':
-		logger = mortgagecomparison_utils.setup_logging(logging.DEBUG,stdout=args.stdout)
+		logger = themortgagemeter_utils.setup_logging(logging.DEBUG,stdout=args.stdout)
 	elif args.logging == 'INFO':
-		logger = mortgagecomparison_utils.setup_logging(logging.INFO,stdout=args.stdout)
+		logger = themortgagemeter_utils.setup_logging(logging.INFO,stdout=args.stdout)
 	elif args.logging == 'WARNING':
-		logger = mortgagecomparison_utils.setup_logging(logging.WARNING,stdout=args.stdout)
+		logger = themortgagemeter_utils.setup_logging(logging.WARNING,stdout=args.stdout)
 	elif args.logging == 'ERROR':
-		logger = mortgagecomparison_utils.setup_logging(logging.ERROR,stdout=args.stdout)
+		logger = themortgagemeter_utils.setup_logging(logging.ERROR,stdout=args.stdout)
 	elif args.logging == 'CRITICAL':
-		logger = mortgagecomparison_utils.setup_logging(logging.CRITICAL,stdout=args.stdout)
+		logger = themortgagemeter_utils.setup_logging(logging.CRITICAL,stdout=args.stdout)
 	elif args.logging == 'STDOUT':
-		logger = mortgagecomparison_utils.setup_logging(logging.CRITICAL,stdout=args.stdout)
+		logger = themortgagemeter_utils.setup_logging(logging.CRITICAL,stdout=args.stdout)
 	logger.info('Program starting: %s', args.institution)
 	try:
 		#if args.institution == 'NTNWD':
@@ -53,30 +53,30 @@ def main():
 		else:
 			raise Exception('Need to supply an institution','')
 		if not args.test:
-			mortgagecomparison_db.db_connection.commit()
+			themortgagemeter_db.db_connection.commit()
 		else:
 			logger.info('Not committing data, as --test passed in')
-			mortgagecomparison_db.db_connection.rollback()
+			themortgagemeter_db.db_connection.rollback()
 	except Exception as e:
 		logger.critical('Error was thrown, quitting')
 		logger.exception('Error was:')
-		mortgagecomparison_utils.record_alert('ERROR: ' + args.institution,logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: ' + args.institution,logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 	logger.info('Program complete for institution: %s', args.institution)
 	# TOOD: why does this never seem to be set to true?
 	global changes
 	logger.info('Changes is: ' + str(changes))
-	mortgagecomparison_db.commit_db()
+	themortgagemeter_db.commit_db()
 
 def update_changes(val,institution_code,logger):
 	global changes
 	logger.info('Changes now ' + str(changes))
 	if changes != val:
-		import mortgagecomparison_db
-		import mortgagecomparison_utils
+		import themortgagemeter_db
+		import themortgagemeter_utils
 		changes = val
 		logger.info('Marking changes as ' + str(val))
 		# TODO reinstate when ready
-		#mortgagecomparison_utils.record_alert('SAVINGS_CHANGE: ' + institution_code,logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		#themortgagemeter_utils.record_alert('SAVINGS_CHANGE: ' + institution_code,logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 
 if __name__ == '__main__':
 	sys.path.append('/opt/themortgagemeter/shared')

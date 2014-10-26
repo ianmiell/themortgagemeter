@@ -6,9 +6,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'mortgagecomparison.views.home', name='home'),
-    # url(r'^mortgagecomparison/', include('mortgagecomparison.foo.urls')),
-	url(r'', include('mortgagecomparisonapp.urls')),
+    # url(r'^$', 'themortgagemeter.views.home', name='home'),
+    # url(r'^themortgagemeter/', include('themortgagemeter.foo.urls')),
+	url(r'', include('themortgagemeterapp.urls')),
     # Uncomment the admin/doc line below to enable admin documentation:
     #url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     # Uncomment the next line to enable the admin:

@@ -1,12 +1,12 @@
 #set fileencoding=utf-8
 from django.http import HttpResponse
-from mortgagecomparisonapp.models import Turl, Tmortgage, Tmortgagejrnl, Tinstitution, Tmailsubscriber, Tsavings
+from themortgagemeterapp.models import Turl, Tmortgage, Tmortgagejrnl, Tinstitution, Tmailsubscriber, Tsavings
 import json
 # Caching
 from django.core.cache import cache
 from django.views.decorators.cache import cache_page, cache_control
-import mortgagecomparison_queries
-import mortgagecomparison_conversions
+import themortgagemeter_queries
+import themortgagemeter_conversions
 import logging
 import datetime
 import string
@@ -14,7 +14,7 @@ import time
 	
 
 def api(request):
-	r = file('/opt/themortgagemeter/website/django/mortgagecomparison/mortgagecomparisonapp/urls.py').read()
+	r = file('/opt/themortgagemeter/website/django/themortgagemeter/themortgagemeterapp/urls.py').read()
 	return HttpResponse(r)
 
 # Clear the cache
@@ -45,7 +45,7 @@ def graphs(request):
 		arg_arr = d["qry_args"]
 		json_name = d["name"]
 		for (eligibility,mortgage_type,ltv,initial_period,label) in arg_arr:
-			cursor.execute(mortgagecomparison_queries.avgs, (eligibility,mortgage_type,ltv,initial_period))
+			cursor.execute(themortgagemeter_queries.avgs, (eligibility,mortgage_type,ltv,initial_period))
 			dat = []
 			options = options_base.copy()
 			for row in cursor.fetchall():
@@ -97,11 +97,11 @@ def best_mortgages(request,num_results,mortgage_type,eligibility,institution_cod
 	# num_results - number of results to return - capped to 30
 	if num_results == '0' or int(num_results) > 30:
 		num_results = '30'
-	if mortgage_type in mortgagecomparison_conversions.mortgage_types.keys():
+	if mortgage_type in themortgagemeter_conversions.mortgage_types.keys():
 		mortgage_type_arg = ' = \'' + mortgage_type + '\''
 	else:
 		mortgage_type_arg = ' like \'%%\' '
-	if eligibility in mortgagecomparison_conversions.eligibility_types.keys():
+	if eligibility in themortgagemeter_conversions.eligibility_types.keys():
 		eligibility_arg = ' = \'' + eligibility + '\''
 	else:
 		eligibility_arg = 'like \'%%\''
@@ -128,8 +128,8 @@ def best_mortgages(request,num_results,mortgage_type,eligibility,institution_cod
 	else:
 		initial_period_arg = '= ' + initial_period
 	order_by_arg = 'm1.rate asc, m1.apr asc, m1.svr asc, m1.ltv asc, m1.initial_period asc, m1.booking_fee asc'
-	#logger.debug(mortgagecomparison_queries.best_mortgages % (mortgage_type_arg, eligibility_arg, institution_code_arg, ltv_arg, order_by_arg, num_results))
-	best_mortgages = Tmortgage.objects.raw(mortgagecomparison_queries.best_mortgages % (mortgage_type_arg, eligibility_arg, institution_code_arg, ltv_arg, initial_period_arg, order_by_arg, num_results))
+	#logger.debug(themortgagemeter_queries.best_mortgages % (mortgage_type_arg, eligibility_arg, institution_code_arg, ltv_arg, order_by_arg, num_results))
+	best_mortgages = Tmortgage.objects.raw(themortgagemeter_queries.best_mortgages % (mortgage_type_arg, eligibility_arg, institution_code_arg, ltv_arg, initial_period_arg, order_by_arg, num_results))
 	display = []
 	for tmortgage in best_mortgages:
 		display.append(get_mortgage_ds(tmortgage))
@@ -141,9 +141,9 @@ def best_mortgages(request,num_results,mortgage_type,eligibility,institution_cod
 def get_conversions(request):
 	logger = logging.getLogger('file_logger')
 	institutions = get_institutions()
-	mortgagecomparison_conversions.add_dict('institution',**institutions)
-	mortgagecomparison_conversions.update_conversions()
-	json_display = json.JSONEncoder().encode(mortgagecomparison_conversions.conversions_display)
+	themortgagemeter_conversions.add_dict('institution',**institutions)
+	themortgagemeter_conversions.update_conversions()
+	json_display = json.JSONEncoder().encode(themortgagemeter_conversions.conversions_display)
 	return HttpResponse(json_display)
 
 # Get active mortgage institutions
@@ -171,7 +171,7 @@ def latest_n_changes(request,num_changes):
 	# Not sure how useful all this cacheing is..
 	if cache.get(replacement_mortgages_qry_key) == None:
 		logger.critical('Running latest_n_changes query')
-		latest_changes = Tmortgage.objects.raw(mortgagecomparison_queries.replacement_mortgages)
+		latest_changes = Tmortgage.objects.raw(themortgagemeter_queries.replacement_mortgages)
 		cache.set(replacement_mortgages_qry_key,latest_changes,replacement_mortgages_qry_cache_time)
 	else:
 		logger.critical('Retrieved latest_n_changes query from cache')
@@ -245,7 +245,7 @@ def latest_n_changes_savings(request,num_changes):
 	# Not sure how useful all this cacheing is..
 	if cache.get(replacement_savings_qry_key) == None:
 		logger.critical('Running latest_n_changes_savings query')
-		latest_changes = Tsavings.objects.raw(mortgagecomparison_queries.replacement_savings)
+		latest_changes = Tsavings.objects.raw(themortgagemeter_queries.replacement_savings)
 		cache.set(replacement_savings_qry_key,latest_changes,replacement_savings_qry_cache_time)
 	else:
 		logger.critical('Retrieved latest_n_changes_savings query from cache')
@@ -323,7 +323,7 @@ def get_mortgage_ds(tmortgage):
 		initial_period_display = str(tmortgage.initial_period / 12) + ' years'
 	else:
 		initial_period_display = str(tmortgage.initial_period) +' months'
-	return {'mortgage_id':tmortgage.mortgage_id,'institution_code':tmortgage.institution_code,'institution_name':tmortgage.institution_name,'mortgage_type':tmortgage.mortgage_type,'mortgage_type_display':mortgagecomparison_conversions.mortgage_types.get(tmortgage.mortgage_type),'rate':tmortgage.rate,'rate_display':str(int(tmortgage.rate)/100.00)+'%','svr':tmortgage.svr,'svr_display':str(int(tmortgage.svr)/100.00)+'%','apr':tmortgage.apr,'apr_display':str(int(tmortgage.apr)/100.00)+'%','ltv':tmortgage.ltv,'ltv_display':str(int(tmortgage.ltv)/100.00)+'%','initial_period':tmortgage.initial_period,'initial_period_display':initial_period_display,'booking_fee':tmortgage.booking_fee,'booking_fee_display':'\xc2\xa3'+str(tmortgage.booking_fee),'term':tmortgage.term,'eligibility':tmortgage.eligibility,'eligibility_display':mortgagecomparison_conversions.eligibility_types.get(tmortgage.eligibility),'cr_date':str(tmortgage.cr_date),'change_date':change_date,'change_date_display':change_date_display,'url':tmortgage.url}
+	return {'mortgage_id':tmortgage.mortgage_id,'institution_code':tmortgage.institution_code,'institution_name':tmortgage.institution_name,'mortgage_type':tmortgage.mortgage_type,'mortgage_type_display':themortgagemeter_conversions.mortgage_types.get(tmortgage.mortgage_type),'rate':tmortgage.rate,'rate_display':str(int(tmortgage.rate)/100.00)+'%','svr':tmortgage.svr,'svr_display':str(int(tmortgage.svr)/100.00)+'%','apr':tmortgage.apr,'apr_display':str(int(tmortgage.apr)/100.00)+'%','ltv':tmortgage.ltv,'ltv_display':str(int(tmortgage.ltv)/100.00)+'%','initial_period':tmortgage.initial_period,'initial_period_display':initial_period_display,'booking_fee':tmortgage.booking_fee,'booking_fee_display':'\xc2\xa3'+str(tmortgage.booking_fee),'term':tmortgage.term,'eligibility':tmortgage.eligibility,'eligibility_display':themortgagemeter_conversions.eligibility_types.get(tmortgage.eligibility),'cr_date':str(tmortgage.cr_date),'change_date':change_date,'change_date_display':change_date_display,'url':tmortgage.url}
 
 
 # diffs between dicts, eg for mortgage dicts:
@@ -377,7 +377,7 @@ def get_savings_ds(tsavings):
 		savings_period_display = str(tsavings.savings_period) + ' months'
 	# TODO: display items as below
 	# TO DISPLAY: regular_saver_frequency_period, bonus_frequency_period, savings_period,change_date et al
-	#return {'mortgage_type_display':mortgagecomparison_conversions.mortgage_types.get(tmortgage.mortgage_type),rate_display':str(int(tmortgage.rate)/100.00)+'%','svr_display':str(int(tmortgage.svr)/100.00)+'%','apr_display':str(int(tmortgage.apr)/100.00)+'%','ltv_display':str(int(tmortgage.ltv)/100.00)+'%','initial_period_display':initial_period_display,'booking_fee_display':'\xc2\xa3'+str(tmortgage.booking_fee),'eligibility_display':mortgagecomparison_conversions.eligibility_types.get(tmortgage.eligibility),'change_date_display':change_date_display,'url':tmortgage.url}
+	#return {'mortgage_type_display':themortgagemeter_conversions.mortgage_types.get(tmortgage.mortgage_type),rate_display':str(int(tmortgage.rate)/100.00)+'%','svr_display':str(int(tmortgage.svr)/100.00)+'%','apr_display':str(int(tmortgage.apr)/100.00)+'%','ltv_display':str(int(tmortgage.ltv)/100.00)+'%','initial_period_display':initial_period_display,'booking_fee_display':'\xc2\xa3'+str(tmortgage.booking_fee),'eligibility_display':themortgagemeter_conversions.eligibility_types.get(tmortgage.eligibility),'change_date_display':change_date_display,'url':tmortgage.url}
 	return {'savings_id':tsavings.savings_id,'institution_code':tsavings.institution_code,'institution_name':tsavings.institution_name,'variability':tsavings.variability,'isa':tsavings.isa,'child':tsavings.child,'online':tsavings.online,'branch':tsavings.branch,'interest_paid':tsavings.interest_paid,'regular_saver':tsavings.regular_saver,'regular_saver_frequency_period':tsavings.regular_saver_frequency_period,'regular_saver_frequency_type':tsavings.regular_saver_frequency_type,'regular_saver_min_amt':tsavings.regular_saver_min_amt,'regular_saver_max_amt':tsavings.regular_saver_max_amt,'bonus':tsavings.bonus,'bonus_frequency_period':tsavings.bonus_frequency_period,'bonus_frequency_type':tsavings.bonus_frequency_type,'savings_period':tsavings.savings_period,'min_amt':tsavings.min_amt,'max_amt':tsavings.max_amt,'gross_percent':tsavings.gross_percent,'aer_percent':tsavings.aer_percent,'cr_date':str(tsavings.cr_date),'change_date':change_date,'url':tsavings.url}
 
 

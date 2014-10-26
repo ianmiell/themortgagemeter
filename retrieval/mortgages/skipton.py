@@ -13,8 +13,8 @@ import logging
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
-import mortgagecomparison_db
+import themortgagemeter_utils
+import themortgagemeter_db
 
 institution_code = 'SKPTN'
 # global regexps
@@ -25,7 +25,7 @@ ftb_re = re.compile(r'/mortgages/first-time-buyer/([0-9]+)yr_([0-9]+)ltv.aspx')
 
 def get_product_pages(static,base_url,suffix,mortgage_type,href_re):
 	logger = logging.getLogger('retrieve')
-	bsobj = mortgagecomparison_utils.get_page(static,'static_html/skipton/fixed_rate_mortgages.html',base_url + suffix,logger)
+	bsobj = themortgagemeter_utils.get_page(static,'static_html/skipton/fixed_rate_mortgages.html',base_url + suffix,logger)
 	term = str(25 * 12)
 	#print bsobj
 	anchors = bsobj.find_all(href=href_re)
@@ -47,7 +47,7 @@ def get_product_pages(static,base_url,suffix,mortgage_type,href_re):
 			initial_period = str(int(re.search(fr_re,link).group(1)) * 12)
 			ltv_percent = str(int(re.search(fr_re,link).group(2)))
 			# Now go to link
-			subpage_bsobj = mortgagecomparison_utils.get_page(static,'N/A',url,logger)
+			subpage_bsobj = themortgagemeter_utils.get_page(static,'N/A',url,logger)
 			table = subpage_bsobj.find_all(attrs={'id' : 'centralContent'},limit=1)[0].find_all('table',limit=1)[0]
 			#print '==================================================='
 			#print table
@@ -55,11 +55,11 @@ def get_product_pages(static,base_url,suffix,mortgage_type,href_re):
 			for tr in table.find_all('tr'):
 				tr_count += 1
 				if tr_count == 3:
-					rate_percent = mortgagecomparison_utils.get_percentage(tr.find_all('td')[1].string,logger)
+					rate_percent = themortgagemeter_utils.get_percentage(tr.find_all('td')[1].string,logger)
 				elif tr_count == 4:
-					svr_percent = mortgagecomparison_utils.get_percentage(tr.find_all('td')[1].string,logger)
+					svr_percent = themortgagemeter_utils.get_percentage(tr.find_all('td')[1].string,logger)
 				elif tr_count == 5:
-					apr_percent = mortgagecomparison_utils.get_percentage(tr.find_all('td')[0].string,logger)
+					apr_percent = themortgagemeter_utils.get_percentage(tr.find_all('td')[0].string,logger)
 				elif tr_count == 7:
 					application_fee = tr.find_all('td')[0].string.encode('utf_8')[2:].replace(',','')
 				elif tr_count == 8:
@@ -68,7 +68,7 @@ def get_product_pages(static,base_url,suffix,mortgage_type,href_re):
 			initial_period = str(int(re.search(tracker_re,link).group(1)) * 10)
 			ltv_percent = str(int(re.search(tracker_re,link).group(2)))
 			# Now go to link
-			subpage_bsobj = mortgagecomparison_utils.get_page(static,'N/A',url,logger)
+			subpage_bsobj = themortgagemeter_utils.get_page(static,'N/A',url,logger)
 			#print subpage_bsobj
 			table = subpage_bsobj.find_all(attrs={'id' : 'centralContent'},limit=1)[0].find_all('table',limit=1)[0]
 			#print '==================================================='
@@ -77,11 +77,11 @@ def get_product_pages(static,base_url,suffix,mortgage_type,href_re):
 			for tr in table.find_all('tr'):
 				tr_count += 1
 				if tr_count == 3:
-					rate_percent = mortgagecomparison_utils.get_percentage(tr.find_all('td')[0].string,logger)
+					rate_percent = themortgagemeter_utils.get_percentage(tr.find_all('td')[0].string,logger)
 				elif tr_count == 4:
-					svr_percent = mortgagecomparison_utils.get_percentage(tr.find_all('td')[1].string,logger)
+					svr_percent = themortgagemeter_utils.get_percentage(tr.find_all('td')[1].string,logger)
 				elif tr_count == 5:
-					apr_percent = mortgagecomparison_utils.get_percentage(tr.find_all('td')[0].string,logger)
+					apr_percent = themortgagemeter_utils.get_percentage(tr.find_all('td')[0].string,logger)
 				elif tr_count == 7:
 					application_fee = tr.find_all('td')[0].string.encode('utf_8')[2:].replace(',','')
 				elif tr_count == 8:
@@ -90,7 +90,7 @@ def get_product_pages(static,base_url,suffix,mortgage_type,href_re):
 			initial_period = str(int(re.search(discount_re,link).group(1)) * 10)
 			ltv_percent = str(int(re.search(discount_re,link).group(2)))
 			# Now go to link
-			subpage_bsobj = mortgagecomparison_utils.get_page(static,'N/A',url,logger)
+			subpage_bsobj = themortgagemeter_utils.get_page(static,'N/A',url,logger)
 			#print subpage_bsobj
 			table = subpage_bsobj.find_all(attrs={'id' : 'centralContent'},limit=1)[0].find_all('table',limit=1)[0]
 			#print '==================================================='
@@ -99,17 +99,17 @@ def get_product_pages(static,base_url,suffix,mortgage_type,href_re):
 			for tr in table.find_all('tr'):
 				tr_count += 1
 				if tr_count == 3:
-					rate_percent = mortgagecomparison_utils.get_percentage(tr.find_all('td')[1].string,logger)
+					rate_percent = themortgagemeter_utils.get_percentage(tr.find_all('td')[1].string,logger)
 				elif tr_count == 4:
-					svr_percent = mortgagecomparison_utils.get_percentage(tr.find_all('td')[1].string,logger)
+					svr_percent = themortgagemeter_utils.get_percentage(tr.find_all('td')[1].string,logger)
 				elif tr_count == 5:
-					apr_percent = mortgagecomparison_utils.get_percentage(tr.find_all('td')[0].string,logger)
+					apr_percent = themortgagemeter_utils.get_percentage(tr.find_all('td')[0].string,logger)
 				elif tr_count == 7:
 					application_fee = tr.find_all('td')[0].string.encode('utf_8')[2:].replace(',','')
 				elif tr_count == 8:
 					booking_fee = tr.find_all('td')[0].string.encode('utf_8')[2:].replace(',','')
 		elif re.search(ftb_re,link):
-			mortgagecomparison_utils.record_alert('ERROR: SKIPTON first time buyer seen for the first time',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+			themortgagemeter_utils.record_alert('ERROR: SKIPTON first time buyer seen for the first time',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 			continue
 		else:
 			raise Exception("Unhandled link " + url,'')

@@ -5,12 +5,12 @@ import html5lib
 import re
 import string
 import logging
-import mortgagecomparison_queries
+import themortgagemeter_queries
 import logging
 import json
 import pickle
 import sys
-import mortgagecomparison_db
+import themortgagemeter_db
 import pexpect
 from bs4 import BeautifulSoup
 
@@ -38,7 +38,7 @@ def record_error(s,logger,db_connection,cursor):
 # Perhaps this could be extended to record separately.
 def record_alert(s,logger,db_connection,cursor):
 	logger.critical("Recording alert: " + s)
-	cursor.execute(mortgagecomparison_queries.insert_alert,(s,))
+	cursor.execute(themortgagemeter_queries.insert_alert,(s,))
 
 def setup_logging(level,stdout=False):
 	# Switch basic logging to DEBUG, then send it to dev null (can't find a better way to switch off base log).
@@ -88,7 +88,7 @@ def get_page(static,static_link,url,logger,tostring=False):
 			except:
 				if i > 8:
 					logger.critical('Giving up')
-					record_alert('ERROR: Giving up retrieval',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+					record_alert('ERROR: Giving up retrieval',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 					exit()
 				logger.critical('Failed to open url, trying again: ' + url)
 				logger.exception('Error was:')
@@ -184,7 +184,7 @@ def get_months(s,logger):
 		period = num
 	else:
 		logger.critical('unable to determine months from period: ' + str(period) + ' and initial_period: ' + period_lower)
-		record_alert('ERROR: unable to determine months from period',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		record_alert('ERROR: unable to determine months from period',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 	return period
 
 

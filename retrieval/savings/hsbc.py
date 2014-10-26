@@ -9,14 +9,14 @@ import main
 import savings_db
 import savings_util
 
-import mortgagecomparison_utils
-import mortgagecomparison_db
+import themortgagemeter_utils
+import themortgagemeter_db
 
 institution_code = 'HSBC'
 
 def get_product_pages(static,base_url,ext):
 	logger = logging.getLogger('retrieve')
-	bsobj = mortgagecomparison_utils.get_page(static,'static_html/hsbc/savings-accounts.html',base_url + ext,logger)
+	bsobj = themortgagemeter_utils.get_page(static,'static_html/hsbc/savings-accounts.html',base_url + ext,logger)
 	# foreach item in the doormatCol, in the ul, get each li's a element href attribute.
 	doormatCols = bsobj.find_all(attrs={'class' : 'doormatCol'})
 	for d in doormatCols:
@@ -36,13 +36,13 @@ def get_product_pages(static,base_url,ext):
 def get_product_page_details(url,savings_data):
 	logger = logging.getLogger('retrieve')
 	#logger.info(url)
-	bsobj = mortgagecomparison_utils.get_page(False,'',url,logger)
+	bsobj = themortgagemeter_utils.get_page(False,'',url,logger)
 	#logger.info(bsobj)
 
 
 def get_product_page_interest_rates(url,savings_data):
 	logger = logging.getLogger('retrieve ' + url)
-	bsobj = mortgagecomparison_utils.get_page(False,'',url,logger)
+	bsobj = themortgagemeter_utils.get_page(False,'',url,logger)
 	#logger.info(url) #logger.info(bsobj)
 	if re.match('.*isa.*',url):
 		savings_data['isa'] = 'Y'
@@ -75,7 +75,7 @@ def get_product_page_interest_rates(url,savings_data):
 			elif "flexible saver" in summary_info:
 				savings_data['variability']     = 'V'
 			else:
-				mortgagecomparison_utils.record_alert('NEED TO HANDLE: ' + summary_info,logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+				themortgagemeter_utils.record_alert('NEED TO HANDLE: ' + summary_info,logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 				exit()
 			tr_count = 0
 			for tr in t.find_all('tr'):
@@ -111,7 +111,7 @@ def get_product_page_interest_rates(url,savings_data):
 									this_savings_data['regular_saver_frequency_period'] = '1'
 									this_savings_data['regular_saver_frequency_type'] = 'M'
 								else:
-									mortgagecomparison_utils.record_alert('ERROR: reg saver not parsed: ' + v,logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+									themortgagemeter_utils.record_alert('ERROR: reg saver not parsed: ' + v,logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 									exit()
 							else:
 								# if it's got a + at the end, it's a min, if it's "up to" it's a max.
@@ -120,10 +120,10 @@ def get_product_page_interest_rates(url,savings_data):
 								this_savings_data['max_amt'] = res[1]
 								# TODO: remove this section
 								#if re.match('^.*\+$',v):
-								#	money_val = mortgagecomparison_utils.get_money(v,logger)
+								#	money_val = themortgagemeter_utils.get_money(v,logger)
 								#	this_savings_data['min_amt'] = money_val
 								#elif re.match('^.*up to.*$',v) or re.match('^.*under.*$',v):
-								#	money_val = mortgagecomparison_utils.get_money(v,logger)
+								#	money_val = themortgagemeter_utils.get_money(v,logger)
 								#	this_savings_data['max_amt'] = money_val
 								#	this_savings_data['min_amt'] = 0
 								#elif re.match('^.* - .*$',v):
@@ -131,7 +131,7 @@ def get_product_page_interest_rates(url,savings_data):
 								#	this_savings_data['max_amt'] = v.split()[2][2:].translate(None,',')
 								#else:
 								#	#logger.info(t) #logger.info('value not handled: ' + v)
-								#	mortgagecomparison_utils.record_alert('ERROR: value wrong: ' + v,logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+								#	themortgagemeter_utils.record_alert('ERROR: value wrong: ' + v,logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 								#	exit()
 						elif td_count == 1:
 							# we don't bother with net_percent

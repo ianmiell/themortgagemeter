@@ -12,7 +12,7 @@ import logging
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
+import themortgagemeter_utils
 
 institution_code = 'CHLS'
 
@@ -20,7 +20,7 @@ institution_code = 'CHLS'
 def get_product_pages(static,url,logger):
 	logger.debug("In get_product_pages: " + url)
 	# Get the svr first (it's global)
-	lines = mortgagecomparison_utils.get_page(False,'','http://www.thechelsea.co.uk/js/mortgage-finder.js',logger,True).split('\n')
+	lines = themortgagemeter_utils.get_page(False,'','http://www.thechelsea.co.uk/js/mortgage-finder.js',logger,True).split('\n')
 	for line in lines:
 		if re.match(r'^var chelseaSVR = "[^%]*%".*',line) != None:
 			svr_percent = re.match(r'^var chelseaSVR = "([^%]*)%".*$',line).group(1)
@@ -30,7 +30,7 @@ def get_product_pages(static,url,logger):
 		tree = ET.parse('static_html/chelsea/mortage-product-data-0031.xml')
 		root = tree.getroot()
 	else:
-		root = ET.fromstring(mortgagecomparison_utils.get_page(False,'',url,logger,True))
+		root = ET.fromstring(themortgagemeter_utils.get_page(False,'',url,logger,True))
 	term = str(25 * 12)
 	for product in root.findall('product'):
 		apr_percent = product.get('apr').split('%')[0]
@@ -95,7 +95,7 @@ def get_product_pages(static,url,logger):
 		eligibilities = mc_util.validate_eligibility_dict(mortgage_eligibility_dict,[])
 
 		# use get_months to determine period
-		initial_period = mortgagecomparison_utils.get_months(name,logger)
+		initial_period = themortgagemeter_utils.get_months(name,logger)
 
 		#ET.dump(product)
 		#print eligibilities
@@ -109,7 +109,7 @@ def chelsea_main(static,forcedelete,logger):
 	# http://www.thechelsea.co.uk/js/mortgage-data-ref.js 
 	# get the xml file from there, then parse it, eg
 	# http://www.thechelsea.co.uk/mortgages/mortage-product-data-0031.xml
-	url = mortgagecomparison_utils.get_page(False,'','http://www.thechelsea.co.uk/js/mortgage-data-ref.js',logger,True).split('"')[1]
+	url = themortgagemeter_utils.get_page(False,'','http://www.thechelsea.co.uk/js/mortgage-data-ref.js',logger,True).split('"')[1]
 	xml_url = url
 	get_product_pages(static,'http://www.thechelsea.co.uk/' + xml_url,logger)
 	mc_db.update_current(institution_code,main.today,forcedelete,logger)

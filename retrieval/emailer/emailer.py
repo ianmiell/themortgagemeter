@@ -2,8 +2,8 @@ import sys
 sys.path.append('../../simple_mailer')
 sys.path.append('../../shared')
 import simple_mailer
-import mortgagecomparison_db
-import mortgagecomparison_utils
+import themortgagemeter_db
+import themortgagemeter_utils
 import logging
 import os
 import time
@@ -54,16 +54,16 @@ def main():
 	global mortgage_change_content
 	global error_content
 	global passfile
-	mortgagecomparison_db.open_db()
+	themortgagemeter_db.open_db()
 	# Perform qry_get_mortgage_change_alerts query
 	# for each alert_id, send an email
 	# If the email is successful, delete the row from the table, commit and continue.
 
 	# Now mortgage change alerts.
-	mortgagecomparison_db.cursor.execute(qry_get_mortgage_change_alerts)
-	alert_rows = mortgagecomparison_db.cursor.fetchall()
-	mortgagecomparison_db.cursor.execute(qry_get_mailsubscribers)
-	subscriber_rows = mortgagecomparison_db.cursor.fetchall()
+	themortgagemeter_db.cursor.execute(qry_get_mortgage_change_alerts)
+	alert_rows = themortgagemeter_db.cursor.fetchall()
+	themortgagemeter_db.cursor.execute(qry_get_mailsubscribers)
+	subscriber_rows = themortgagemeter_db.cursor.fetchall()
 	print "Rows returned"
 	print alert_rows
 	for alert_row in alert_rows:
@@ -80,20 +80,20 @@ def main():
 			time.sleep(random.randint(10,20))
 			simple_mailer.main(sender,to,passfile,subject,contentfile,mortgage_change_content)
 	# if we are here, we assume all has gone OK, and we delete the relevant alerts
-	mortgagecomparison_db.cursor.execute(qry_delete_mortgage_change_alerts)
+	themortgagemeter_db.cursor.execute(qry_delete_mortgage_change_alerts)
 
 	# Now errors.
-	mortgagecomparison_db.cursor.execute(qry_get_error_alerts)
-	alert_rows = mortgagecomparison_db.cursor.fetchall()
+	themortgagemeter_db.cursor.execute(qry_get_error_alerts)
+	alert_rows = themortgagemeter_db.cursor.fetchall()
 	for alert_row in alert_rows:
 		alert_id = alert_row[0]
 		alert = alert_row[1]
 		simple_mailer.main(sender,'MORTGAGECOMPARISON_ADMINEMAIL',passfile,subject,contentfile,error_content)
 	# if we are here, we assume all has gone OK, and we delete the relevant alerts
-	mortgagecomparison_db.cursor.execute(qry_delete_error_alerts)
+	themortgagemeter_db.cursor.execute(qry_delete_error_alerts)
 
 	# cleanup
-	mortgagecomparison_db.commit_db()
+	themortgagemeter_db.commit_db()
 
 
 

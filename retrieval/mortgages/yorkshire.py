@@ -10,7 +10,7 @@ import json
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
+import themortgagemeter_utils
 
 institution_code = 'YRKSHR'
 term = str(25 * 12)
@@ -51,7 +51,7 @@ def process_page(url,logger):
 #links: "/personal/mortgages/all-our-mortgages/fixed-rate-mortgages/mortgages-three-year-fixed-rate-95ltv"}
 #]
 
-	resp = mortgagecomparison_utils.get_page(False,'',url,logger,tostring=True)
+	resp = themortgagemeter_utils.get_page(False,'',url,logger,tostring=True)
 	# Tidy up json
 	# http://stackoverflow.com/questions/4033633/handling-lazy-json-in-python-expecting-property-name
 	resp = re.sub(r"{\s*'?(\w)", r'{"\1', resp)

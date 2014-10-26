@@ -5,8 +5,8 @@ import urllib2
 import html5lib
 import re
 import string
-import mortgagecomparison_utils
-import mortgagecomparison_db
+import themortgagemeter_utils
+import themortgagemeter_db
 import savings_db
 
 import unittest
@@ -17,41 +17,41 @@ import unittest
 # Expected data are strings.
 def check_data(isa, regular_saver, regular_saver_frequency_period, regular_saver_frequency_type, regular_saver_min_amt, regular_saver_max_amt, bonus, bonus_frequency_period, bonus_frequency_type, online, branch, variability, savings_period, min_amt, max_amt, gross_percent, aer_percent, child, interest_paid, logger):
 	# Now we check that the values we have are the right type:
-	if mortgagecomparison_utils.isnumber(regular_saver_frequency_period) != True:
+	if themortgagemeter_utils.isnumber(regular_saver_frequency_period) != True:
 		logger.critical('problem with regular_saver_frequency_period - not a number:' + regular_saver_frequency_period)
-		mortgagecomparison_utils.record_alert('ERROR: problem with regular_saver_frequency_period - not a number: ',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with regular_saver_frequency_period - not a number: ',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
-	elif mortgagecomparison_utils.isnumber(regular_saver_min_amt) != True:
+	elif themortgagemeter_utils.isnumber(regular_saver_min_amt) != True:
 		logger.critical('problem with regular_saver_min_amt - not a number: ' + regular_saver_min_amt)
-		mortgagecomparison_utils.record_alert('ERROR: problem with regular_saver_min_amt',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with regular_saver_min_amt',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
-	elif mortgagecomparison_utils.isnumber(regular_saver_max_amt) != True:
+	elif themortgagemeter_utils.isnumber(regular_saver_max_amt) != True:
 		logger.critical('problem with regular_saver_max_amt - not a number:' + regular_saver_max_amt)
-		mortgagecomparison_utils.record_alert('ERROR: problem with regular_saver_max_amt - not a number:',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with regular_saver_max_amt - not a number:',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
-	elif mortgagecomparison_utils.isnumber(bonus_frequency_period) != True:
+	elif themortgagemeter_utils.isnumber(bonus_frequency_period) != True:
 		logger.critical('problem with bonus_frequency_period - not a number:' + bonus_frequency_period)
-		mortgagecomparison_utils.record_alert('ERROR: problem with bonus_frequency_period - not a number: ',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with bonus_frequency_period - not a number: ',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
-	elif mortgagecomparison_utils.isnumber(savings_period) != True:
+	elif themortgagemeter_utils.isnumber(savings_period) != True:
 		logger.critical('problem with savings_period - not a number:' + savings_period)
-		mortgagecomparison_utils.record_alert('ERROR: problem with savings_period - not a number: ',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with savings_period - not a number: ',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
-	elif mortgagecomparison_utils.isnumber(min_amt) != True:
+	elif themortgagemeter_utils.isnumber(min_amt) != True:
 		logger.critical('problem with min_amt - not a number:' + min_amt)
-		mortgagecomparison_utils.record_alert('ERROR: problem with min_amt - not a number: ',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with min_amt - not a number: ',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
-	elif mortgagecomparison_utils.isnumber(max_amt) != True:
+	elif themortgagemeter_utils.isnumber(max_amt) != True:
 		logger.critical('problem with max_amt - not a number:' + max_amt)
-		mortgagecomparison_utils.record_alert('ERROR: problem with max_amt - not a number: ',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with max_amt - not a number: ',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
-	elif mortgagecomparison_utils.isnumber(gross_percent) != True:
+	elif themortgagemeter_utils.isnumber(gross_percent) != True:
 		logger.critical('problem with gross_percent - not a number:' + gross_percent)
-		mortgagecomparison_utils.record_alert('ERROR: problem with gross_percent - not a number: ',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with gross_percent - not a number: ',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
-	elif mortgagecomparison_utils.isnumber(aer_percent) != True:
+	elif themortgagemeter_utils.isnumber(aer_percent) != True:
 		logger.critical('problem with aer_percent - not a number:' + aer_percent)
-		mortgagecomparison_utils.record_alert('ERROR: problem with aer_percent - not a number: ',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with aer_percent - not a number: ',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
 
 
@@ -136,10 +136,10 @@ def get_money_range(s,logger):
 	res = ["0","-1"]
 	s = s.strip()
 	if re.match('^.*\+$',s):
-		money_val = mortgagecomparison_utils.get_money(s,logger)
+		money_val = themortgagemeter_utils.get_money(s,logger)
 		res[0] = money_val
 	elif re.match('^.*up to.*$',s) or re.match('^.*under.*$',s):
-		money_val = mortgagecomparison_utils.get_money(s,logger)
+		money_val = themortgagemeter_utils.get_money(s,logger)
 		res[1] = money_val
 	elif re.match('^.*or more$',s):
 		index = s.find("£")
@@ -157,7 +157,7 @@ def get_money_range(s,logger):
 		res[1] = s.split()[2][2:].translate(None,',')
 	else:
 		#logger.info(t) #logger.info('value not handled: ' + s)
-		mortgagecomparison_utils.record_alert('ERROR: value not properly parsed by get_money_range: ' + s,logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: value not properly parsed by get_money_range: ' + s,logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
 	return res
 

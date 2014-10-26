@@ -12,7 +12,7 @@ import logging
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
+import themortgagemeter_utils
 
 institution_code = 'TSC'
 
@@ -20,13 +20,13 @@ institution_code = 'TSC'
 def get_product_pages(static,url,logger):
 	logger.debug("In get_product_pages: " + url)
 	# Get the svr first (it's global)
-	lines = mortgagecomparison_utils.get_page(False,'',url,logger,True).split('\n')
+	lines = themortgagemeter_utils.get_page(False,'',url,logger,True).split('\n')
 	# Now get the mortgage data
 	if static:
 		tree = ET.parse('static_html/tesco/Products.xml')
 		root = tree.getroot()
 	else:
-		root = ET.fromstring(mortgagecomparison_utils.get_page(False,'',url,logger,True))
+		root = ET.fromstring(themortgagemeter_utils.get_page(False,'',url,logger,True))
 	term = str(25 * 12)
 	for purchase in ('HousePurchase','Remortgage'):
 		if purchase == 'HousePurchase':
@@ -48,7 +48,7 @@ def get_product_pages(static,url,logger):
 					apr_percent = mortgage.find('APR').text
 					svr_percent = mortgage.find('variableRate').text
 					name = mortgage.find('name').text.split('\n')[0]
-					initial_period = mortgagecomparison_utils.get_months(name,logger)
+					initial_period = themortgagemeter_utils.get_months(name,logger)
 					booking_fee = str(int(mortgage.find('bookingFee').text) + int(mortgage.find('productFee').text))
 					for eligibility in eligibilities:
 						mc_util.handle_mortgage_insert(institution_code,mortgage_type,rate_percent,svr_percent,apr_percent,ltv_percent,initial_period,booking_fee,term,'http://www.tescobank.com/personal/finance/mortgages',eligibility,logger)

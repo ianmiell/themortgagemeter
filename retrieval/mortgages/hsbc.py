@@ -12,7 +12,7 @@ import logging
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
+import themortgagemeter_utils
 
 institution_code = 'HSBC'
 
@@ -21,7 +21,7 @@ def get_product_pages(static,base_url):
 	data = [('/mortgage-rates','NRM'),('/mortgages/mortgage-rates/first-time-buyers','NFTB'),('/mortgages//mortgage-rates/moving-home','NMH'),('/mortgages/mortgage-rates/existing-customer-switching','EED'),('/mortgages/mortgage-rates/existing-customer-borrowing-more','EBM')]
 	for tup in data:
 		url = base_url + tup[0]
-		bsobj = mortgagecomparison_utils.get_page_headless(url,logger)
+		bsobj = themortgagemeter_utils.get_page_headless(url,logger)
 		print 'BSOBJ'
 		print bsobj
 		for anchor in bsobj.find_all('a'):
@@ -34,7 +34,7 @@ def get_product_pages(static,base_url):
 
 def get_mortgage_page_details(static,url,eligibility):
 	logger = logging.getLogger('retrieve')
-	bsobj = mortgagecomparison_utils.get_page_headless(url,logger)
+	bsobj = themortgagemeter_utils.get_page_headless(url,logger)
 	# assume default of 25 years
 	term = str(25 * 12)
 	#logger.info(bsobj)
@@ -69,7 +69,7 @@ def get_mortgage_page_details(static,url,eligibility):
 		if initial_period == 'Term of Loan':
 			initial_period = term
 		else:
-			initial_period = mortgagecomparison_utils.get_months(initial_period,logger)
+			initial_period = themortgagemeter_utils.get_months(initial_period,logger)
 			break
 	mc_util.handle_mortgage_insert(institution_code,mortgage_type,rate_percent,svr_percent,apr_percent,ltv_percent,initial_period,booking_fee,term,url,eligibility,logger)
 

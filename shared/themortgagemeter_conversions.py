@@ -1,7 +1,7 @@
 # This file is both a reference and contains helper functions for converting codes in the system
 # that are not stored in the database.
 
-# TODO: get these from db as well as insitutions (see views.py in mortgagecomparisonapp)
+# TODO: get these from db as well as insitutions (see views.py in themortgagemeterapp)
 
 # mortgage_types
 mortgage_types = {'F':'Fixed', 'O':'Offset', 'B':'Buy-To-Let', 'D':'Discount', 'T':'Tracker', 'V':'Variable'}

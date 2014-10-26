@@ -8,19 +8,19 @@ import json
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
+import themortgagemeter_utils
 
 institution_code = 'NTWST'
 term = str(12 * 25)
 
 def process_page(static,url,mortgage_type,eligibility):
 	logger = logging.getLogger('retrieve')
-	resp = mortgagecomparison_utils.get_page(static,'static_html/natwest/fix_ftb.html',url,logger,tostring=True)
+	resp = themortgagemeter_utils.get_page(static,'static_html/natwest/fix_ftb.html',url,logger,tostring=True)
 	json_obj = json.loads(resp)
 	if json_obj['Mortgages'] == None:
 		logger.info('URL returned nothing: ' + url)
 		return
-	#mortgagecomparison_utils.pretty_print_json(json_obj)
+	#themortgagemeter_utils.pretty_print_json(json_obj)
 	mortgages = json_obj['Mortgages']['mortgage']
 	for mortgage in mortgages:
 		rate_percent = mortgage['initialRate']['value']

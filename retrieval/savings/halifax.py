@@ -8,15 +8,15 @@ import string
 import main
 import savings_util
 import savings_db
-import mortgagecomparison_utils
-import mortgagecomparison_db
+import themortgagemeter_utils
+import themortgagemeter_db
 
 institution_code = 'HLFX'
 term = str(12 * 25)
 def get_product_pages(static,base_url,ext_url,logger):
 	url = base_url + ext_url
 	urls_seen = []
-	bsobj = mortgagecomparison_utils.get_page(static,'static_html/halifax/savings-accounts.html',url,logger)
+	bsobj = themortgagemeter_utils.get_page(static,'static_html/halifax/savings-accounts.html',url,logger)
 	# let's see how much info we can extract from the page
 	# Get all the sortable tables and divine as much info as possible from that.
 	sortable_tables = doormatCols = bsobj.find_all(attrs={'class' : 'sortableTable'})
@@ -51,7 +51,7 @@ def get_product_pages(static,base_url,ext_url,logger):
 				elif td_idx == 2:
 					#print "2: " + td_text
 					# minimum investment, max is always infinity
-					min_amt = mortgagecomparison_utils.get_money(td_text,logger)
+					min_amt = themortgagemeter_utils.get_money(td_text,logger)
 					savings_data['min_amt'] = min_amt
 				elif td_idx == 3:
 					#print "3: " + td_text
@@ -61,7 +61,7 @@ def get_product_pages(static,base_url,ext_url,logger):
 					elif re.match('.*fixed.*',td_text):
 						savings_data['variability'] = 'F'
 					else:
-						mortgagecomparison_utils.record_alert('ERROR: unknown variability: ' + td_text,logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+						themortgagemeter_utils.record_alert('ERROR: unknown variability: ' + td_text,logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 						exit()
 				elif td_idx == 4:
 					#print "4: " + td_text
@@ -112,12 +112,12 @@ def get_product_pages(static,base_url,ext_url,logger):
 						savings_util.handle_savings_insert(institution_code, isa, regular_saver, regular_saver_frequency_period, regular_saver_frequency_type, regular_saver_min_amt, regular_saver_max_amt, bonus, bonus_frequency_period, bonus_frequency_type, online, branch, variability, savings_period, min_amt, max_amt, gross_percent, aer_percent, child, interest_paid, url, logger)
 					urls_seen.insert(0,new_url)
 				else:
-					mortgagecomparison_utils.record_alert('ERROR: too many tds in tr: ' + tr,logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+					themortgagemeter_utils.record_alert('ERROR: too many tds in tr: ' + tr,logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 					exit()
 				td_idx = td_idx + 1
 
 def process_more_info_page(savings_data,url,logger):
-	bsobj = mortgagecomparison_utils.get_page(False,'static_html/halifax/savings-accounts.html',url,logger)
+	bsobj = themortgagemeter_utils.get_page(False,'static_html/halifax/savings-accounts.html',url,logger)
 	#print bsobj
 	savings_array = []
 	#print "Passed in:"
@@ -130,7 +130,7 @@ def process_more_info_page(savings_data,url,logger):
 					tabs = i2.find_all("table")
 					if re.match(".*isa-saver-fixed.*",url):
 						if len(tabs) != 2:
-							mortgagecomparison_utils.record_alert('ERROR: too many tabs in isa',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+							themortgagemeter_utils.record_alert('ERROR: too many tabs in isa',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 							exit()
 						else:
 							tabs.pop(0)
@@ -140,14 +140,14 @@ def process_more_info_page(savings_data,url,logger):
 							for tr in trs:
 								savings_data_tmp = savings_data.copy()
 								tds = tr.find_all("td")
-								savings_data_tmp['savings_period'] = mortgagecomparison_utils.get_months(tds[0].text.strip().encode('utf-8'),logger)
-								savings_data_tmp['aer_percent'] = mortgagecomparison_utils.get_percentage(tds[1].text.strip().encode('utf-8'),logger)
+								savings_data_tmp['savings_period'] = themortgagemeter_utils.get_months(tds[0].text.strip().encode('utf-8'),logger)
+								savings_data_tmp['aer_percent'] = themortgagemeter_utils.get_percentage(tds[1].text.strip().encode('utf-8'),logger)
 								savings_data_tmp['gross_percent'] = savings_data_tmp['aer_percent']
 								savings_array.append(savings_data_tmp)
 					else:
 						if len(tabs) > 1:
 							#print tabs
-							mortgagecomparison_utils.record_alert('ERROR: too many tabs in isa',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+							themortgagemeter_utils.record_alert('ERROR: too many tabs in isa',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 							exit()
 						for tab in tabs:
 							#print tab
@@ -161,7 +161,7 @@ def process_more_info_page(savings_data,url,logger):
 									td_text = td.text.lower()
 									if re.match('interest rates.*',th_text):
 										#print "IR:" + td_text
-										pc = mortgagecomparison_utils.get_percentage(td_text,logger)
+										pc = themortgagemeter_utils.get_percentage(td_text,logger)
 										savings_data_tmp = savings_data.copy()
 										savings_data_tmp['gross_percent'] = pc
 										savings_data_tmp['aer_percent'] = pc
@@ -173,13 +173,13 @@ def process_more_info_page(savings_data,url,logger):
 										td1_text = td1.text.lower()
 										td2_text = td2.text.lower()
 										if re.match('interest rates.*',td1_text):
-											pc = mortgagecomparison_utils.get_percentage(td2_text,logger)
+											pc = themortgagemeter_utils.get_percentage(td2_text,logger)
 											savings_data_tmp = savings_data.copy()
 											savings_data_tmp['gross_percent'] = pc
 											savings_data_tmp['aer_percent'] = pc
 											savings_array.append(savings_data_tmp)
 									else:
-										mortgagecomparison_utils.record_alert('ERROR: unhandled case: ' + url,logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+										themortgagemeter_utils.record_alert('ERROR: unhandled case: ' + url,logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 										exit()
 	elif re.match('.*fixed-online-saver.*',url) or re.match('.*tracker-bond.*',url) or re.match('.*fixed-saver.*',url):
 		if re.match('.*fixed-online-saver.*',url) or re.match('.*fixed-saver.*',url):
@@ -199,7 +199,7 @@ def process_more_info_page(savings_data,url,logger):
 					i1s.append(i)
 					break
 		if i1s == []:
-			mortgagecomparison_utils.record_alert('No items from expected h3/4 match!',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+			themortgagemeter_utils.record_alert('No items from expected h3/4 match!',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		for i1 in i1s:
 			for i2 in i1.parent():
 				tbodys = i2.find_all("tbody")
@@ -232,7 +232,7 @@ def process_more_info_page(savings_data,url,logger):
 							td_count = 0
 						if code == "TB" and tr_count > 1:
 							if table_savings_period == "unset":
-								mortgagecomparison_utils.record_alert('ERROR: table_savings_period should not be unset',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+								themortgagemeter_utils.record_alert('ERROR: table_savings_period should not be unset',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 								exit()
 							savings_data_tmp['savings_period'] = table_savings_period
 						for td in tr.find_all("td"):
@@ -245,16 +245,16 @@ def process_more_info_page(savings_data,url,logger):
 							text = td.text.lower().strip().encode('utf-8')
 							if td_count == 0:
 								# store this in a variable for use on next row if necessary
-								table_savings_period = mortgagecomparison_utils.get_months(text,logger)
+								table_savings_period = themortgagemeter_utils.get_months(text,logger)
 								savings_data_tmp['savings_period'] = table_savings_period
 							elif td_count == 1:
 								res = savings_util.get_money_range(text,logger)
 								savings_data_tmp['min_amt'] = res[0]
 								savings_data_tmp['max_amt'] = res[1]
 							elif td_count == 2:
-								savings_data_tmp['gross_percent'] = mortgagecomparison_utils.get_percentage(text,logger)
+								savings_data_tmp['gross_percent'] = themortgagemeter_utils.get_percentage(text,logger)
 							elif td_count == 3:
-								savings_data_tmp['aer_percent'] = mortgagecomparison_utils.get_percentage(text,logger)
+								savings_data_tmp['aer_percent'] = themortgagemeter_utils.get_percentage(text,logger)
 								# and then break out
 								break
 							td_count = td_count + 1
@@ -281,7 +281,7 @@ def process_more_info_page(savings_data,url,logger):
 			savings_data_tmp = savings_data.copy()
 			#print l
 			# get percentage
-			savings_data_tmp['gross_percent'] = mortgagecomparison_utils.get_percentage(l,logger)
+			savings_data_tmp['gross_percent'] = themortgagemeter_utils.get_percentage(l,logger)
 			savings_data_tmp['aer_percent'] = savings_data_tmp['gross_percent']
 			# get_money range
 			res = savings_util.get_money_range(l,logger)
@@ -315,7 +315,7 @@ def process_more_info_page(savings_data,url,logger):
 			# copy 
 			savings_data_tmp = savings_data.copy()
 			# get percentage
-			savings_data_tmp['gross_percent'] = mortgagecomparison_utils.get_percentage(l,logger)
+			savings_data_tmp['gross_percent'] = themortgagemeter_utils.get_percentage(l,logger)
 			if savings_data_tmp['gross_percent'] == '':
 				# abandon ship!
 				continue
@@ -346,7 +346,7 @@ def process_more_info_page(savings_data,url,logger):
 			savings_data_tmp = savings_data.copy()
 			#print l
 			# get percentage
-			savings_data_tmp['gross_percent'] = mortgagecomparison_utils.get_percentage(l,logger)
+			savings_data_tmp['gross_percent'] = themortgagemeter_utils.get_percentage(l,logger)
 			savings_data_tmp['aer_percent'] = savings_data_tmp['gross_percent']
 			# TODO: bonus_frequency_period set to 1, or get from data?
 			# append to savings_array
@@ -357,7 +357,7 @@ def process_more_info_page(savings_data,url,logger):
 		logger.info('unhandled:' + url)
 		exit()
 	if savings_array == []:
-		mortgagecomparison_utils.record_alert('ERROR: returning nothing from a page',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: returning nothing from a page',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
 	# Return the savings_array
 	logger.info('returning savings_array:' + str(savings_array))
@@ -386,7 +386,7 @@ def halifax_main(static,forcedelete,logger):
 					#	# get the string up to the "gross" and grab the percent.
 					#	td_text_pc = td_text[:td_text_idx]
 					#	#print savings_array_idx
-					#	savings_array[savings_array_idx]['gross_percent'] = mortgagecomparison_utils.get_percentage(td_text_pc,logger)
+					#	savings_array[savings_array_idx]['gross_percent'] = themortgagemeter_utils.get_percentage(td_text_pc,logger)
 					#	# Get the remaining string.
 					#	td_text = td_text[td_text_idx+5:]
 					#	# Get the first aer from the remaining string, get string up to that point.
@@ -398,7 +398,7 @@ def halifax_main(static,forcedelete,logger):
 					#	savings_array_idx = savings_array_idx + 1
 					## We assume at this point that there's only one item in the savings_array.
 					#if savings_array[savings_array_idx]['gross_percent'] == -1:
-					#	gross_percent = mortgagecomparison_utils.get_percentage(td_text,logger)
+					#	gross_percent = themortgagemeter_utils.get_percentage(td_text,logger)
 					#	set_savings_array(savings_array,'gross_percent',gross_percent,logger)
 					## If there are any percents left, then and no gross percent exists, look for a percent.
 					## If gross percent doesn't exist, 

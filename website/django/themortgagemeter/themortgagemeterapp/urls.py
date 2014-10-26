@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 
-urlpatterns = patterns('mortgagecomparisonapp.views',
+urlpatterns = patterns('themortgagemeterapp.views',
     url(r'^$', 'home', name='home'),
     url(r'^api$', 'api'),
     url(r'conversions/$', 'get_conversions'),

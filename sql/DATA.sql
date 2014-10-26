@@ -38,10 +38,10 @@ COPY django_content_type (id, name, app_label, model) FROM stdin;
 6	session	sessions	session
 7	site	sites	site
 8	log entry	admin	logentry
-9	turl	mortgagecomparisonapp	turl
-10	tmortgage	mortgagecomparisonapp	tmortgage
-11	tinstitution	mortgagecomparisonapp	tinstitution
-15	tmortgagejrnl	mortgagecomparisonapp	tmortgagejrnl
+9	turl	themortgagemeterapp	turl
+10	tmortgage	themortgagemeterapp	tmortgage
+11	tinstitution	themortgagemeterapp	tinstitution
+15	tmortgagejrnl	themortgagemeterapp	tmortgagejrnl
 \.
 
 
@@ -229,10 +229,10 @@ replacement_mortgages_materialized_view	replacement_mortgages_view	2014-10-08 16
 
 
 --
--- Data for Name: mortgagecomparisonapp_tmortgage; Type: TABLE DATA; Schema: public; Owner: themortgagemeter
+-- Data for Name: themortgagemeterapp_tmortgage; Type: TABLE DATA; Schema: public; Owner: themortgagemeter
 --
 
-COPY mortgagecomparisonapp_tmortgage (mortgage_id, institution_code, mortgage_type, rate, apr, ltv, initial_period, booking_fee, term, eligibility) FROM stdin;
+COPY themortgagemeterapp_tmortgage (mortgage_id, institution_code, mortgage_type, rate, apr, ltv, initial_period, booking_fee, term, eligibility) FROM stdin;
 \.
 
 

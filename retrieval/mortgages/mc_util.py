@@ -6,8 +6,8 @@ import urllib2
 import html5lib
 import re
 import string
-import mortgagecomparison_utils
-import mortgagecomparison_db
+import themortgagemeter_utils
+import themortgagemeter_db
 
 # Given a string, extracts the percent value as a decimal string
 # Returns blank string if none could be found
@@ -16,7 +16,7 @@ import mortgagecomparison_db
 # Takes string like "5 years fixed" and returns mortgage type
 def get_mortgage_type(s,logger):
 	str_lower = s.lower()
-	res = re.match(r'^.*(fixed|tracker|variable|discount).*$',mortgagecomparison_utils.remove_non_ascii(str_lower))
+	res = re.match(r'^.*(fixed|tracker|variable|discount).*$',themortgagemeter_utils.remove_non_ascii(str_lower))
 	type_str = res.group(1)
 	if type_str == 'fixed':
 		mortgage_type = 'F'
@@ -24,32 +24,32 @@ def get_mortgage_type(s,logger):
 		mortgage_type = 'T'
 	else:
 		logger.critical('unable to determine mortgage_type from str: ' + type_str)
-		mortgagecomparison_utils.record_alert('ERROR: unable to determine mortgage_type from str',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: unable to determine mortgage_type from str',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 	return mortgage_type
 
 
 def check_data(rate_percent,booking_fee,ltv_percent,apr_percent,initial_period,logger):
 	# Now we check that the values we have are the right type:
-	if mortgagecomparison_utils.isnumber(rate_percent) != True:
+	if themortgagemeter_utils.isnumber(rate_percent) != True:
 		logger.critical('problem with rate_percent:' + rate_percent)
-		mortgagecomparison_utils.record_alert('ERROR: problem with rate_percent',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with rate_percent',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
 	elif booking_fee.isdigit() != True:
 		logger.critical('problem with booking_fee:' + booking_fee)
-		mortgagecomparison_utils.record_alert('ERROR: problem with booking_fee',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with booking_fee',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
-	elif mortgagecomparison_utils.isnumber(ltv_percent) != True:
+	elif themortgagemeter_utils.isnumber(ltv_percent) != True:
 		logger.critical('problem with ltv_percent: ' + ltv_percent)
-		mortgagecomparison_utils.record_alert('ERROR: problem with ltv_percent',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with ltv_percent',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
-	elif mortgagecomparison_utils.isnumber(apr_percent) != True:
+	elif themortgagemeter_utils.isnumber(apr_percent) != True:
 		logger.critical('problem with apr_percent: ' + apr_percent)
-		mortgagecomparison_utils.record_alert('ERROR: problem with apr_percent',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with apr_percent',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
 	# mortgage type must be ok
 	elif str(initial_period).isdigit() != True:
 		logger.critical('problem with initial_period: ' + str(initial_period))
-		mortgagecomparison_utils.record_alert('ERROR: problem with initial_period',logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+		themortgagemeter_utils.record_alert('ERROR: problem with initial_period',logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 		exit()
 
 

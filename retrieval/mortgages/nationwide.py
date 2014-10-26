@@ -10,7 +10,7 @@ import json
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
+import themortgagemeter_utils
 
 institution_code = 'NTNWD'
 term = str(25 * 12)
@@ -53,7 +53,7 @@ def process_page(url,ltv,eligibility,mortgage_type,logger):
 #      "SpecialProductFee": 900,
 #      "Term": 24,
 #      "Withdrawn": false
-	resp = mortgagecomparison_utils.get_page(False,'',url,logger,tostring=True)
+	resp = themortgagemeter_utils.get_page(False,'',url,logger,tostring=True)
 	json_obj = json.loads(resp)
 	mortgage_list = json_obj['Rates']
 	if mortgage_list == 'none':

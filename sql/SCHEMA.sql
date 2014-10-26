@@ -520,10 +520,10 @@ CREATE TABLE matviews (
 ALTER TABLE public.matviews OWNER TO themortgagemeter;
 
 --
--- Name: mortgagecomparisonapp_tmortgage; Type: TABLE; Schema: public; Owner: themortgagemeter; Tablespace: 
+-- Name: themortgagemeterapp_tmortgage; Type: TABLE; Schema: public; Owner: themortgagemeter; Tablespace: 
 --
 
-CREATE TABLE mortgagecomparisonapp_tmortgage (
+CREATE TABLE themortgagemeterapp_tmortgage (
     mortgage_id integer NOT NULL,
     institution_code character varying(6) NOT NULL,
     mortgage_type text NOT NULL,
@@ -537,7 +537,7 @@ CREATE TABLE mortgagecomparisonapp_tmortgage (
 );
 
 
-ALTER TABLE public.mortgagecomparisonapp_tmortgage OWNER TO themortgagemeter;
+ALTER TABLE public.themortgagemeterapp_tmortgage OWNER TO themortgagemeter;
 
 --
 -- Name: replacement_mortgages_materialized_view; Type: TABLE; Schema: public; Owner: themortgagemeter; Tablespace: 
@@ -1162,11 +1162,11 @@ ALTER TABLE ONLY matviews
 
 
 --
--- Name: mortgagecomparisonapp_tmortgage_pkey; Type: CONSTRAINT; Schema: public; Owner: themortgagemeter; Tablespace: 
+-- Name: themortgagemeterapp_tmortgage_pkey; Type: CONSTRAINT; Schema: public; Owner: themortgagemeter; Tablespace: 
 --
 
-ALTER TABLE ONLY mortgagecomparisonapp_tmortgage
-    ADD CONSTRAINT mortgagecomparisonapp_tmortgage_pkey PRIMARY KEY (mortgage_id);
+ALTER TABLE ONLY themortgagemeterapp_tmortgage
+    ADD CONSTRAINT themortgagemeterapp_tmortgage_pkey PRIMARY KEY (mortgage_id);
 
 
 --

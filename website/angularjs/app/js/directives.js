@@ -3,7 +3,7 @@
 /* Directives */
 
 // Not used and never working - kept here for future reference.
-//mortgagecomparison.directive('chart', function() {
+//themortgagemeter.directive('chart', function() {
 //    return {
 //		//restrict: 'EA' if you want it available as an attribute as well (ng-chart, presumably!)
 //        restrict: 'E',

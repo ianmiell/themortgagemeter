@@ -3,7 +3,7 @@
 /* Filters */
 
 // Takes the return values of the last_n_changes call and produces a table of changes.
-angular.module('mortgagecomparisonchangesfilter', []).filter('change_filter', function() {
+angular.module('themortgagemeterchangesfilter', []).filter('change_filter', function() {
 	return function(change_items) {
 		var div, i, j, k, col, change_item, row, better, field;
 		var col_list = ['rate_display','svr_display','apr_display','ltv_display','institution_name','eligibility_display','mortgage_type_display','booking_fee_display','initial_period_display'];

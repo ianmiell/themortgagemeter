@@ -13,8 +13,8 @@ import logging
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
-import mortgagecomparison_db
+import themortgagemeter_utils
+import themortgagemeter_db
 
 #insert into tinstitution (institution_code,institution_type,institution_name) values('PSTFFC','BANK','The Post Office'); 
 
@@ -22,7 +22,7 @@ institution_code = 'PSTFFC'
 
 def get_product_page(static,url,eligibilities):
 	logger = logging.getLogger('retrieve')
-	bsobj = mortgagecomparison_utils.get_page(static,'static_html/post_office/our-full-range.html',url,logger)
+	bsobj = themortgagemeter_utils.get_page(static,'static_html/post_office/our-full-range.html',url,logger)
 	#print bsobj
 	term = str(25 * 12)
 	ltv_elems = bsobj.find_all('h2')
@@ -37,7 +37,7 @@ def get_product_page(static,url,eligibilities):
 		# For post office, first reported % is 100 - LTV
 		ltv_elem_str = ltv_elem.string
 		if (ltv_elem_str):
-			ltv_percent = mortgagecomparison_utils.get_percentage(ltv_elem_str,logger)
+			ltv_percent = themortgagemeter_utils.get_percentage(ltv_elem_str,logger)
 			if ltv_percent != '':
 				ltv_percent = str(100 - int(ltv_percent))
 			else:
@@ -66,7 +66,7 @@ def get_product_page(static,url,eligibilities):
 					# Sometimes we get empty fields - we remove them here.
 					while '' in s:
 						s.remove('')
-					initial_period = str(mortgagecomparison_utils.get_months(s[i],logger))
+					initial_period = str(themortgagemeter_utils.get_months(s[i],logger))
 					#logger.debug('type_str before split: ' + tds[i].text.encode('utf-8'))
 					#logger.debug('tds i: ' + str(i) + ' tds: ' + str(tds))
 					#logger.debug('tds i: ' + str(i) + ' tds[i]: ' + str(tds[i].text.encode('utf-8')))
@@ -79,25 +79,25 @@ def get_product_page(static,url,eligibilities):
 					elif type_str == 'tracker':
 						mortgage_type = 'T'
 					else:
-							mortgagecomparison_utils.record_alert('ERROR: PSTFFC neither fixed nor tracker: ' + type_str,logger,mortgagecomparison_db.db_connection,mortgagecomparison_db.cursor)
+							themortgagemeter_utils.record_alert('ERROR: PSTFFC neither fixed nor tracker: ' + type_str,logger,themortgagemeter_db.db_connection,themortgagemeter_db.cursor)
 					i+=1
 					j = 0
 					for td in tds[i].text.encode('utf-8').split('\n'):
 						t = tds[i].text.encode('utf-8').split('\n')[j]
-						rate_percent = mortgagecomparison_utils.get_percentage(t,logger)
+						rate_percent = themortgagemeter_utils.get_percentage(t,logger)
 						if rate_percent != '':
 							break
 						j += 1
 					while svr_percent == '':
 						i+=1
 						for t in tds[i].text.encode('utf-8').split('\n'):
-							svr_percent = mortgagecomparison_utils.get_percentage(t,logger)
+							svr_percent = themortgagemeter_utils.get_percentage(t,logger)
 							if svr_percent != '':
 								break
 					while apr_percent == '':
 						i+=1
 						for t in tds[i].text.encode('utf-8').split('\n'):
-							apr_percent = mortgagecomparison_utils.get_percentage(t,logger)
+							apr_percent = themortgagemeter_utils.get_percentage(t,logger)
 							if apr_percent != '':
 								break
 					i+=1

@@ -10,7 +10,7 @@
 		Order allow,deny
 		allow from all
 	</Directory>
-	WSGIScriptAlias /rest /opt/themortgagemeter/website/django/mortgagecomparison/wsgi-scripts/wsgi.py
+	WSGIScriptAlias /rest /opt/themortgagemeter/website/django/themortgagemeter/wsgi-scripts/wsgi.py
 </VirtualHost>
 
 

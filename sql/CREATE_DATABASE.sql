@@ -1,1 +1,1 @@
-create database mortgagecomparison;
+create database themortgagemeter;

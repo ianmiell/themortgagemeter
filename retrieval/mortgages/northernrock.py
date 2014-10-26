@@ -7,19 +7,19 @@ import string
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
+import themortgagemeter_utils
 
 institution_code = 'NRTHNR'
 term = str(12 * 25)
 
 def process_page(static,base_url,url_suffix,eligibility):
 	logger = logging.getLogger('retrieve')
-	bsobj = mortgagecomparison_utils.get_page(static,'static_html/northernrock/First-Time-Buyer',base_url + url_suffix,logger)
+	bsobj = themortgagemeter_utils.get_page(static,'static_html/northernrock/First-Time-Buyer',base_url + url_suffix,logger)
 	anchors = bsobj.find_all(attrs={'class' : 'continue moreinfo'})
 	for anchor in anchors:
 		url = base_url + anchor['href']
 		logger.info(url)
-		anchor_bsobj = mortgagecomparison_utils.get_page(static,'static_html/northernrock/5yr_everyday_fixed_5ct5',url,logger)
+		anchor_bsobj = themortgagemeter_utils.get_page(static,'static_html/northernrock/5yr_everyday_fixed_5ct5',url,logger)
 		title = anchor_bsobj.find_all('h1')[0].string
 		for class_str in ('fixedpanel','trackerpanel'):
 			trs = anchor_bsobj.find_all('tr','list ' + class_str)
@@ -66,7 +66,7 @@ def process_title(title,logger):
 	# Take the title, and break down into initial_period and mortgage type
 	# mortgage_type:
 	# If it contains Fixed = F, Tracker = T, "Freedom to Fix"?, "Fixed Cashback"?, "Flexi Tracker"?
-	initial_period = str(mortgagecomparison_utils.get_months(title,logger))
+	initial_period = str(themortgagemeter_utils.get_months(title,logger))
 	mortgage_type = mc_util.get_mortgage_type(title,logger)
 	return (initial_period,mortgage_type)
 

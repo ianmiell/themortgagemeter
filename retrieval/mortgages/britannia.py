@@ -12,7 +12,7 @@ import logging
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
+import themortgagemeter_utils
 
 institution_code = 'BRTN'
 
@@ -22,7 +22,7 @@ pages_so_far = []
 
 def get_product_pages(static,base_url,suffix_url,logger):
 	logger.info("In get_product_pages: " + base_url + suffix_url)
-	bsobj = mortgagecomparison_utils.get_page(static,'NA',base_url + suffix_url,logger)
+	bsobj = themortgagemeter_utils.get_page(static,'NA',base_url + suffix_url,logger)
 	pages_so_far.append(suffix_url)
 	for anchor in bsobj.find_all('a'):
 		href = anchor.get('href')
@@ -34,7 +34,7 @@ def get_product_pages(static,base_url,suffix_url,logger):
 			get_mortgage_page_details(static,base_url,href,logger)
 
 def get_mortgage_page_details(static,base_url,suffix_url,logger):
-	bsobj = mortgagecomparison_utils.get_page(static,'NA',base_url + suffix_url,logger)
+	bsobj = themortgagemeter_utils.get_page(static,'NA',base_url + suffix_url,logger)
 	mtgtables = bsobj.find_all(id='mtgTableData')
 	if len(mtgtables) == 0:
 		# We're in a product page with potentially further product pages and no mortgage info,

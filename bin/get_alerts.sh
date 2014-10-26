@@ -1,3 +1,3 @@
-psql mortgagecomparison << END
+psql themortgagemeter << END
 select * from talert
 END

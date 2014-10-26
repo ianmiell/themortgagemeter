@@ -8,13 +8,13 @@ import string
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
+import themortgagemeter_utils
 
 institution_code = 'HLFX'
 term = str(12 * 25)
 
 def halifax_remortgage_page(static,url,mortgage_type,eligibility,logger):
-	bsobj = mortgagecomparison_utils.get_page(static,'static_html/halifax/remortgage-fixed-75ltv.asp',url,logger)
+	bsobj = themortgagemeter_utils.get_page(static,'static_html/halifax/remortgage-fixed-75ltv.asp',url,logger)
 	trs = bsobj.find_all('tr')
 	for tr in trs:
 		mortgage_details = []
@@ -37,7 +37,7 @@ def halifax_remortgage_page(static,url,mortgage_type,eligibility,logger):
 				elif re.search(r'months',initial_period) and not re.search(r'[0-9]+ month',initial_period):
 					initial_period = initial_period[0:2]
 				else:
-					initial_period = str(mortgagecomparison_utils.get_months(initial_period,logger))
+					initial_period = str(themortgagemeter_utils.get_months(initial_period,logger))
 				ltv_percent = mortgage_details[14].split('-')[1].strip('%')
 				mc_util.handle_mortgage_insert(institution_code,mortgage_type,rate_percent,svr_percent,apr_percent,ltv_percent,initial_period,booking_fee,term,url,eligibility,logger)
 		elif len(mortgage_details) == 25:
@@ -53,7 +53,7 @@ def halifax_remortgage_page(static,url,mortgage_type,eligibility,logger):
 				elif re.search(r'months',initial_period) and not re.search(r'[0-9]+ month',initial_period):
 					initial_period = initial_period[0:2]
 				else:
-					initial_period = str(mortgagecomparison_utils.get_months(initial_period,logger))
+					initial_period = str(themortgagemeter_utils.get_months(initial_period,logger))
 				ltv_percent = mortgage_details[16].split('-')[1].strip('%')
 				# handle special nonsense case
 				mc_util.handle_mortgage_insert(institution_code,mortgage_type,rate_percent,svr_percent,apr_percent,ltv_percent,initial_period,booking_fee,term,url,eligibility,logger)
@@ -62,7 +62,7 @@ def halifax_remortgage_page(static,url,mortgage_type,eligibility,logger):
 
 def halifax_ftb_page(static,url,mortgage_type,eligibility,logger):
 	logger = logging.getLogger('retrieve')
-	bsobj = mortgagecomparison_utils.get_page(static,'static_html/halifax/fixed.html',url,logger)
+	bsobj = themortgagemeter_utils.get_page(static,'static_html/halifax/fixed.html',url,logger)
 	trs = bsobj.find_all('tr')
 	for tr in trs:
 		mortgage_details = []
@@ -85,7 +85,7 @@ def halifax_ftb_page(static,url,mortgage_type,eligibility,logger):
 					elif re.search(r'months',initial_period) and not re.search(r'[0-9]+ month',initial_period):
 						initial_period = initial_period[0:2]
 					else:
-						initial_period = str(mortgagecomparison_utils.get_months(initial_period,logger))
+						initial_period = str(themortgagemeter_utils.get_months(initial_period,logger))
 					#print mortgage_details
 					if len(mortgage_details[14].split('-')) > 1:
 						ltv_percent = str(100 - int(mortgage_details[14].split('-')[0]))

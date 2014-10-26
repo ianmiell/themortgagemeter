@@ -1,1 +1,1 @@
-drop database mortgagecomparison;
+drop database themortgagemeter;

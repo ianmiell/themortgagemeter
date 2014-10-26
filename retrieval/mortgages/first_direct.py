@@ -12,14 +12,14 @@ import logging
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
+import themortgagemeter_utils
 
 institution_code = 'FRSTDRCT'
 
 
 def get_product_page(static,url):
 	logger = logging.getLogger('retrieve')
-	bsobj = mortgagecomparison_utils.get_page(static,'static_html/first_direct/mortgage-rates',url,logger)
+	bsobj = themortgagemeter_utils.get_page(static,'static_html/first_direct/mortgage-rates',url,logger)
 	print bsobj
 	sections = bsobj.find_all(attrs={'class':'section'})
 	for section in sections:
@@ -41,7 +41,7 @@ def get_product_page(static,url):
 					#print td
 					if count == 0:
 						#initial_period
-						initial_period = mortgagecomparison_utils.get_months(td_text,logger)
+						initial_period = themortgagemeter_utils.get_months(td_text,logger)
 						#mortgage_type F/D/T/O/V
 						mortgage_type = mc_util.get_mortgage_type(td_text,logger)
 						#eligibility
@@ -49,20 +49,20 @@ def get_product_page(static,url):
 						pass
 					elif count == 1:
 						#ltv_percent
-						ltv_percent = mortgagecomparison_utils.get_percentage(td_text,logger)
+						ltv_percent = themortgagemeter_utils.get_percentage(td_text,logger)
 					elif count == 2:
 						#rate_percent
-						rate_percent = mortgagecomparison_utils.get_percentage(td_text,logger)
+						rate_percent = themortgagemeter_utils.get_percentage(td_text,logger)
 					elif count == 3:
 						#svr_percent
-						svr_percent = mortgagecomparison_utils.get_percentage(td_text,logger)
+						svr_percent = themortgagemeter_utils.get_percentage(td_text,logger)
 					elif count == 4:
 						#apr_percent
-						apr_percent = mortgagecomparison_utils.get_percentage(td_text,logger)
+						apr_percent = themortgagemeter_utils.get_percentage(td_text,logger)
 					elif count == 5:
-						booking_fee_int = booking_fee_int + int(mortgagecomparison_utils.get_money(td_text,logger))
+						booking_fee_int = booking_fee_int + int(themortgagemeter_utils.get_money(td_text,logger))
 					elif count == 6:
-						booking_fee_int = booking_fee_int + int(mortgagecomparison_utils.get_money(td_text,logger))
+						booking_fee_int = booking_fee_int + int(themortgagemeter_utils.get_money(td_text,logger))
 
 					count = count + 1
 				booking_fee = str(booking_fee_int)
@@ -76,7 +76,7 @@ def get_product_page(static,url):
 #
 #def get_mortgage_page_details(static,url,eligibility):
 #	logger = logging.getLogger('retrieve')
-#	bsobj = mortgagecomparison_utils.get_page(static,'static_html/hsbc/product_page.html',url,logger)
+#	bsobj = themortgagemeter_utils.get_page(static,'static_html/hsbc/product_page.html',url,logger)
 #	# assume default of 25 years
 #	term = str(25 * 12)
 #	#logger.info(bsobj)
@@ -111,7 +111,7 @@ def get_product_page(static,url):
 #		if initial_period == 'Term of Loan':
 #			initial_period = term
 #		else:
-#			initial_period = mortgagecomparison_utils.get_months(initial_period,logger)
+#			initial_period = themortgagemeter_utils.get_months(initial_period,logger)
 #			break
 #	mc_util.handle_mortgage_insert(institution_code,mortgage_type,rate_percent,svr_percent,apr_percent,ltv_percent,initial_period,booking_fee,term,url,eligibility,logger)
 

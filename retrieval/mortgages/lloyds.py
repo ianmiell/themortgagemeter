@@ -10,14 +10,14 @@ import json
 import main
 import mc_util
 import mc_db
-import mortgagecomparison_utils
+import themortgagemeter_utils
 
 institution_code = 'LLOYDS'
 r = re.compile(r'([0-9]+)%[\s]+of.*$')
 term = str(12 * 25)
 
 def get_product_pages(url,mortgage_type,ltv_percent,eligibilities,logger):
-	resp = mortgagecomparison_utils.get_page(False,'',url,logger,tostring=True)
+	resp = themortgagemeter_utils.get_page(False,'',url,logger,tostring=True)
 	json_obj = json.loads(resp)
 	#print json_obj
 	mortgage_list = json_obj['mortgageList']
