@@ -36,7 +36,7 @@ class themortgagemeter(ShutItModule):
 			shutit.send('chown -R themortgagemeter:themortgagemeter /opt/themortgagemeter')
 		shutit.login('themortgagemeter')
 		# If we're delivering within a dockerfile this will already have been added
-		if not shutit.file_exists('/opt/themortgagemeter'):
+		if not shutit.file_exists('/opt/themortgagemeter/.git/config'):
 			shutit.send('pushd /opt')
 			if shutit.send('git clone ' + shutit.cfg[self.module_id]['gitrepo'],expect=['assword',shutit.get_default_expect()],check_exit=False) == 0:
 				shutit.send(config_dict[self.module_id]['gitpassword'])
