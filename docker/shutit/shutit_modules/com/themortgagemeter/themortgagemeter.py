@@ -27,16 +27,18 @@ class themortgagemeter(ShutItModule):
 		shutit.send('passwd','new UNIX password:')
 		shutit.send(config_dict[self.module_id]['containerpass'],'new UNIX password:',check_exit=False)
 		shutit.send(config_dict[self.module_id]['containerpass'],check_exit=False)
-		for package in ('vim','expect','linux-tools-common','linux-tools','postgresql','libpq-dev','libpostgresql-jdbc-java','python-psycopg2','xml-twig-tools','html2text','tidy','git-core','python-pip','python-html5lib','python-beautifulsoup','python-pygresql','python-bs4','python-html5lib','npm','apache2','libapache2-mod-wsgi','python-django','python-pexpect','curl','git','sysklogd','cron','linux-image-virtual'):
+		for package in ('vim','expect','linux-tools-common','linux-tools','postgresql','libpq-dev','libpostgresql-jdbc-java','python-psycopg2','xml-twig-tools','html2text','tidy','git-core','python-pip','python-html5lib','python-beautifulsoup','python-pygresql','python-bs4','python-html5lib','npm','apache2','libapache2-mod-wsgi','python-django','python-pexpect','curl','git','sysklogd','linux-image-virtual'):
 			shutit.install(package,timeout=1200)
 		shutit.send('pip install beautifulsoup4')
 		shutit.send('pip install openpyxl')
 		shutit.send('chmod 777 /opt')
 		if shutit.file_exists('/opt/themortgagemeter'):
+			shutit.send('echo HERE && sleep 10')
 			shutit.send('chown -R themortgagemeter:themortgagemeter /opt/themortgagemeter')
 		shutit.login('themortgagemeter')
 		# If we're delivering within a dockerfile this will already have been added
-		if not shutit.file_exists('/opt/themortgagemeter/.git/config'):
+		if not shutit.file_exists('/opt/themortgagemeter'):
+			shutit.send('echo HERE2 && sleep 10')
 			shutit.send('pushd /opt')
 			if shutit.send('git clone ' + shutit.cfg[self.module_id]['gitrepo'],expect=['assword',shutit.get_default_expect()],check_exit=False) == 0:
 				shutit.send(config_dict[self.module_id]['gitpassword'])
