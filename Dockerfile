@@ -62,7 +62,7 @@ EXPOSE 22 2222
 # Change the working directory to the ShutIt 
 WORKDIR /opt/themortgagemeter/docker/shutit/shutit_modules/com/themortgagemeter
 
-RUN /opt/shutit/shutit build --shutit_module_path /opt/shutit/library --delivery dockerfile
+RUN /opt/shutit/shutit build --shutit_module_path /opt/shutit/library --delivery bash
 
 CMD ["/root/start_themortgagemeter.sh"]
 
