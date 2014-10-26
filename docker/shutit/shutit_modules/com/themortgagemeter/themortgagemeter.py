@@ -14,9 +14,11 @@ class themortgagemeter(ShutItModule):
 		shutit.install('cron')
 		shutit.install('sudo')
 		shutit.install('telnet')
+		shutit.send('ls /opt')
 		shutit.send('groupadd -g 1000 themortgagemeter')
 		shutit.send('useradd -g themortgagemeter -d /home/themortgagemeter -s /bin/bash -m themortgagemeter')
 		shutit.send('adduser themortgagemeter sudo')
+		shutit.send('ls /opt')
 		shutit.send('echo "%sudo ALL=(ALL:ALL) ALL" > /etc/sudoers.d/sudo')
 		shutit.send('chmod 0440 /etc/sudoers.d/sudo')
 		shutit.send("""echo "
@@ -24,14 +26,18 @@ class themortgagemeter(ShutItModule):
 00 16 * * * cd /opt/themortgagemeter/bin && ./get_mortgages.sh 2>&1 > /tmp/get_mortgages.out && cd /opt/themortgagemeter/retrieval/emailer && python emailer.py 2>&1 > /tmp/emailer.out
 00 16 * * * cd /opt/themortgagemeter/bin && ./get_savings.sh 2>&1 > /tmp/get_savings.out
 00 19 * * * (cd /opt/themortgagemeter/bin && ./backup_db.exp) > /tmp/backupout 2>&1" | crontab -u themortgagemeter -""")
+		shutit.send('ls /opt')
 		shutit.send('passwd','new UNIX password:')
 		shutit.send(config_dict[self.module_id]['containerpass'],'new UNIX password:',check_exit=False)
 		shutit.send(config_dict[self.module_id]['containerpass'],check_exit=False)
+		shutit.send('ls /opt')
 		for package in ('vim','expect','linux-tools-common','linux-tools','postgresql','libpq-dev','libpostgresql-jdbc-java','python-psycopg2','xml-twig-tools','html2text','tidy','git-core','python-pip','python-html5lib','python-beautifulsoup','python-pygresql','python-bs4','python-html5lib','npm','apache2','libapache2-mod-wsgi','python-django','python-pexpect','curl','git','sysklogd','linux-image-virtual'):
 			shutit.install(package,timeout=1200)
+		shutit.send('ls /opt')
 		shutit.send('pip install beautifulsoup4')
 		shutit.send('pip install openpyxl')
 		shutit.send('chmod 777 /opt')
+		shutit.send('ls /opt')
 		if shutit.file_exists('/opt/themortgagemeter'):
 			shutit.send('echo HERE && sleep 10')
 			shutit.send('chown -R themortgagemeter:themortgagemeter /opt/themortgagemeter')
