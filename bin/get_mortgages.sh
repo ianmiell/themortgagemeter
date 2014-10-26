@@ -1,4 +1,4 @@
-cd /opt/themortgagmeter/retrieval/mortgages
+cd /opt/themortgagemeter/retrieval/mortgages
 python main.py --institution NTNWD $MORTGAGE_COMPARISON_RETRIEVAL_REGRESSION_TEST &
 python main.py --institution SNTNDR $MORTGAGE_COMPARISON_RETRIEVAL_REGRESSION_TEST &
 python main.py --institution HLFX $MORTGAGE_COMPARISON_RETRIEVAL_REGRESSION_TEST &
