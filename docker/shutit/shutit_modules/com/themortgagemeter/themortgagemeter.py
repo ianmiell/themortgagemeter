@@ -57,7 +57,7 @@ class themortgagemeter(ShutItModule):
 		#change the perms on the log folders to 777 (the umask is applied on creation)
 		shutit.send('chmod 777 /opt/themortgagemeter/retrieval/mortgages/logs')
 		shutit.send('chmod 777 /opt/themortgagemeter/retrieval/data/logs')
-		shutit.send('touch /opt/themortgagemeter/website/django/themortagemeter/logs/log.log')
+		shutit.send('touch /opt/themortgagemeter/website/django/themortgagemeter/logs/log.log')
 		shutit.send('chmod 777 /opt/themortgagemeter/website/django/themortgagemeter/logs/log.log')
 		##install the database
 		shutit.login('postgres')
