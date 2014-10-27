@@ -54,11 +54,6 @@ RUN echo "containerpass:rootpass" >> ~/.shutit/config
 # CONFIG SECTION COMPLETE
 ################################################################################
 
-# Expose the web port on the host's port 8080
-EXPOSE 80 8080
-# Expose the ssh port on the host's port 2222
-EXPOSE 22 2222
-
 # Change the working directory to the ShutIt build
 WORKDIR /opt/themortgagemeter/docker/shutit/shutit_modules/com/themortgagemeter
 
