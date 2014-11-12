@@ -46,7 +46,7 @@ RUN echo "mailpass:mymailpass" >> ~/.shutit/config
 RUN echo "adminemail:ian.miell@gmail.com" >> ~/.shutit/config
 
 # Your site's domain name, eg themortgagemeter.com
-RUN echo "sitename:themortgagemeter.com" >> ~/.shutit/config
+RUN echo "sitename:pinkyponk" >> ~/.shutit/config
 
 # This value will be the root password for your container
 # TODO: Fill this in appropriately replacing rootpass your preferred container password, and then delete this line
