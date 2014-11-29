@@ -113,7 +113,7 @@ def module():
 	return themortgagemeter(
 		'com.themortgagemeter.setup', 1003189494.56,
 		description='Builds the mortgage comparison site',
-		depends=['shutit.tk.setup','shutit.tk.ssh_server.ssh_server','shutit.tk.postgres.postgres','shutit.tk.phantomjs.phantomjs','shutit.tk.casperjs.casperjs','shutit.tk.jq.jq']
+		depends=['shutit.tk.setup','shutit.tk.ssh_server.ssh_server','shutit.tk.postgres.postgres','shutit.tk.phantomjs.phantomjs','shutit.tk.casperjs.casperjs']
 	)
 
 
