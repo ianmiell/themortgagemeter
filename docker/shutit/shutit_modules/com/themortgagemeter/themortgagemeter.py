@@ -27,8 +27,12 @@ class themortgagemeter(ShutItModule):
 		shutit.send('passwd','new UNIX password:')
 		shutit.send(config_dict[self.module_id]['containerpass'],'new UNIX password:',check_exit=False)
 		shutit.send(config_dict[self.module_id]['containerpass'],check_exit=False)
-		for package in ('vim','expect','linux-tools-common','linux-tools','postgresql','libpq-dev','libpostgresql-jdbc-java','python-psycopg2','xml-twig-tools','html2text','tidy','git-core','python-pip','python-html5lib','python-beautifulsoup','python-pygresql','python-bs4','python-html5lib','npm','apache2','libapache2-mod-wsgi','python-django','python-pexpect','curl','git','sysklogd','linux-image-virtual'):
-			shutit.install(package,timeout=1200)
+		# prevent grub from being installed
+		shutit.send('echo "Package: grub-pc" >> /etc/apt/preferences')
+		shutit.send('echo "Pin: release *" >> /etc/apt/preferences')
+		shutit.send('echo "Pin-Priority: -1" >> /etc/apt/preferences')
+		shutit.install('linux-image-virtual',timeout=1200)
+		shutit.install('vim expect linux-tools-common linux-tools postgresql libpq-dev libpostgresql-jdbc-java python-psycopg2 xml-twig-tools html2text tidy git-core python-pip python-html5lib python-beautifulsoup python-pygresql python-bs4 python-html5lib npm apache2 libapache2-mod-wsgi python-django python-pexpect curl git sysklogd cron',timeout=2400)
 		shutit.send('pip install beautifulsoup4')
 		shutit.send('pip install openpyxl')
 		shutit.send('chmod 777 /opt')
