@@ -74,7 +74,6 @@ class themortgagemeter(ShutItModule):
 		shutit.add_line_to_file('#!/bin/bash','/root/start_themortgagemeter.sh')
 		shutit.add_line_to_file('/root/start_postgres.sh','/root/start_themortgagemeter.sh')
 		shutit.add_line_to_file('apache2ctl restart','/root/start_themortgagemeter.sh')
-		shutit.add_line_to_file('/root/start_ssh_server.sh','/root/start_themortgagemeter.sh')
 		shutit.add_line_to_file('service sysklogd start','/root/start_themortgagemeter.sh')
 		shutit.add_line_to_file('cron -f -L 8','/root/start_themortgagemeter.sh')
 		shutit.send('chmod +x /root/start_themortgagemeter.sh')
@@ -117,7 +116,7 @@ def module():
 	return themortgagemeter(
 		'com.themortgagemeter.setup', 1003189494.56,
 		description='Builds the mortgage comparison site',
-		depends=['shutit.tk.setup','shutit.tk.ssh_server.ssh_server','shutit.tk.postgres.postgres','shutit.tk.phantomjs.phantomjs','shutit.tk.casperjs.casperjs']
+		depends=['shutit.tk.setup','shutit.tk.postgres.postgres','shutit.tk.phantomjs.phantomjs','shutit.tk.casperjs.casperjs']
 	)
 
 
