@@ -41,19 +41,16 @@ class themortgagemeter(ShutItModule):
 		shutit.login('themortgagemeter')
 		# If we're delivering within a dockerfile this will already have been added
 		if not shutit.file_exists('/opt/themortgagemeter'):
-			shutit.send('pushd /opt')
+			shutit.send('cd /opt')
 			if shutit.send('git clone ' + shutit.cfg[self.module_id]['gitrepo'],expect=['assword',shutit.get_default_expect()],check_exit=False) == 0:
 				shutit.send(config_dict[self.module_id]['gitpassword'])
-			shutit.send('popd')
-		shutit.send('pushd /opt/themortgagemeter')
+		shutit.send('cd /opt/themortgagemeter')
 		shutit.send('git submodule init')
 		shutit.send('git submodule update')
-		shutit.send('popd')
-		shutit.send('pushd /opt/themortgagemeter/simple_mailer')
+		shutit.send('cd /opt/themortgagemeter/simple_mailer')
 		shutit.send('git pull origin master')
 		shutit.send('chmod 600 /opt/themortgagemeter/conf/mailpass')
 		shutit.send('echo -n "' + shutit.cfg[self.module_id]['mailpass'] + '" > /opt/themortgagemeter/conf/mailpass')
-		shutit.send('popd')
 		shutit.logout()
 		shutit.send("perl -p -i -e 's/Require all denied/Require all granted/' /etc/apache2/apache2.conf")
 		shutit.send('cp /opt/themortgagemeter/website/apache2/sites-enabled/000-default /etc/apache2/sites-available/000-default.conf')
@@ -77,13 +74,12 @@ class themortgagemeter(ShutItModule):
 		shutit.add_line_to_file('service sysklogd start','/root/start_themortgagemeter.sh')
 		shutit.add_line_to_file('cron -f -L 8','/root/start_themortgagemeter.sh')
 		shutit.send('chmod +x /root/start_themortgagemeter.sh')
-		shutit.send('pushd /opt/themortgagemeter')
+		shutit.send('cd /opt/themortgagemeter')
 		# The below strings are deliberately broken up to ensure we don't overwrite them ourselves :)
 		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/THEMORTGAGEMETER" + "_ADMINEMAIL/" + shutit.cfg[self.module_id]['adminemail'] + "/g'")
 		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/THEMORTGAGEMETER" + "_SENDEREMAIL/" + shutit.cfg[self.module_id]['senderemail'] + "/g'")
 		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/THEMORTGAGEMETER" + "_SITENAME/" + shutit.cfg[self.module_id]['sitename'] + "/g'")
 		shutit.send("find . -type f -print0 | xargs -0 sed -i 's/THEMORTGAGEMETER" + "_GITPASSWORD/" + shutit.cfg[self.module_id]['gitpassword'] + "/g'")
-		shutit.send('popd')
 		return True
 
 	def start(self,shutit):
