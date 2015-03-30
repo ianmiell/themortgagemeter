@@ -44,7 +44,7 @@ class themortgagemeter(ShutItModule):
 		# If we're delivering within a dockerfile this will already have been added
 		if not shutit.file_exists('/opt/themortgagemeter'):
 			shutit.send('cd /opt')
-			if shutit.send('git clone ' + shutit.cfg[self.module_id]['gitrepo'],expect=['assword',shutit.get_default_expect()],check_exit=False) == 0:
+			if shutit.send('git clone ' + shutit.cfg[self.module_id]['gitrepo'] + ' themortgagemeter',expect=['assword',shutit.get_default_expect()],check_exit=False) == 0:
 				shutit.send(config_dict[self.module_id]['gitpassword'])
 		shutit.send('cd /opt/themortgagemeter')
 		shutit.send('git submodule init')
@@ -60,7 +60,7 @@ class themortgagemeter(ShutItModule):
 		#change the perms on the log folders to 777 (the umask is applied on creation)
 		shutit.send('chmod 777 /opt/themortgagemeter/retrieval/mortgages/logs')
 		shutit.send('chmod 777 /opt/themortgagemeter/retrieval/data/logs')
-		shutit.send('touch /opt/themortgagemeter/website/django/themortgagemeter/logs/log.log')
+		shutit.send('touch /opt/themortgagemeter/website/django/mortgagecomparison/logs/log.log')
 		shutit.send('chmod 777 /opt/themortgagemeter/website/django/themortgagemeter/logs/log.log')
 		##install the database
 		shutit.login('postgres')
