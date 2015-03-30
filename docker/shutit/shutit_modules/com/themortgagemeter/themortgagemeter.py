@@ -10,11 +10,7 @@ class themortgagemeter(ShutItModule):
 
 	def build(self,shutit):
 		config_dict = shutit.cfg
-		shutit.install('adduser')
-		shutit.install('cron')
-		shutit.install('sudo')
-		shutit.install('telnet')
-		shutit.install('openssh-server')
+		shutit.install('linux-image-virtual openssh-server telnet sudo cron adduser vim expect linux-tools-common linux-tools postgresql libpq-dev libpostgresql-jdbc-java python-psycopg2 xml-twig-tools html2text tidy git-core python-pip python-html5lib python-beautifulsoup python-pygresql python-bs4 python-html5lib npm apache2 libapache2-mod-wsgi python-django python-pexpect curl git sysklogd cron',timeout=2400)
 		shutit.send('mkdir -p /var/run/ssh')
 		shutit.send('groupadd -g 1000 themortgagemeter')
 		shutit.send('useradd -g themortgagemeter -d /home/themortgagemeter -s /bin/bash -m themortgagemeter')
@@ -33,8 +29,6 @@ class themortgagemeter(ShutItModule):
 		shutit.send('echo "Package: grub-pc" >> /etc/apt/preferences')
 		shutit.send('echo "Pin: release *" >> /etc/apt/preferences')
 		shutit.send('echo "Pin-Priority: -1" >> /etc/apt/preferences')
-		shutit.install('linux-image-virtual',timeout=1200)
-		shutit.install('vim expect linux-tools-common linux-tools postgresql libpq-dev libpostgresql-jdbc-java python-psycopg2 xml-twig-tools html2text tidy git-core python-pip python-html5lib python-beautifulsoup python-pygresql python-bs4 python-html5lib npm apache2 libapache2-mod-wsgi python-django python-pexpect curl git sysklogd cron',timeout=2400)
 		shutit.send('pip install beautifulsoup4')
 		shutit.send('pip install openpyxl')
 		shutit.send('chmod 777 /opt')
