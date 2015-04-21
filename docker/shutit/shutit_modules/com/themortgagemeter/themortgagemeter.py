@@ -61,7 +61,7 @@ class themortgagemeter(ShutItModule):
 		shutit.send('chmod 777 /opt/themortgagemeter/retrieval/mortgages/logs')
 		shutit.send('chmod 777 /opt/themortgagemeter/retrieval/data/logs')
 		shutit.send('mkdir -p /opt/themortgagemeter/website/django/themortgagemeter/logs')
-		shutit.send('touch /opt/themortgagemeter/website/django/mortgagecomparison/logs/log.log')
+		shutit.send('touch /opt/themortgagemeter/website/django/themortgagemeter/logs/log.log')
 		shutit.send('chmod 777 /opt/themortgagemeter/website/django/themortgagemeter/logs')
 		shutit.send('chmod 777 /opt/themortgagemeter/website/django/themortgagemeter/logs/log.log')
 		##install the database
