@@ -1,6 +1,6 @@
 #!/bin/bash
 pushd ..
-shutit build --shutit_module_path $(dirname $(which shutit))/library --image_tag stackbrew/ubuntu:saucy --interactive 0
+shutit build --shutit_module_path $(dirname $(which shutit))/library --image_tag ubuntu:14.04.2 --interactive 0
 if [[ "x$?" != "x0" ]]
 then
 	popd

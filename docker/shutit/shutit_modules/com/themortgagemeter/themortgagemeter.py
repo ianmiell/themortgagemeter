@@ -34,7 +34,7 @@ class themortgagemeter(ShutItModule):
 		shutit.send('echo "Pin: release *" >> /etc/apt/preferences')
 		shutit.send('echo "Pin-Priority: -1" >> /etc/apt/preferences')
 		shutit.install('linux-image-virtual',timeout=1200)
-		shutit.install('vim expect linux-tools-common linux-tools postgresql libpq-dev libpostgresql-jdbc-java python-psycopg2 xml-twig-tools html2text tidy git-core python-pip python-html5lib python-beautifulsoup python-pygresql python-bs4 python-html5lib npm apache2 libapache2-mod-wsgi python-django python-pexpect curl git sysklogd cron',timeout=2400)
+		shutit.install('vim expect linux-tools-common linux-tools-virtual postgresql libpq-dev libpostgresql-jdbc-java python-psycopg2 xml-twig-tools html2text tidy git-core python-pip python-html5lib python-beautifulsoup python-pygresql python-bs4 python-html5lib npm apache2 libapache2-mod-wsgi python-django python-pexpect curl git busybox-syslogd cron',timeout=2400)
 		shutit.send('pip install beautifulsoup4')
 		shutit.send('pip install openpyxl')
 		shutit.send('chmod 777 /opt')
@@ -76,7 +76,7 @@ class themortgagemeter(ShutItModule):
 		shutit.add_line_to_file('/root/start_postgres.sh','/root/start_themortgagemeter.sh')
 		shutit.add_line_to_file('apache2ctl restart','/root/start_themortgagemeter.sh')
 		shutit.add_line_to_file('service ssh start','/root/start_themortgagemeter.sh')
-		shutit.add_line_to_file('service sysklogd start','/root/start_themortgagemeter.sh')
+		shutit.add_line_to_file('service busybox-syslogd start','/root/start_themortgagemeter.sh')
 		shutit.add_line_to_file('cron -f -L 8','/root/start_themortgagemeter.sh')
 		shutit.send('chmod +x /root/start_themortgagemeter.sh')
 		shutit.send('cd /opt/themortgagemeter')
@@ -90,13 +90,13 @@ class themortgagemeter(ShutItModule):
 	def start(self,shutit):
 		shutit.send('apache2ctl restart')
 		shutit.send('service postgresql start')
-		shutit.send('service sysklogd start')
+		shutit.send('service busybox-syslogd start')
 		return True
 
 	def stop(self,shutit):
 		shutit.send('apache2ctl stop')
 		shutit.send('service postgresql stop')
-		shutit.send('service sysklogd stop')
+		shutit.send('service busybox-syslogd stop')
 		return True
 
 	def get_config(self, shutit):
