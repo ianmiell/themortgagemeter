@@ -1,4 +1,4 @@
-FROM ubuntu:saucy
+FROM ubuntu:14.04.2
 
 MAINTAINER ian.miell@gmail.com
 
