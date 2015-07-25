@@ -46,6 +46,7 @@ class themortgagemeter(ShutItModule):
 			shutit.send('cd /opt')
 			if shutit.send('git clone ' + shutit.cfg[self.module_id]['gitrepo'] + ' themortgagemeter',expect=['assword',shutit.get_default_expect()],check_exit=False) == 0:
 				shutit.send(config_dict[self.module_id]['gitpassword'])
+		shutit.pause_point('')
 		shutit.send('cd /opt/themortgagemeter')
 		shutit.send('git submodule init')
 		shutit.send('git submodule update')
@@ -69,8 +70,8 @@ class themortgagemeter(ShutItModule):
 		shutit.send('psql postgres < /opt/themortgagemeter/sql/CREATE_DATABASE.sql')
 		##set the postgres and themortgagemeter password (as postgres):
 		shutit.send_and_expect('/opt/themortgagemeter/bin/create_user.sh')
-		shutit.send('psql themortgagemeter < /opt/themortgagemeter/sql/SCHEMA.sql')
-		shutit.send('psql themortgagemeter < /opt/themortgagemeter/sql/DATA.sql')
+		shutit.send('psql themortgagemeter < /opt/themortgagemeter/sql/archive/SCHEMA_CURRENT.sql')
+		shutit.send('psql themortgagemeter < /opt/themortgagemeter/sql/archive/DATA_CURRENT.sql')
 		shutit.logout()
 		shutit.add_line_to_file('#!/bin/bash','/root/start_themortgagemeter.sh')
 		shutit.add_line_to_file('/root/start_postgres.sh','/root/start_themortgagemeter.sh')
