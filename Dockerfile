@@ -2,12 +2,11 @@ FROM ubuntu:14.04.2
 
 MAINTAINER ian.miell@gmail.com
 
-RUN apt-get update
-RUN apt-get install -y -qq curl git python-pip
+RUN apt-get update && apt-get install -y -qq git python-pip
+RUN pip install shutit
+
 WORKDIR /opt
-RUN git clone https://github.com/ianmiell/shutit.git
-WORKDIR /opt/shutit
-RUN pip install -r requirements.txt
+RUN git clone https://github.com/ianmiell/shutit-library
 
 ENV HOME /root
 
@@ -57,7 +56,7 @@ RUN echo "containerpass:rootpass" >> ~/.shutit/config
 # Change the working directory to the ShutIt build
 WORKDIR /opt/themortgagemeter/docker/shutit/shutit_modules/com/themortgagemeter
 
-RUN /opt/shutit/shutit build --shutit_module_path /opt/shutit/library --delivery bash
+RUN shutit build --shutit_module_path /opt/shutit-library --delivery bash
 
 CMD ["/root/start_themortgagemeter.sh"]
 
