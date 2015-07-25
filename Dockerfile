@@ -56,7 +56,7 @@ RUN echo "containerpass:rootpass" >> ~/.shutit/config
 # Change the working directory to the ShutIt build
 WORKDIR /opt/themortgagemeter/docker/shutit/shutit_modules/com/themortgagemeter
 
-RUN shutit build --shutit_module_path /opt/shutit-library --delivery bash
+RUN shutit build --shutit_module_path /opt/shutit-library --delivery dockerfile
 
 CMD ["/root/start_themortgagemeter.sh"]
 
