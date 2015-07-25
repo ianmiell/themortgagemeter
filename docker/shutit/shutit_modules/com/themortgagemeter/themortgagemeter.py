@@ -46,7 +46,6 @@ class themortgagemeter(ShutItModule):
 			shutit.send('cd /opt')
 			if shutit.send('git clone ' + shutit.cfg[self.module_id]['gitrepo'] + ' themortgagemeter',expect=['assword',shutit.get_default_expect()],check_exit=False) == 0:
 				shutit.send(config_dict[self.module_id]['gitpassword'])
-		shutit.pause_point('')
 		shutit.send('cd /opt/themortgagemeter')
 		shutit.send('git submodule init')
 		shutit.send('git submodule update')
