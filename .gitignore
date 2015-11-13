@@ -1,8 +1,6 @@
 *.pyc
 *.log*
 *.bak*
-sql/archive/SCHEMA*
-sql/archive/DATA*
 mmhost1.cnf
 lp01728.cnf
 lon1vtp32.cnf
