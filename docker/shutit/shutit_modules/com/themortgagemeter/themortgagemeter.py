@@ -15,6 +15,7 @@ class themortgagemeter(ShutItModule):
 		shutit.install('sudo')
 		shutit.install('telnet')
 		shutit.install('openssh-server')
+		shutit.install('phantomjs')
 		shutit.send('mkdir -p /var/run/ssh')
 		shutit.send('groupadd -g 1000 themortgagemeter')
 		shutit.send('useradd -g themortgagemeter -d /home/themortgagemeter -s /bin/bash -m themortgagemeter')
@@ -117,7 +118,7 @@ def module():
 	return themortgagemeter(
 		'com.themortgagemeter.setup', 1003189494.56,
 		description='Builds the mortgage comparison site',
-		depends=['shutit.tk.setup','shutit.tk.postgres.postgres','shutit.tk.phantomjs.phantomjs','shutit.tk.casperjs.casperjs']
+		depends=['shutit.tk.setup','shutit.tk.postgres.postgres','shutit.tk.casperjs.casperjs']
 	)
 
 
