@@ -13,7 +13,7 @@ For Using:
 then:
 
 ```sh
-cd docker/dockerfile
+cd themortgagemeter
 vi Dockerfile
 ```
 
