@@ -2,7 +2,7 @@ FROM ubuntu:14.04.2
 
 MAINTAINER ian.miell@gmail.com
 
-RUN apt-get update && apt-get install -y -qq git python-pip
+RUN apt-get update && apt-get install -y -qq git python-pip python-dev
 RUN pip install shutit
 
 WORKDIR /opt
