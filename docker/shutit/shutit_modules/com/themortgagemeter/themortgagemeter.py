@@ -45,8 +45,7 @@ class themortgagemeter(ShutItModule):
 		# If we're delivering within a dockerfile this will already have been added
 		if not shutit.file_exists('/opt/themortgagemeter'):
 			shutit.send('cd /opt')
-			if shutit.send('git clone ' + shutit.cfg[self.module_id]['gitrepo'] + ' themortgagemeter',expect=['assword',shutit.get_default_expect()],check_exit=False) == 0:
-				shutit.send(config_dict[self.module_id]['gitpassword'])
+			shutit.multisend('git clone ' + shutit.cfg[self.module_id]['gitrepo'] + ' themortgagemeter',{'assword':config_dict[self.module_id]['gitpassword']},check_exit=False) == 0:
 		shutit.send('cd /opt/themortgagemeter')
 		shutit.send('git submodule init')
 		shutit.send('git submodule update')
