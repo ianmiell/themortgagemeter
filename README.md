@@ -39,9 +39,7 @@ eg on 14.04 ubuntu:
 ```sh
 apt-get update
 apt-get install -y docker.io python-pip
-git clone https://github.com/ianmiell/shutit.git
-cd shutit
-pip install -r requirements.txt 
+sudo pip install shutit
 mkdir -p ~/.shutit && touch ~/.shutit/config && chmod 600 ~/.shutit/config 
 vi ~/.shutit/config
 ```
