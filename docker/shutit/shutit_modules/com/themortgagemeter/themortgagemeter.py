@@ -65,7 +65,7 @@ class themortgagemeter(ShutItModule):
 		shutit.send('chmod 777 /opt/themortgagemeter/website/django/themortgagemeter/logs')
 		shutit.send('chmod 777 /opt/themortgagemeter/website/django/themortgagemeter/logs/log.log')
 		##install the database
-		shutit.login('postgres')
+		shutit.login(user='postgres')
 		shutit.send('psql postgres < /opt/themortgagemeter/sql/CREATE_DATABASE.sql')
 		##set the postgres and themortgagemeter password (as postgres):
 		shutit.send_and_expect('/opt/themortgagemeter/bin/create_user.sh')
