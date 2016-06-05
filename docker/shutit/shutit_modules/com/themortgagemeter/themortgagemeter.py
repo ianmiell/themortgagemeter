@@ -41,7 +41,7 @@ class themortgagemeter(ShutItModule):
 		shutit.send('chmod 777 /opt')
 		if shutit.file_exists('/opt/themortgagemeter'):
 			shutit.send('rm -rf /opt/themortgagemeter')
-		shutit.login('themortgagemeter')
+		shutit.login(user='themortgagemeter')
 		# If we're delivering within a dockerfile this will already have been added
 		if not shutit.file_exists('/opt/themortgagemeter'):
 			shutit.send('cd /opt')
