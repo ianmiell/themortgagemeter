@@ -68,7 +68,7 @@ class themortgagemeter(ShutItModule):
 		shutit.login(user='postgres')
 		shutit.send('psql postgres < /opt/themortgagemeter/sql/CREATE_DATABASE.sql')
 		##set the postgres and themortgagemeter password (as postgres):
-		shutit.send_and_expect('/opt/themortgagemeter/bin/create_user.sh')
+		shutit.send('/opt/themortgagemeter/bin/create_user.sh')
 		shutit.send('psql themortgagemeter < /opt/themortgagemeter/sql/SCHEMA.sql')
 		shutit.send('psql themortgagemeter < /opt/themortgagemeter/sql/DATA.sql')
 		shutit.logout()
